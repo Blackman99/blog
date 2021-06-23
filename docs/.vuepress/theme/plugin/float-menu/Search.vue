@@ -1,8 +1,8 @@
 <template>
-  <div class="theme-search" v-show="isShow">
+  <div v-show="isShow" class="theme-search">
     <div class="theme-search__inner">
-      <SearchBox/>
-      <a class="icon-exit" @click="handleExit"></a>
+      <SearchBox />
+      <a class="icon-exit" @click="handleExit" />
     </div>
   </div>
 </template>
@@ -17,28 +17,28 @@ export default {
       isShow: false
     }
   },
-  created() {
+  mounted() {
     this.$eventBus.$on('EV_TOGGLE_SEARCH', (flag) => {
       if (flag === false) {
-        return this.isShow = false;
+        this.isShow = false
+        return
       }
-      this.isShow = !this.isShow;
+      this.isShow = !this.isShow
     })
-  },
-  mounted() {
-    window.addEventListener('keydown', (ev)=>{
+    window.addEventListener('keydown', (ev) => {
       if (ev.key === 'k' && (ev.metaKey || ev.ctrlKey)) {
-        ev.preventDefault();
-        return this.isShow = true;
+        ev.preventDefault()
+        this.isShow = true
+        return
       }
       if (ev.keyCode === 27) {
-        return this.isShow = false;
+        this.isShow = false
       }
     }, false)
   },
   methods: {
     handleExit() {
-      this.isShow = false;
+      this.isShow = false
     }
   }
 }

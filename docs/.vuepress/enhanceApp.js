@@ -13,25 +13,4 @@ export default ({
       config: {}
     })
   }
-  let quasarInited = false
-  Vue.mixin({
-    mounted() {
-      if (!quasarInited) {
-        quasarInited = true
-        const { mobile, desktop, ios, andriod } = this.$q.platform.is
-        document.body.className = `
-					${desktop ? 'desktop no-touch' : ''} 
-					${mobile ? 'mobile touch' : ''} 
-					${(ios || andriod) ? `platform-${ios ? 'ios' : 'andriod'}` : ''}
-					body--light
-					`
-        if (desktop) {
-          return
-        }
-        if (mobile) {
-          document.body.className = 'mobile touch platform-ios body--light'
-        }
-      }
-    },
-  })
 }

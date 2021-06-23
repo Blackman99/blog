@@ -5,4 +5,8 @@ layout: Post
 date: 2021-06-06
 ---
 
+> 个人简历
+
+<!-- more -->
+
 <resume /> 

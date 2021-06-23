@@ -2,7 +2,7 @@
   <div class="theme-sidebar">
     <div class="theme-sidebar__inner">
       <div class="theme-header">
-        <RouterLink class="theme-header__logo" to="/">
+        <div class="theme-header__logo" @click="gotoHomePage">
           <img
             draggable="false"
             class="theme-header__picture"
@@ -10,9 +10,9 @@
             alt="logo"
             width="160"
             height="160"
->
+          >
             <ThemePalette v-if="$themeConfig.palette" />
-        </RouterLink>
+        </div>
         <RouterLink class="theme-header__name" to="/">
           {{ $site.title }}
         </RouterLink>
@@ -37,6 +37,13 @@ export default {
     FooterBar,
     ThemePalette
   },
+  methods: {
+    gotoHomePage() {
+      if (this.$route.path !== '/') {
+        this.$router.push('/')
+      }
+    }
+  }
 }
 </script>
 <style lang="stylus">

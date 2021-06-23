@@ -13,6 +13,8 @@
         </slot>
       </div>
       <SvgSprite />
+      <Search />
+      <FloatMenu />
     </div>
   </ClientOnly>
 </template>
@@ -111,6 +113,20 @@ export default {
       this.isSidebarOpen = false
       this.$eventBus.$emit('EV_TOGGLE_SEARCH', false)
     })
+
+    const { mobile, desktop, ios, andriod } = this.$q.platform.is
+    document.body.className = `
+          ${desktop ? 'desktop no-touch' : ''} 
+          ${mobile ? 'mobile touch' : ''} 
+          ${(ios || andriod) ? `platform-${ios ? 'ios' : 'andriod'}` : ''}
+          body--light
+          `
+    if (desktop) {
+      return
+    }
+    if (mobile) {
+      document.body.className = 'mobile touch platform-ios body--light'
+    }
   },
   methods: {
     toggleSidebar(to) {

@@ -8,7 +8,7 @@
         class="theme-item"
         :style="{color: `${item.btnColor}`}"
         :title="item.btnColor"
-        @click.stop="setThemeColors(item)"
+        @click="setThemeColors(item)"
       />
     </div>
   </div>
@@ -32,7 +32,10 @@ export default {
     }
   },
   mounted() {
-    const ele = document.createElement('style')
+    let ele = document.getElementById('js_themePalette')
+    if (!ele) {
+      ele = document.createElement('style')
+    }
     ele.setAttribute('id', 'js_themePalette')
     this.themePaletteBox = ele
     ele.innerHTML = window.localStorage.getItem('__palette__')
@@ -68,6 +71,7 @@ export default {
     height 8px
     width 8px
     box-sizing border-box
+    cursor pointer
     &:hover
       opacity .9
       transform scale(1.2)

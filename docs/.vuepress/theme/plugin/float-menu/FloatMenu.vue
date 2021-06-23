@@ -1,5 +1,5 @@
 <template>
-  <div class="float-menu-wrap" :class="{'float-menu-wrap--open': isSHow}">
+  <div class="float-menu-wrap" :class="[{'float-menu-wrap--open': isSHow}]">
     <Toc />
     <div class="float-menu__list">
       <span class="icon-up" @click="scrollToTop" />
