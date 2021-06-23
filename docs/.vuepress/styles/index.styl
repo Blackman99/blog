@@ -1,0 +1,113 @@
+:root {
+  --donsen-music-player-theme-color: var(--theme-accent-color);
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.custom-block {
+  border-left-width: .5rem;
+  border-left-style: solid;
+  margin: 1rem 0;
+  border-radius: 3px;
+  .custom-block-title {
+    margin-top: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+}
+h1 {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+
+.vuepress-toc {
+  padding-top: 100px;
+}
+.content-wrapper {
+  min-height: calc(100vh - 61px);
+}
+
+p {
+  font-size: .95rem;
+}
+
+.content__default:not(.custom) > h1, 
+.content__default:not(.custom) > h2, 
+.content__default:not(.custom) > h3, 
+.content__default:not(.custom) > h4, 
+.content__default:not(.custom) > h5, 
+.content__default:not(.custom) > h6 {
+  margin-bottom: 1rem;
+}
+
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden
+}
+
+.q-item.bg-primary {
+  .q-item__section--side {
+    color: white
+  }
+}
+
+.content__default pre[class*="language-"] {
+  margin-top: 0;
+}
+
+code {
+  font-family: Consolas;
+}
+
+.article-content hr.q-separator {
+  box-shadow: none;
+  width: unset;
+  border-radius: 0;
+  border: none;
+  background: rgba(0,0,0,.12);
+  margin: 0;
+  transition: background .3s,opacity .3s;
+  flex-shrink: 0;
+  display: block;
+  height: 1px;
+}
+.article-cover {
+  text-align: center;
+  height: 200px;
+  overflow: hidden;
+  img[alt=cover] {
+    transition: all linear .2s;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  &:hover {
+    img[alt=cover] {
+      transform: scale(1.1);
+    }
+  }
+}
+.custom-player {
+  .bg-primary {
+    background-color: var(--donsen-music-player-theme-color) !important;
+  }
+  .text-primary {
+    color: var(--donsen-music-player-theme-color) !important;
+  }
+}
