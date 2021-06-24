@@ -476,11 +476,6 @@ export default {
   background-color #333
   background-position center
   overflow hidden
-  &.mobile {
-    .play-list {
-      width: 100%;
-    }
-  }
   &.fullscreen {
     position fixed
     background-size contain
@@ -499,6 +494,16 @@ export default {
     }
     .play-list {
       width: 20vw;
+    }
+    &.mobile {
+      .play-list {
+        width: 100%;
+      }
+    }
+  }
+  &.mobile {
+    .play-list {
+      width: 100%;
     }
   }
   ::-webkit-scrollbar-track {
