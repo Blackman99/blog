@@ -3,14 +3,14 @@ export const extRE = /\.(md|html)$/
 export const endingSlashRE = /\/$/
 export const outboundRE = /^[a-z]+:/i
 
-export function normalize (path) {
+export function normalize(path) {
   return decodeURI(path)
     .replace(hashRE, '')
     .replace(extRE, '')
 }
 
 export function getCssVar(key) {
-  return window.getComputedStyle(document.documentElement).getPropertyValue(key).trim();
+  return window.getComputedStyle(document.documentElement).getPropertyValue(key).trim()
 }
 
 /*
@@ -34,19 +34,19 @@ export function findContainerInVm(ref, vm, def) {
   return container || def
 }
 
-export function isExternal (path) {
+export function isExternal(path) {
   return outboundRE.test(path)
 }
 
-export function isMailto (path) {
+export function isMailto(path) {
   return /^mailto:/.test(path)
 }
 
-export function isTel (path) {
+export function isTel(path) {
   return /^tel:/.test(path)
 }
 
-export function ensureExt (path) {
+export function ensureExt(path) {
   if (isExternal(path)) {
     return path
   }
@@ -60,7 +60,7 @@ export function ensureExt (path) {
   return normalized + '.html' + hash
 }
 
-export function resolveNavLinkItem (linkItem) {
+export function resolveNavLinkItem(linkItem) {
   return Object.assign(linkItem, {
     type: linkItem.items && linkItem.items.length ? 'links' : 'link'
   })
@@ -71,7 +71,7 @@ export function resolveNavLinkItem (linkItem) {
  * @param { Array<string|string[]> | Array<SidebarGroup> | [link: string]: SidebarConfig } config
  * @returns { base: string, config: SidebarConfig }
  */
-export function resolveMatchingConfig (regularPath, config) {
+export function resolveMatchingConfig(regularPath, config) {
   if (Array.isArray(config)) {
     return {
       base: '/',
@@ -93,7 +93,7 @@ export function resolveMatchingConfig (regularPath, config) {
  * @param { Page } page
  * @returns { SidebarGroup }
  */
-function resolveHeaders (page) {
+function resolveHeaders(page) {
   const headers = groupHeaders(page.headers || [])
   return [{
     type: 'group',
@@ -117,7 +117,7 @@ function resolveHeaders (page) {
  * @param { string } localePath
  * @returns { SidebarGroup }
  */
-export function resolveSidebarItems (page, regularPath, site, localePath) {
+export function resolveSidebarItems(page, regularPath, site, localePath) {
   const { pages, themeConfig } = site
 
   const localeConfig = localePath && themeConfig.locales
@@ -143,7 +143,7 @@ export function resolveSidebarItems (page, regularPath, site, localePath) {
   }
 }
 
-function resolveItem (item, pages, base, groupDepth = 1) {
+function resolveItem(item, pages, base, groupDepth = 1) {
   if (typeof item === 'string') {
     return resolvePage(pages, item, base)
   } else if (Array.isArray(item)) {

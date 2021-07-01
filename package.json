@@ -8,7 +8,7 @@
     "dev": "vuepress dev docs --no-cache ",
     "build": "vuepress build docs",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "yarn song && yarn build"
+    "deploy:oss": "yarn song && yarn build && node ./deploy-ali-oss"
   },
   "keywords": [
     "Javascript",

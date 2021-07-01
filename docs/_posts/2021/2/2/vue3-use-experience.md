@@ -8,7 +8,7 @@ categories:
 tags:
   - Vue
   - Composition-API
-  - TypeScript
+  - Typescript
 cover: /logos/vue-logo.png
 ---
 

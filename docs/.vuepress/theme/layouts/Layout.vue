@@ -56,6 +56,7 @@ export default {
         ['home', 'Home'],
         ['archive', 'Archive'],
         ['categoryItem', 'CategoryItem'],
+        ['category', 'Category'],
         ['tag', 'Tag'],
         ['tagItem', 'TagItem'],
         ['friendLink', 'FriendLink']
