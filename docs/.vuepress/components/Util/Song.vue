@@ -184,7 +184,6 @@
 </template>
 <script>
 import { scroll } from 'quasar'
-import shuffle from 'lodash/shuffle'
 import songs from '@src/songs/songsInfo.json'
 
 const songIdkey = 'DONSEN_SONG_ID'
@@ -273,10 +272,6 @@ export default {
     showControl() {
       return (this.hovering && this.fullscreen) || !this.fullscreen
     },
-    lyricsRainbow() {
-      this.currentHilightLyricIndex
-      return this.shuffleRainbow()
-    }
   },
   watch: {
     volume(v) {
@@ -340,17 +335,6 @@ export default {
     }
   },
   methods: {
-    shuffleRainbow() {
-      return shuffle([
-        '#ff0000',
-        '#ff5900',
-        '#fff200',
-        '#51ff00',
-        '#00d0ff',
-        '#9000ff',
-        ' #ff008c'
-      ]).join(',')
-    },
     minuteFormatter,
     rememberPlayState() {
       window.localStorage.setItem(songIdkey, this.playingSongId)
@@ -476,7 +460,10 @@ export default {
   background-color #333
   background-position center
   overflow hidden
+  max-width: 560px
+  margin: 0 auto
   &.fullscreen {
+    max-width: unset
     position fixed
     background-size contain
     top 0
@@ -502,6 +489,7 @@ export default {
     }
   }
   &.mobile {
+    max-width: unset
     .play-list {
       width: 100%;
     }
@@ -533,7 +521,7 @@ export default {
     )
     -webkit-background-clip text;
     background-clip text;
-    animation: lyrics 10s ease infinite;
+    animation: lyrics 30s ease infinite;
     color: transparent
     h3 {
       margin: 0;
