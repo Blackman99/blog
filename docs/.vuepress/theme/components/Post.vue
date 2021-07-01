@@ -114,7 +114,7 @@ export default {
     transition: color .15s,border-color .15s,opacity .15s;
 .article__header
   .post-title
-    padding: 4.3rem 2.15rem 2.15rem;
+    padding: 2.15rem;
     margin 0
   .post-meta
     padding: 0px 2.15rem;

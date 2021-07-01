@@ -33,7 +33,7 @@ export default {
   },
   methods: {
     copyCode() {
-      copyToClipboard(this.$refs.codeContent[0].textContent)
+      copyToClipboard(this.$refs.codeContent[0].querySelector('code').textContent)
         .then(() => {
           this.$q.notify({
             message: '代码复制成功！',

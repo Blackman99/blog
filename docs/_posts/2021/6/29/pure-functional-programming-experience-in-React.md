@@ -15,10 +15,13 @@ date: 2021-07-01
 
 <!-- more -->
 
-### Todo组件
+<Util-CodeTab
+  key-prefix="todo"
+  :code-types="['children', 'parent']"
+  default-active-code-type="children"
+/>
 
-> Todo.tsx
-
+::: slot todo-children
 ```tsx
 import React, { useState } from 'react'
 
@@ -81,13 +84,10 @@ export {
   TodoItem,
   TodoList
 }
-
 ```
+:::
 
-### 父组件
-
-> Parent.tsx
-
+::: slot todo-parent
 ```tsx
 import React, { useState } from 'react'
 import { Todo, TodoList } from './_components/Todo'
@@ -108,3 +108,4 @@ const Parent = () => {
 
 export { Parent }
 ```
+:::
