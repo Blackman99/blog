@@ -35,7 +35,6 @@
   "dependencies": {
     "@quasar/extras": "^1.5.2",
     "@vue/eslint-config-standard": "^5.1.2",
-    "ali-oss": "^6.15.2",
     "ali-oss-static-web-deploy": "^0.0.7",
     "axios": "^0.19.2",
     "express": "^4.17.1",
