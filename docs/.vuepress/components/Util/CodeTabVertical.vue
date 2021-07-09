@@ -60,7 +60,7 @@ export default {
     }
   },
   watch: {
-    codeType(newType, oldType) {
+    codeType() {
       this.$nextTick(() => {
         this.setHeight()
       })
@@ -71,8 +71,11 @@ export default {
   },
   methods: {
     setHeight() {
-      const codeContentHeight = this.$refs.codeContent[0].clientHeight
-      this.height = `${codeContentHeight}px`
+      const codeContents = this.$refs.codeContent
+      if (codeContents && codeContents.length > 0) {
+        const codeContentHeight = this.$refs.codeContent[0].clientHeight
+        this.height = `${codeContentHeight}px`
+      }
     }
   }
 }

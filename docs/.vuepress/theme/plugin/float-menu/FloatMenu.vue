@@ -1,19 +1,19 @@
 <template>
   <div class="float-menu-wrap" :class="[{'float-menu-wrap--open': isSHow}]">
     <Toc />
-    <div class="float-menu__list">
+    <div class="float-menu__list" @click="toggleMenu">
       <span class="icon-up" @click="scrollToTop" />
       <DarkMode />
       <span v-if="width < narrowWidth" class="icon-sidebar" @click="handleToggleSideBar" />
       <span v-if="$page.pid === 'post'" class="icon-toc" @click="toggleToc" />
-      <span class="icon-search" @click.stop="toggleSearch" />
+      <span class="icon-search" @click="toggleSearch" />
     </div>
     <div class="float-menu" @click="toggleMenu">
       <svg
         class="float-menu__progress"
         width="100%"
         height="100%"
->
+      >
         <circle
           ref="js_progressCircle"
           :stroke-dasharray="computedStrokeDasharray"
@@ -23,7 +23,7 @@
           r="48%"
           cx="50%"
           cy="50%"
-/>
+        />
       </svg>
       <div v-if="count === 0" class="float-menu__dot" />
       <div v-else class="float-menu__text">{{ count }}<span>%</span></div>
@@ -113,8 +113,6 @@ export default {
     .float-menu__list > span
       opacity: 1;
       z-index 0
-      &.icon-search
-        z-index -1
       &:nth-child(3n-2)
         top: 0;
         right: 0;

@@ -64,8 +64,12 @@ export default {
     $route() {},
   },
   mounted() {
-    this.$eventBus.$on('EV_TOGGLE_TOC', () => {
-      this.isShow = !this.isShow
+    this.$eventBus.$on('EV_TOGGLE_TOC', (v) => {
+      if (!this.isShow && v === undefined) {
+        this.isShow = !this.isShow
+      } else {
+        this.isShow = v
+      }
     })
     // sync visible to parent component
     const syncVisible = () => {

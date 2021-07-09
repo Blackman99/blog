@@ -13,7 +13,15 @@
         </h3>
         <div class="article-desc" v-html="item.excerpt" />
         <footer class="article-meta">
-          <span><i class="icon-calendar" />{{ formateDate(item.frontmatter.date) }}</span>
+          <div>{{ formateDate(item.frontmatter.date) }}<i class="icon-calendar" /></div>
+          <div class="article-tags">
+             <q-icon name="bookmarks" />
+            <router-link v-for="(t, j) in item.frontmatter.tags || []" :key="j" :to="`/tags/${t}`">
+              <q-chip dense clickable>
+                {{ t }}
+              </q-chip>
+            </router-link>
+          </div>
         </footer>
       </div>
     </div>
@@ -44,7 +52,6 @@ export default {
 .article-item
   display: block;
   overflow: hidden;
-  margin-bottom: 1.75rem;
   border-radius: 6px;
   background var(--theme-card-background)
 .article-title
@@ -60,9 +67,16 @@ export default {
     border-bottom: 1px dotted;
     transition: color .15s,border-color .15s,opacity .15s;
 .article-meta
-  margin: 1em 1.5rem 0;
+  margin: 0 1.5rem;
   padding-bottom: 1.5rem;
+  display flex
+  align-items items-center
   opacity: .63;
   [class^="icon-"]
-    margin-right 0.4rem
+    margin-left 0.4rem
+  .q-chip
+    background-color var(--theme-accent-color-04)
+    color #fff
+    &:hover
+      background-color var(--theme-accent-color-08)
 </style>

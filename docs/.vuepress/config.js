@@ -98,7 +98,6 @@ module.exports = {
     logo: '/apple-touch-icon.png',
     nav: [
       { text: '博客', link: '/' },
-      { text: '听听歌吧', link: '/songs/' },
       {
         text: '个人简历',
         link: '/resume/'

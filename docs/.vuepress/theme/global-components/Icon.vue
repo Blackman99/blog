@@ -6,7 +6,8 @@ export default {
   name: 'Icon',
   props: {
     icon: {
-      type: String
+      type: String,
+      required: true
     }
   }
 }

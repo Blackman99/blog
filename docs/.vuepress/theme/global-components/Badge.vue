@@ -6,7 +6,10 @@ export default {
       type: String,
       default: 'tip'
     },
-    text: String,
+    text: {
+      type: String,
+      default: ''
+    },
     vertical: {
       type: String,
       default: 'top'
@@ -32,7 +35,7 @@ export default {
   border-radius 3px
   padding 0 6px
   color white
-  background-color #42b983
+  background-color var(--theme-accent-color)
   &.tip, &.green
     background-color $badgeTipColor
   &.error
