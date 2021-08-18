@@ -28,7 +28,7 @@
             <Content :slot-key="`${keyPrefix ? `${keyPrefix}-` : ''}${name}`" />
           </div>
           <div v-if="!hideCopy" class="absolute-bottom-right copy-btn">
-            <q-btn round icon="content_copy" color="primary" @click="copyCode">
+            <q-btn round icon="content_copy" color="primary" size="12px" @click="copyCode">
               <q-tooltip>
                 点我复制
               </q-tooltip>

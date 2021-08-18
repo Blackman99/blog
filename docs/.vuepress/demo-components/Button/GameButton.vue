@@ -18,6 +18,7 @@ $shadow = #0099C0;
 .game-button {
   border-radius: 30px;
   padding: 12px 20px;
+  user-select: none;
   line-height: 1;
   cursor: pointer;
   position: relative;
