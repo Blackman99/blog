@@ -1,7 +1,9 @@
 .custom-block
   .custom-block-title
     font-weight 600
-  &.tip
+  &.tip,
+  &.warning,
+  &.danger
     padding .1rem 1.5rem
     border-left-width .4rem 
     border-left-style solid
@@ -9,8 +11,8 @@
     border-radius: 3px;
     word-break: break-word;
     line-height: 1.8;
-    background-color var(--theme-accent-color-005);
   &.tip
+    background-color var(--theme-accent-color-005);
     border-color var(--theme-accent-color)
   &.warning
     border-color darken(#ffe564, 30%)
