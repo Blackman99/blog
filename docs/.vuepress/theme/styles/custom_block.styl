@@ -1,7 +1,7 @@
 .custom-block
   .custom-block-title
     font-weight 600
-  &.tip, &.warning, &.danger
+  &.tip
     padding .1rem 1.5rem
     border-left-width .4rem 
     border-left-style solid
@@ -14,6 +14,7 @@
     border-color var(--theme-accent-color)
   &.warning
     border-color darken(#ffe564, 30%)
+    background-color: #fffde7
     color var(--theme-foreground-color)
     .custom-block-title
       color darken(#ffe564, 35%)
@@ -22,6 +23,7 @@
   &.danger
     border-color darken(red, 20%)
     color var(--theme-foreground-color)
+    background-color: #ffebee
     .custom-block-title
       color darken(red, 40%)
     a
