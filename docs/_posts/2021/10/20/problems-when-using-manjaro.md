@@ -12,11 +12,14 @@ categories:
   - Expand Learning
 ---
 
-> 程序员的意义在于不断折腾，最近将自己的两台笔记本都安装了win11以及Manjaro双系统，下面谈谈安装以及使用Manjaro时的遇到的一些问题，以及对应的解决方案
+> 程序员的意义在于不断折腾  
+> 最近将自己的3台电脑都安装了win11以及Manjaro双系统  
+> 下面谈谈安装以及使用Manjaro时的遇到的一些问题，以及对应的解决方案
 <!-- more -->
 
 ::: tip 提示
-本文涉及所使用的Manjaro版本为`21.1.6`
+本文涉及所使用的Manjaro版本为`21.1.6`  
+桌面使用的是gnome
 :::
 
 ## 安装Chrome
@@ -60,9 +63,9 @@ sudo pacman -S visual-studio-code-bin
 
 * 打开terminal
 * 在terminal里右键选择配置文件首选项
-* 在自定义字体那一栏里的字体名称记下
+* 将自定义字体那一栏里的字体名称记下
 * 打开VScode设置，找到Editor Font Size
-* 将记下的字体放置于第一个: `"你的终端字体", ...其他`，比如下面是我的配置
+* 将刚刚记下的字体名称放置于最后一个: `...其他, "你的终端字体"`，比如下面是我的配置
 
 ![](/images/vscode-font-set.png)
 
@@ -76,28 +79,63 @@ sudo pacman -S visual-studio-code-bin
 ```sh
 sudo pacman -S flameshot
 ```
-* 设置全局快捷键（如果需要的话）
-设置 => keyboard => Customize Shortcuts => 自定义快捷键 => + => 
-命令那一栏填写: `flameshot gui`，即可使用自定义的快捷键快速启动截图
+* 设置全局快捷键（如果需要的话）  
+设置 `=>` keyboard `=>` Customize Shortcuts `=>` 自定义快捷键 `=>` 点击+ `=>`  
+命令那一栏填写: `flameshot gui`，即可使用自定义的快捷键快速启动截图  
+下面是我自定义的全局快捷键`Ctrl` + `Alt` + `A`
+
+![](/images/custom-flameshot-shortcut.png)
 
 ## 安装录屏工具（peek）
 
-```
-// TODO
-```
+打开软件管理器，搜索peek安装或者执行`sudo pacman -S peek`
 
 ## 安装钉钉
 
+```sh
+yay -S dingtalk
 ```
-// TODO
-```
-## 设置快捷键
 
+::: tip 请安装`dingtalk-bin`而非`dingtalk`  
+`dingtalk`是基于`electron`开发的web套壳版，功能不全  
+而`dingtalk-bin`为官方linux版，功能较为完善
+:::
+
+::: warning 个人体验官方版目前依旧存在一些问题
+* 工作台内的应用无法输入中文
+* 查找聊天记录功能无法输入中文
+* 不支持dark mode
+
+请确保了解后果
+:::
+
+## 安装node环境
+
+* 安装`nvm`
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 ```
-// TODO
+* 安装`node`
+```sh
+nvm install 14.17.1
 ```
+安装完毕后会自动默认使用该版本
+* 安装`yarn`
+```sh
+npm install -g yarn
+```
+
+::: tip 选择自己的Node版本
+本人使用的node版本为`14.17.1`，请读者选择自己需要的node版本进行安装
+:::
+
+## 结语
+
+因为本人在安装使用Manjaro时从事的是前端开发工作，上述的几个步骤完成之后基本可以满足日常开发需求  
 
 ## 参考
-```
-// TODO
-```
+
+* [WeChat (简体中文) - ArchWiki](https://wiki.archlinux.org/title/WeChat_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))
+* [Fcitx5 - ArchWiki](https://wiki.archlinux.org/title/Fcitx5)
+* [AUR (en) - dingtalk-bin](https://aur.archlinux.org/packages/dingtalk-bin/)
+* [nvm-sh/nvm: Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions](https://github.com/nvm-sh/nvm#installing-and-updating)
