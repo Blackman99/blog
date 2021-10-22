@@ -43,6 +43,7 @@ QT_IM_MODULE  DEFAULT=fcitx
 XMODIFIERS    DEFAULT=@im=fcitx
 INPUT_METHOD  DEFAULT=fcitx
 SDL_IM_MODULE DEFAULT=fcitx
+* 安装Nord主题
 ```
 * 设置开机启动（如果需要的话）
 ```sh
@@ -89,6 +90,18 @@ sudo pacman -S flameshot
 ## 安装录屏工具（peek）
 
 打开软件管理器，搜索peek安装或者执行`sudo pacman -S peek`
+
+## 安装QQ
+
+这里我直接用了VScode QQ作为解决方案
+
+## 安装微信
+
+我这里使用的是魔改版`wechat-uos`
+```sh
+yay -S wechat-uos
+```
+
 
 ## 安装钉钉
 
@@ -139,3 +152,4 @@ npm install -g yarn
 * [Fcitx5 - ArchWiki](https://wiki.archlinux.org/title/Fcitx5)
 * [AUR (en) - dingtalk-bin](https://aur.archlinux.org/packages/dingtalk-bin/)
 * [nvm-sh/nvm: Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions](https://github.com/nvm-sh/nvm#installing-and-updating)
+* [QQ - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=takayama.vscode-qq)
