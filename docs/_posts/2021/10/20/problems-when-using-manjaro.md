@@ -106,7 +106,10 @@ sudo pacman -S flameshot
 
 ## 安装QQ
 
-这里我直接用了VScode QQ作为解决方案
+我这里使用了`icalingua`方案
+```sh
+yay -S icalingua
+```
 
 ## 安装微信
 
@@ -157,7 +160,7 @@ npm install -g yarn
 
 ## 结语
 
-因为本人在安装使用Manjaro时从事的是前端开发工作，上述的几个步骤完成之后基本可以满足日常开发需求  
+因为我在安装使用Manjaro时从事的是前端开发工作，上述的几个步骤完成之后基本可以满足日常开发需求  
 
 ## 参考
 
@@ -165,4 +168,4 @@ npm install -g yarn
 * [Fcitx5 - ArchWiki](https://wiki.archlinux.org/title/Fcitx5)
 * [AUR (en) - dingtalk-bin](https://aur.archlinux.org/packages/dingtalk-bin/)
 * [nvm-sh/nvm: Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions](https://github.com/nvm-sh/nvm#installing-and-updating)
-* [QQ - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=takayama.vscode-qq)
+* [Tencent QQ (简体中文) - ArchWiki](https://wiki.archlinux.org/title/Tencent_QQ_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#Icalingua)
