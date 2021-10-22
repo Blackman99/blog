@@ -101,6 +101,9 @@ sudo pacman -S flameshot
 
 打开软件管理器，搜索peek安装或者执行`sudo pacman -S peek`
 
+下面附上一张用peek录制的使用全局快捷键打开flameshot的gif
+![alt](/images/peek-flameshot.gif)
+
 ## 安装QQ
 
 这里我直接用了VScode QQ作为解决方案
