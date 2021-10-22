@@ -59,7 +59,7 @@ module.exports = {
   ],
   // theme: resolve(process.cwd(), 'theme'),
   themeConfig: {
-    copy: false,
+    copy: true,
     copyright: `© ${new Date().getFullYear()} ❤️ <a target="_blank" rel="external nofollow noopener" href="https://blog.donsen.site/">Zion Dotson</a>`,
     reward: {
       text: '给我买杯咖啡 ☕.',

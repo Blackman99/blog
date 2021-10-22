@@ -62,7 +62,7 @@ cp /usr/share/applications/org.fcitx.Fcitx5.desktop ~/.config/autostart/
 
 ## 安装VScode（visual-studio-code-bin）
 
-::: tip 提示
+::: warning 警告
 请安装微软官方版本（visual-studio-code-bin）而不是开源版（code），**开源版的问题非常多！**
 :::
 
