@@ -1,14 +1,12 @@
 .custom-block
-  .custom-block-title
-    font-weight 600
+  border-radius 6px
   &.tip,
   &.warning,
   &.danger
     padding .1rem 1.5rem
-    border-left-width .4rem 
+    border-left-width .45rem 
     border-left-style solid
     margin 1rem 0
-    border-radius: 3px;
     word-break: break-word;
     line-height: 1.8;
   &.tip
@@ -23,17 +21,16 @@
     a
       color var(--theme-foreground-color)
   &.danger
-    border-color darken(red, 20%)
+    border-color darken(#ec407a, 20%)
     color var(--theme-foreground-color)
     background-color: #ffebee
     .custom-block-title
-      color darken(red, 40%)
+      color darken(#ec407a, 10%)
     a
       color var(--theme-foreground-color)
   &.details
     display block
     position relative
-    border-radius 2px
     margin 1.6em 0
     padding 1.6em
     background-color var(--theme-accent-color-005)
@@ -46,3 +43,14 @@
     summary
       outline none
       cursor pointer
+
+html.dark {
+  .custom-block {
+    &.danger {
+      background-color: darken(#ec407a, 85%)
+    }
+    &.warning {
+      background-color: darken(#ffe564, 85%)
+    }
+  }
+}
