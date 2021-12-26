@@ -253,8 +253,8 @@ dynamicData: dynamicValue
 
 <Util-CodeTab
   key-prefix="vmodel"
-  :code-types="['createModelMixin.js', 'CustomInput.vue', 'CustomCheckbox.vue']"
-  default-active-code-type="createModelMixin"
+  :code-types="['createModelMixin.js', 'CustomInput.vue', 'CustomCheckbox.vue', '使用']"
+  default-active-code-type="createModelMixin.js"
 />
 
 ::: slot vmodel-createModelMixin.js
@@ -347,6 +347,34 @@ export default {
   data() {
     return {
       
+    }
+  }
+}
+</script>
+```
+:::
+
+::: slot vmodel-使用
+```vue
+<template>
+  <div>
+    <CustomCheckboxm v-model="checked" />
+    <CustomInput v-model="value" />
+  </div>
+</template>
+<script>
+import CustomCheckbox from 'path/to/CustomCheckbox'
+import CustomInput from 'path/to/CustomInput'
+
+export default {
+  components: {
+    CustomCheckboxm,
+    CustomInput
+  },
+  data() {
+    return {
+      checked: true,
+      value: ''
     }
   }
 }
