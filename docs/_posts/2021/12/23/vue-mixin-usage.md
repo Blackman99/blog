@@ -251,6 +251,8 @@ dynamicData: dynamicValue
 在这种情况下，可能需要多次封装组件内部的`v-model`提供给使用者绑定值  
 这个时候`mixin`能很好的帮你完成通用的自定义`v-model`实现
 
+下面的示例展示了通过参数自定义`v-model`所需要的一些相关选项，并提供默认`v-model`行为
+
 <Util-CodeTab
   key-prefix="vmodel"
   :code-types="['createModelMixin.js', 'CustomInput.vue', 'CustomCheckbox.vue', '使用']"
@@ -302,9 +304,7 @@ const createModelMixin = (
   },
 })
 
-const defaultModelMixin = createModelMixin()
-
-export createModelMixin
+export default createModelMixin
 
 ```
 :::
