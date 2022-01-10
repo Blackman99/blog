@@ -278,7 +278,7 @@ const createModelMixin = (
 ) => ({
   model: {
     prop: propName,
-    event: 'change',
+    event: eventName,
   },
   props: {
     [propName]: {

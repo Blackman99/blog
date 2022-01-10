@@ -50,11 +50,18 @@ git clone https://github.com/tonyfettes/fcitx5-nord.git
 mkdir -p ~/.local/share/fcitx5/themes/
 cd fcitx5-nord
 cp -r Nord-Dark/ Nord-Light/ ~/.local/share/fcitx5/themes/
+
+# ~/.config/fcitx5/conf/classicui.conf
+Theme=Nord-Dark
+# or
+Theme=Nord-Light
 ```
+
+* 注销重新登录即可
+
 效果如下：  
 ![alt](/images/fcitx5-nord-theme.png)
 
-注销重新登录即可
 * 设置开机启动（如果需要的话）
 ```sh
 cp /usr/share/applications/org.fcitx.Fcitx5.desktop ~/.config/autostart/
