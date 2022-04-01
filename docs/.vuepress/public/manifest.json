@@ -1,0 +1,13 @@
+{
+  "background_color": "black",
+  "description": "Zion Dotson的个人博客",
+  "display": "fullscreen",
+  "icons": [{
+    "src": "apple-touch-icon.png",
+    "sizes": "140x140",
+    "type": "image/png"
+  }],
+  "name": "Zion Dotson的个人博客",
+  "short_name": "Zion Dotson",
+  "start_url": "/"
+}

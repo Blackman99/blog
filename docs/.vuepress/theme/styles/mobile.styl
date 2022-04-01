@@ -1,0 +1,194 @@
+.theme-main__inner
+  .article-list
+    display: grid
+    grid-gap: 1.5rem 1.5rem
+    .article-item
+      display: flex
+      flex-direction: column
+      .article-meta
+        flex-grow: 1
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        align-items: flex-end
+        .article-tags
+          display: flex
+          flex-direction: row-reverse
+          align-items: center
+          flex-wrap: wrap
+@media (max-width: $MQNarrow)
+  .theme-palette
+    display flex
+  .theme-main
+    margin-left 0
+    transform-origin: 0 42%;
+    transition-property transform border-radius
+    transition-duration .4s
+    &__inner
+      margin 0 auto
+  .theme-sidebar
+    z-index 0
+    opacity 0
+    border-right none
+    transition-property visibility, opacity
+    visibility: hidden;
+    transition-duration .4s
+  .theme-container
+    transition-delay .2s
+    transition-property background
+    transition-duration .4s
+    &.sidebar-open
+      .theme-sidebar
+        visibility: visible;
+        opacity 1
+      .theme-main
+        border-radius: .85rem;
+        transform: translate3d(302px, 0px, 0px);
+        &__inner
+          height 100vh
+          overflow hidden
+@media (min-width: $MQMobile)
+  .theme-main__inner
+    margin 2rem auto
+    max-width 600px
+    min-width 580px
+    .article-list
+      grid-template-columns 100%
+  .theme-search__inner
+    max-width: var(--theme-content-width);
+@media (min-width: $MQMobileMd)
+  .theme-main__inner
+    max-width 780px
+    min-width 800px
+    .article-list
+      grid-template-columns repeat(2, 50%)
+@media (min-width: $MQMobileLg ) and (max-width: $MQMobileXxl)
+  .theme-main__inner
+    max-width 960px
+    min-width 960px
+    .article-list
+      grid-template-columns repeat(6, 16.66666666%)
+      .article-item
+        &:nth-child(5n+1)
+          grid-column-start: 1
+          grid-column-end: 3
+        &:nth-child(5n+2)
+          grid-column-start: 3
+          grid-column-end: 5
+        &:nth-child(5n+3)
+          grid-column-start: 5
+          grid-column-end: 7
+        &:nth-child(5n+4)
+          grid-column-start: 1
+          grid-column-end: 4
+        &:nth-child(5n)
+          grid-column-start: 4
+          grid-column-end: 7
+
+@media (max-width: $MQMobile)
+  .theme-main__inner
+    max-width 100vw
+    min-width 100vw
+    .article-list
+      grid-template-columns 100%
+  .theme-main
+    transform-origin: 0 42%;
+    transition-property transform border-radius
+    transition-duration .4s
+    &__inner
+      margin 0 auto
+  .theme-sidebar
+    border-right none
+    transition-property visibility, opacity
+    transition-duration .4s
+  .theme-container
+    transition-delay .2s
+    transition-property background
+    transition-duration .4s
+    &.sidebar-open
+      background var(--theme-sidebar-background)
+      .theme-sidebar
+        opacity 1
+      .theme-main
+        border-radius: .85rem;
+        transform: translate3d(302px, 0px, 0px) scale3d(0.86, 0.86, 1);
+        &__inner
+          height 100vh
+          overflow hidden
+        &:before
+          position: absolute;
+          border-radius: .85rem;
+          top: 1.6rem;
+          bottom: 1.6rem;
+          left: -1.6rem;
+          z-index: -1;
+          width: 100%;
+          background-color: hsla(0,0%,100%,.2);
+          content: "";
+  .theme-sidebar__inner
+    .theme-header
+      background: none
+      &__name, &__slogan
+        color: #ffffff
+  .theme-SubNav
+    background: none
+  .theme-footer
+    width 100%
+    color #ffffff
+    position static
+    text-align center
+    padding: 1rem 1rem .75rem;
+    a:link, a:visited
+      color #ffffff
+  .theme-nav
+    .search-box
+      padding-left: 3rem;
+      padding-right 3rem
+      text-align: left;
+      input
+        width 100%
+        left 0
+        background-color: #fff
+    .nav-links .nav-item
+      padding-left: 3rem;
+      text-align: left;
+      a:link, a:visited
+        color #ffffff
+      a:after
+        content: none
+  .theme-search
+    &__inner
+      margin-top 0
+      border-radius 0
+    .search-box
+      .suggestions
+        border-radius 0
+@media (min-width: $MQMobileXl) {
+  .theme-main__inner {
+    max-width: 1080px;
+    min-width: 1080px;
+  }
+}
+@media (min-width: $MQMobileXxl) {
+  .theme-main__inner {
+    max-width: 1600px;
+    min-width: 1600px;
+    .article-list {
+      grid-template-columns: repeat(4, 25%);
+      .article-item {
+        &:nth-child(1) {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 1;
+          grid-row-end: 3;
+        }
+        &:nth-child(7) {
+          grid-column-start: 3;
+          grid-column-end: 4;
+          grid-row-start: 2;
+          grid-row-end: 4;
+        }
+      }
+    }
+  }
+}
