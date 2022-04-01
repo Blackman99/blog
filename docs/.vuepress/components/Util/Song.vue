@@ -152,7 +152,7 @@
             <div>
               {{ currentSecondsInMinuteFormat }}
             </div>
-            <div class="col q-px-sm">
+            <div class="col q-px-sm flex items-center">
               <q-slider v-model="currentSeconds" :min="0" :max="totalSeconds" @change="secondsChange" />
             </div>
             <div>
@@ -161,7 +161,7 @@
           </div>
           <div :class="['row', 'items-center', 'justify-end']" :style="{ width: isMobile ? '80px' : '120px' }">
             <q-btn flat round :icon="volume === 0 ? 'volume_off' : 'volume_up'" color="primary" @click="muteOrUnmute" />
-            <div class="col">
+            <div class="col row items-center">
               <q-slider v-model="volume" :min="0" :max="100" label />
             </div>
           </div>
@@ -557,8 +557,14 @@ export default {
     padding: 8px 12px 8px 8px;
     transition all ease-in-out .2s
     >>> .q-slider__track-container {
-      background-color #fff
+      border-radius: 4px;
+      transition: background-color .2s ease-in-out;
+      &:hover {
+        background-color rgba(#fff, .1);
+      }
     }
+    >>> .q-slider__thumb,
+    >>> .q-slider__track,
     >>> .q-slider {
       color: var(--theme-accent-color);
     }
