@@ -25,7 +25,8 @@
           :name="name"
         >
           <div ref="codeContent" class="code-content">
-            <Content :slot-key="`${keyPrefix ? `${keyPrefix}-` : ''}${name}`" />
+            <slot v-if="useVueSlot" :name="name" />
+            <Content v-else :slot-key="`${keyPrefix ? `${keyPrefix}-` : ''}${name}`" />
           </div>
           <div v-if="!hideCopy" class="absolute-bottom-right copy-btn">
             <q-btn round icon="content_copy" color="primary" size="12px" @click="copyCode">
@@ -44,6 +45,12 @@ import codeTabMixin from '@vp/mixin/codeTab'
 
 export default {
   mixins: [codeTabMixin],
+  props: {
+    useVueSlot: {
+      type: Boolean,
+      default: false,
+    }
+  },
   data() {
     return {
       expanded: true
