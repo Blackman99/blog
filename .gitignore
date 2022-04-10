@@ -1,8 +1,0 @@
-node_modules
-.vscode
-yarn.lock
-package-lock.json
-*.log
-output
-logs
-pnpm-lock.yaml
