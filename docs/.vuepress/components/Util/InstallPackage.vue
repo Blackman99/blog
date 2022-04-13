@@ -2,7 +2,7 @@
   <code-tab default-active-code-type="npm" :code-types="types" use-vue-slot>
     <template v-for="t in types" #[t]>
       <div :key="t" class="language-sh line-numbers-mode">
-        <pre class="language-sh"><code><span class="token function">{{ t }} </span><span class="token function">{{ installScriptMap[t] }}</span> {{ packageName }}</code></pre> 
+        <pre class="language-sh"><code><span class="token function">{{ t }} </span><span class="token function">{{ installScriptMap[t] }}</span> {{ dev ? '-D ' : '' }}{{ packageName }}</code></pre> 
         <div class="line-numbers-wrapper">
           <span class="line-number">1</span>
           <br>
@@ -18,6 +18,10 @@ export default {
     CodeTab
   },
   props: {
+    dev: {
+      type: Boolean,
+      default: false,
+    },
     packageName: {
       type: String,
       required: true
