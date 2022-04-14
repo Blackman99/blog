@@ -201,8 +201,64 @@ webpack不能解析`import.meta.xxx`相关代码
 
 ::: slot ignore-ignoreLoader.js
 ```js
-module.exports = function(source) {
-  return source.replace(/^\/\/ @webpack-ignore start[\s\S]+\/\/ @webpack-ignore end/g, '')
+module.exports = function (source) {
+  return source.replace(
+    /\/\/ @webpack-ignore start[\s\S]*\/\/ @webpack-ignore end/g,
+    ''
+  )
 }
 ```
 :::
+
+::: slot ignore-vue.config.js
+```js
+module.exports = {
+  configureWebpack: {
+    module: {
+      rules: [
+        {
+          // 这里需要改成对应使用到了import.meta.xxx的文件目录
+          include: [
+            path.resolve(__dirname, './src/router'),
+            path.resolve(__dirname, './src/store'),
+            path.resolve(__dirname, './src/utils'),
+          ],
+          // 这里需要改成对应使用到了import.meta.xxx的具体文件正则
+          test: /(index)|(getEnv)\.js$/,
+          loader: [resolve(__dirname, './path/to/ignoreLoader.js')],
+        },
+      ],
+    },
+  },
+}
+```
+:::
+
+::: slot ignore-router.js
+```js
+import predictEnv from '/path/to/predictEnv.js'
+
+let routes = []
+
+predictEnv(
+  () => {
+    // @webpack-ignore start
+    // 这里是vite路由自动装配路由代码，用到import.meta.glob API
+    // @webpack-ignore end
+  },
+  () => {
+    // 这里是webpack路由自动装配路由代码，用到require.context API
+  }
+)
+```
+:::
+
+这就是所有内容啦，从现在起就可以在开发环境使用Vite，打包延用Webpack，提升开发体验了，改造的过程虽然痛苦，对于开发体验的提升却是十分巨大的
+
+### 参考
+
+* [Webpack require.context](https://webpack.js.org/guides/dependency-management/#requirecontext)
+* [Vite glob 导入](https://cn.vitejs.dev/guide/features.html#glob-import)
+* [Vite 环境变量&模式](https://cn.vitejs.dev/guide/env-and-mode.html#env-variables-and-modes)
+* [Vue cli 环境变量&模式](https://cli.vuejs.org/zh/guide/mode-and-env.html#%E6%A8%A1%E5%BC%8F%E5%92%8C%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F)
+
