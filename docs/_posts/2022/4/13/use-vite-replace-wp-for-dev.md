@@ -20,44 +20,138 @@ categories:
 ### 预先准备
 
 * 安装Vite
-<Util-InstallPackage package-name="vite" dev />
-* 安装Vite的Vue2插件
-<Util-InstallPackage package-name="vite-plugin-vue2" dev />
-* 根目录下新建vite.config.js，并写入如下内容
-  ```js
-  import { createVuePlugin } from 'vite-plugin-vue2' 
-  export default {
-    plugins: [createVuePlugin()]
-  }
-  ```
-* 根目录下新建index.html文件，并将webpack指定的index.html模板里引入的全局css,js复制，并将/src/main.js直接作为module引入，下面是内容参考
-  ```html
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <title></title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <!-- 假设你用了如下的katex样式文件 -->
-      <link rel="stylesheet" type="text/css" href="/css/katex.min.css">
-    </head>
-    <body>
-      <div id="app"></div>
-      <script type="module" src="/src/main.js"></script>
-    </body>
 
-  </html>
-  ```
+<Util-InstallPackage package-name="vite" dev />
+
+* 安装Vite的Vue2插件
+
+<Util-InstallPackage package-name="vite-plugin-vue2" dev />
+
+* 根目录下新建vite.config.js，并写入如下内容
+
+```js
+import { createVuePlugin } from 'vite-plugin-vue2' 
+export default {
+  plugins: [createVuePlugin()]
+}
+```
+
+* 根目录下新建index.html文件，并将webpack指定的index.html模板里引入的全局css,js复制，并将/src/main.js直接作为module引入，下面是内容参考
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- 假设你用了如下的katex样式文件 -->
+    <link rel="stylesheet" type="text/css" href="/css/katex.min.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+
+</html>
+```
+
 * 新增启动脚本`dev:vite`，在package.json中配置：
-  ```json
-  {
-    "scripts": {
-      "dev:vite": "npx vite dev"
+
+```json
+{
+  "scripts": {
+    "dev:vite": "npx vite dev"
+  }
+}
+```
+
+### 开发环境代理转换
+
+下面以`/customApi/foo/bar` => `http://your.custom.api.com/foo/bar` 为例给出对应的vue-cli配置以及vite配置
+
+<Util-CodeTab
+  key-prefix="dev-proxy"
+  :code-types="['vue.config.js', 'vite.config.js']"
+  default-active-code-type="vue.config.js"
+/>
+
+::: slot dev-proxy-vue.config.js
+```js
+module.exports = {
+  devServer {
+    proxy: {
+      '/customApi': {
+        target: 'http://your.custom.api.com',
+        pathRewrite: {
+          '^/customApi': '',
+        },
+      }
     }
   }
-  ```
+}
+```
+:::
 
-### vue文件导入后缀问题
+::: slot dev-proxy-vite.config.js
+```js
+export default {
+  server: {
+    proxy: {
+      '/customApi': {
+        target: 'http://your.custom.api.com',
+        rewrite: path => path.replace(/^\/customApi/, '')
+      }
+    }
+  }
+}
+```
+:::
+
+### 全局样式导入转换
+
+因为我改造的这个项目用到了[vue-cli-plugin-style-resources-loader](https://www.npmjs.com/package/vue-cli-plugin-style-resources-loader)
+所以需要将对应的全局导入样式变量进行对等转换，下面给出对应的vue-cli配置以及vite配置
+
+<Util-CodeTab
+  key-prefix="global-css"
+  :code-types="['vue.config.js', 'vite.config.js']"
+  default-active-code-type="vue.config.js"
+/>
+
+::: slot global-css-vue.config.js
+```js
+module.exports = {
+  pluginOptions: {
+    'style-resources-loader': {
+      preProcessor: 'scss',
+      patterns: [path.resolve(__dirname, 'src/style/variables/theme.scss')],
+    },
+  },
+}
+```
+:::
+
+::: slot global-css-vite.config.js
+```js
+import { readFileSync } from 'fs'
+
+export default {
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: readFileSync(
+          resolve(__dirname, './src/style/variables/theme.scss'),
+          'utf8'
+        ),
+      },
+    },
+  },
+}
+```
+:::
+
+### 静态&动态导入后缀名问题
 
 * 在Webpack项目中，vue文件的导入可以不用加`.vue`后缀
 * 而在Vite中，必须显示指出`.vue`后缀
