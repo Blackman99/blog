@@ -46,6 +46,24 @@ linkedList.get(1);            //返回3
 
 ### 实现代码
 
+::: tip 提示
+这里为了方便`log`，重写`toString`，此部分代码与核心逻辑无关
+
+```js
+MyLinkedList.prototype.toString = function () {
+  let r = ''
+  let t = this
+  while (t.next !== null) {
+    r += t.val + '->'
+    t = t.next
+  }
+  return r + t.val + '->TAIL'
+}
+```
+
+
+:::
+
 <Util-CodeTab
   key-prefix="ll"
   :code-types="['javascript', 'run', 'output']"
@@ -121,33 +139,32 @@ MyLinkedList.prototype.deleteAtIndex = function (index) {
 
 ::: slot ll-run
 ```js
-var myLinkedList = new MyLinkedList()
-console.log('initial: ', myLinkedList.toString())
+const myLinkedList = new MyLinkedList()
+console.log('initial:', myLinkedList.toString())
 myLinkedList.addAtHead(1)
-console.log('add val 1 to head: ', myLinkedList.toString())
+console.log('add val 1 to head:', myLinkedList.toString())
 myLinkedList.addAtTail(3)
-console.log('add val 3 to tail: ', myLinkedList.toString())
+console.log('add val 3 to tail:', myLinkedList.toString())
 myLinkedList.addAtIndex(1, 2)
-console.log('add val 2 to index 1: ', myLinkedList.toString())
-console.log('get 1: ', myLinkedList.get(1))
+console.log('add val 2 to index 1:', myLinkedList.toString())
+console.log('get val from index 1:', myLinkedList.get(1))
 myLinkedList.deleteAtIndex(1)
-console.log('delete node from index 1: ', myLinkedList.toString())
-console.log('get 1: ', myLinkedList.get(1))
+console.log('delete node from index 1:', myLinkedList.toString())
+console.log('get val from index 1:', myLinkedList.get(1))
 ```
 :::
 
 ::: slot ll-output
 ```yaml
-initial:  HEAD->TAIL
-add val 1 to head:  HEAD->1->TAIL
-add val 3 to tail:  HEAD->1->3->TAIL
-add val 2 to index 1:  HEAD->1->2->3->TAIL
-get 1:  2
-delete node from index 1:  HEAD->1->3->TAIL
-get 1:  3
+initial: HEAD->TAIL
+add val 1 to head: HEAD->1->TAIL
+add val 3 to tail: HEAD->1->3->TAIL
+add val 2 to index 1: HEAD->1->2->3->TAIL
+get val from index 1: 2
+delete node from index 1: HEAD->1->3->TAIL
+get val from index 1: 3
 ```
 :::
-
 
 ### 参考
 
