@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@vp/*": ["docs/.vuepress/*"]
+    }
+  }
+}
