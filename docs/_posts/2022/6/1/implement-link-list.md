@@ -6,6 +6,7 @@ author: Zion Dotson
 location: Beijing
 tags:
   - Algorithm
+  - Leetcode
 categories:
   - Algorithm
 ---
