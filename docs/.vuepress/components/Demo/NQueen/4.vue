@@ -1,47 +1,45 @@
 <template>
-  <div>
-    <CodeTab
-      use-vue-slot
-      hide-copy
-      :code-types="['solution1', 'solution2']"
-      defaultActiveCodeType="solution1"
-    >
-      <template #solution1>
-        <div class="board">
+  <CodeTab
+    use-vue-slot
+    hide-copy
+    :code-types="['solution1', 'solution2']"
+    defaultActiveCodeType="solution1"
+  >
+    <template #solution1>
+      <div class="board">
+        <div
+          v-for="i in 4"
+          :key="i"
+          class="row"
+        >
           <div
-            v-for="i in 4"
-            :key="i"
-            class="row"
+            v-for="j in 4"
+            :key="j"
+            class="cell"
           >
-            <div
-              v-for="j in 4"
-              :key="j"
-              class="cell"
-            >
-              <Crown v-if="solution1[i - 1][j - 1] === 'Q'" />
-            </div>
+            <Crown v-if="solution1[i - 1][j - 1] === 'Q'" />
           </div>
         </div>
-      </template>
-      <template #solution2>
-        <div class="board">
+      </div>
+    </template>
+    <template #solution2>
+      <div class="board">
+        <div
+          v-for="i in 4"
+          :key="i"
+          class="row"
+        >
           <div
-            v-for="i in 4"
-            :key="i"
-            class="row"
+            v-for="j in 4"
+            :key="j"
+            class="cell"
           >
-            <div
-              v-for="j in 4"
-              :key="j"
-              class="cell"
-            >
-              <Crown v-if="solution2[i - 1][j - 1] === 'Q'" />
-            </div>
+            <Crown v-if="solution2[i - 1][j - 1] === 'Q'" />
           </div>
         </div>
-      </template>
-    </CodeTab>
-  </div>
+      </div>
+    </template>
+  </CodeTab>
 </template>
 <script>
 // @ts-ignore
@@ -66,7 +64,7 @@ export default {
   scoped
 >
 .board {
-  margin-top: 12px;
+  margin: 12px auto;
   .cell {
     height: 100px;
     width: 100px;
@@ -96,6 +94,18 @@ export default {
           background-color: #333;
         }
       }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .cell {
+      width: 70px;
+      height: 70px;
+      font-size: 36px;
     }
   }
 }

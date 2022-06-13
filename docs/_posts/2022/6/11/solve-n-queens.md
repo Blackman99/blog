@@ -22,32 +22,15 @@ n 皇后问题 研究的是如何将 n 个皇后放置在 n×n 的棋盘上，
 
 给你一个整数 n ，返回所有不同的 n 皇后问题 的解决方案
 
-每一种解法包含一个不同的 n 皇后问题 的棋子放置方案，该方案中 'Q' 和 '.' 分别代表了皇后和空位
+每一种解法包含一个不同的 n 皇后问题 的棋子放置方案，该方案中 'Q' 和 '.' 分别代表了皇后和空位，其中n满足
+
+$1<= n <= 9$
 
 ### 示例
 
 当`n = 4`时，应该有两个解，如下图：
 
 <Demo-NQueen-4 />
-
-* 输入：n = 4
-* 输出：
-```js
-[
-  [
-    ".Q..",
-    "...Q",
-    "Q...",
-    "..Q."
-  ],
-  [
-    "..Q.",
-    "Q...",
-    "...Q",
-    ".Q.."
-  ]
-]
-```
 
 ### 分析
 
@@ -56,21 +39,28 @@ n 皇后问题 研究的是如何将 n 个皇后放置在 n×n 的棋盘上，
 * 继续从下一行的第一格开始放置，每次放置判断是否满足放置条件
 
 ::: tip 如何表示两条斜线
-假设当前格坐标为`(3, 2)`
 
-* 那么与当前格在同一个左上至右下斜线的所有其他格`(i, j)`，需要满足`i - j = 1 - 2 = -1`
-* 那么与当前格在同一个右上至左下斜线的所有其他格`(i, j)`，需要满足`i + j = 1 + 2 = 3`
+设`i`为行下标，`j`为列下标
 
-这里以7x7的棋盘为例说明
+* 对于左上至右下斜同一条斜线需要满足`i - j`的值相等
+* 对于右上至左下斜同一条斜线需要满足`i + j`的值相等
 
-```html
-<!-- TODO: 画出7x7斜线示例 -->
-```
+这里以5x5的棋盘为例说明：
+
+<Slashes7 />
 
 :::
 
 ### 代码
 
+<Util-CodeTab
+  key-prefix="solveNQueens"
+  :code-types="['javascript', 'run', 'output']"
+  default-active-code-type="javascript"
+/>
+
+::: slot solveNQueens-javascript
+  
 ```js
 /**
  * @param {number} n
@@ -114,13 +104,50 @@ const solveNQueens = function (n) {
   return res
 }
 ```
+:::
+
+::: slot solveNQueens-run
+```js
+console.log(solveNQueens(4))
+```
+:::
+
+::: slot solveNQueens-output
+```js
+[
+  [
+    ".Q..",
+    "...Q",
+    "Q...",
+    "..Q."
+  ],
+  [
+    "..Q.",
+    "Q...",
+    "...Q",
+    ".Q.."
+  ]
+]
+```
+:::
 
 ### 动画演示
 
-```html
-<!-- TODO: 动画演示 -->
-```
+下面以动画演示5x5的一种解
+
+<AnimationDemo />
 
 ### 参考
 
 * [51. N 皇后 - 力扣（LeetCode）](https://leetcode.cn/problems/n-queens/)
+
+<script>
+import Slashes7 from '@vp/demo-components/Algorithm/SolveNQueen/Slashes7.vue'
+import AnimationDemo from '@vp/demo-components/Algorithm/SolveNQueen/AnimationDemo.vue'
+export default {
+  components: {
+    Slashes7,
+    AnimationDemo
+  }
+}
+</script>
