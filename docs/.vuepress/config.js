@@ -10,7 +10,7 @@ const themeColors = [
   ['#ff5722', '255,87,34'],
   ['#795548', '121,85,72'],
   ['#607D8B', '96,125,139'],
-  ['#2a2b33', '42,43,51']
+  ['#2a2b33', '42,43,51'],
 ]
 
 const colors = themeColors.map(([hex, rgb]) => ({
@@ -39,25 +39,23 @@ const colors = themeColors.map(([hex, rgb]) => ({
           --theme-accent-color-01: rgba(${rgb},0.1);
           --theme-accent-color-02: rgba(${rgb},0.2);
           --theme-accent-color-04: rgba(${rgb},0.4);
-          --theme-accent-color-08: rgba(${rgb},0.8);`
-  }
+          --theme-accent-color-08: rgba(${rgb},0.8);`,
+  },
 }))
 
 module.exports = {
   port: 23456,
   title: 'Zion Dotson 的个人博客',
+  description: '偶尔会有一些新奇的想法',
   dest: './output',
   locales: {
     '/': {
       lang: 'zh-CN',
       title: 'Zion Dotson 的个人博客',
-      description: 'Vue-powered Static Site Generator'
+      description: 'Vue-powered Static Site Generator',
     },
   },
-  head: [
-    ['link', { rel: 'icon', href: '/apple-touch-icon.png' }]
-  ],
-  // theme: resolve(process.cwd(), 'theme'),
+  head: [['link', { rel: 'icon', href: '/apple-touch-icon.png' }]],
   themeConfig: {
     copy: true,
     copyright: `© ${new Date().getFullYear()} ❤️ <a target="_blank" rel="external nofollow noopener" href="https://blog.donsen.site/">Zion Dotson</a>`,
@@ -70,19 +68,19 @@ module.exports = {
           icon: 'wechat',
           qrcode: '/images/my-wechat-qrcode.jpg',
           text: '微信支付',
-          color: 'rgb(9, 187, 7)'
+          color: 'rgb(9, 187, 7)',
         },
         {
           name: 'alipay',
           symbol: 'alipay',
           qrcode: '/images/my-alipay-qrcode.jpg',
           text: '支付宝支付',
-          color: '#1296db'
-        }
-      ]
+          color: '#1296db',
+        },
+      ],
     },
     palette: {
-      colors
+      colors,
     },
     hostname: 'https://blog.donsen.site',
     searchPlaceholder: '搜索',
@@ -100,19 +98,19 @@ module.exports = {
       { text: '博客', link: '/' },
       {
         text: '听听歌吧',
-        link: '/listen/'
+        link: '/listen/',
       },
-      { text: '友情链接', link: '/friend-links/' }
+      { text: '友情链接', link: '/friend-links/' },
     ],
     social: [
       {
         type: 'email',
-        link: '1197160272@qq.com'
+        link: '1197160272@qq.com',
       },
       {
         type: 'github',
-        link: 'Blackman99'
-      }
+        link: 'Blackman99',
+      },
     ],
     blog: {
       directories: [
@@ -120,8 +118,8 @@ module.exports = {
           id: 'post',
           dirname: '_posts',
           path: '/',
-          title: '博客'
-        }
+          title: '博客',
+        },
       ],
       frontmatters: [
         {
@@ -130,8 +128,8 @@ module.exports = {
           path: '/tags/',
           frontmatter: { title: '标签' },
           pagination: {
-            lengthPerPage: 10
-          }
+            lengthPerPage: 10,
+          },
         },
         {
           id: 'category',
@@ -139,23 +137,23 @@ module.exports = {
           path: '/categories/',
           frontmatter: { title: '目录' },
           pagination: {
-            lengthPerPage: 10
-          }
-        }
+            lengthPerPage: 10,
+          },
+        },
       ],
       comment: {
         service: 'valine',
         appId: '9KduIFr1tWHr5dgODcRkhh4J-gzGzoHsz',
-        appKey: 'bR1t4d1c4CDKp71JMjwqbm0C'
-      }
-    }
+        appKey: 'bR1t4d1c4CDKp71JMjwqbm0C',
+      },
+    },
   },
   markdown: {
     extendMarkdown: md => {
       md.use(require('markdown-it-katex'))
     },
     extractHeaders: ['h2', 'h3', 'h4', 'h5'],
-    lineNumbers: true
+    lineNumbers: true,
   },
   plugins: [
     'vuepress-plugin-smooth-scroll',
@@ -163,12 +161,12 @@ module.exports = {
     [
       '@vuepress/google-analytics',
       {
-        'ga': 'UA-168133590-1'
-      }
-    ]
+        ga: 'UA-168133590-1',
+      },
+    ],
   ],
   alias: {
     '@src': resolve(process.cwd()),
-    '@vp': resolve(process.cwd(), 'docs/.vuepress')
-  }
+    '@vp': resolve(process.cwd(), 'docs/.vuepress'),
+  },
 }
