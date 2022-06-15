@@ -11,7 +11,8 @@ categories:
   - Algorithm
 ---
 
-<!-- 重拾算法 -->
+> 重拾算法
+<!-- more -->
 
 ### 描述
 
