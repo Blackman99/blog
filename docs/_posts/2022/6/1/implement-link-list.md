@@ -1,6 +1,6 @@
 ---
 title: leetcode 707 - 设计链表
-description: 重拾算法，从零开始
+description: 重拾算法，重新开始
 date: 2022-06-01
 author: Zion Dotson
 location: Beijing

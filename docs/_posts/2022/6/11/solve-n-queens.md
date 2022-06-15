@@ -1,6 +1,6 @@
 ---
 title: leetcode 51 - N 皇后
-description: leetcode 51 - N 皇后
+description: 重拾算法，重新开始
 date: 2022-06-11
 author: Zion Dotson
 location: Beijing

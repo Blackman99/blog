@@ -6,3 +6,4 @@ package-lock.json
 output
 logs
 pnpm-lock.yaml
+test.js
