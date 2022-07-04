@@ -146,22 +146,20 @@ count.set(get(count) - 1)
 
 ### 双向绑定
 
-
-
 ### 总结
 
-Svelte的优点上面只提到了一些核心，实际上从最常用的组件传值、双向绑定、事件、组件上下文、过渡、动画、动态样式...等等，Svelte都做到了尽可能的简化
+Svelte 的优点上面只提到了一些核心，实际上从最常用的组件传值、双向绑定、事件、组件上下文、过渡、动画、动态样式...等等，Svelte 都做到了尽可能的简化
 
 我个人觉得 Svelte 目前只有一个缺点：  
 生态相较于 Vue、React 等其他框架来说比较不完善，组件库、工具库、SSR 可能需要自主实现  
 不过这一点随着时间的推移可能会越来越不明显
 
-当然也不是说无脑鼓吹Svelte，我现在还是针对不同的项目会使用不同的框架
-* 当需求是编写一个类后台系统时，可能用Vue比较好，目前有成熟的诸如：
-  * (Element Admin)(https://panjiachen.github.io/vue-element-admin-site/zh/)
-  * (Vben Admin)[https://vvbin.cn/doc-next/]
-可以帮助我快速完成需求
-* 而当需要编写一个移动端HyBrid应用时，特别是用作展示或者涉及到一些简单的交互需要**自主实现**时，我则会选Svelte
+当然也不是说无脑鼓吹 Svelte，我现在还是针对不同的项目会使用不同的框架
+
+- 当需求是编写一个类后台系统时，可能用 Vue 比较好，目前有成熟的诸如：
+  - [Element Admin](https://panjiachen.github.io/vue-element-admin-site/zh/)
+  - [Vben Admin](https://vvbin.cn/doc-next/)
+- 而当需要编写一个移动端 HyBrid 应用时，特别是用作展示或者涉及到一些简单的交互需要**自主实现**时，我则会选 Svelte
 
 ### 参考
 
