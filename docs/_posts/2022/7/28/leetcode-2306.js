@@ -25,3 +25,5 @@ const distinctNames = function (ideas) {
   }
   return ans * 2
 }
+
+console.log(distinctNames(['coffee', 'cat', 'donuts', 'time', 'toffee']))
