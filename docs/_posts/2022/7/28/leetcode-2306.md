@@ -52,7 +52,28 @@ $$count = 2 * \sum_{i=0}^{i < 26} (\sum_{j=0}^{j<i} (|G_i| - m) * (|G_j| - m)) $
 
 ### 代码
 
+<Util-CodeTab
+  key-prefix="code"
+  :code-types="['code', '输入', '输出']"
+  default-active-code-type="code"
+/>
+
+::: slot code-code
 <<< @/docs/_posts/2022/7/28/leetcode-2306.js
+:::
+
+::: slot code-输入
+```js
+['coffee', 'cat', 'donuts', 'time', 'toffee']
+```
+:::
+
+::: slot code-输出
+```js
+6
+```
+:::
+
 
 ### 参考
 

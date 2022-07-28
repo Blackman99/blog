@@ -23,8 +23,5 @@ const distinctNames = function (ideas) {
       ans += (groups[i].size - m) * (groups[j].size - m)
     }
   }
-  console.log(groups)
   return ans * 2
 }
-
-console.log(distinctNames(['coffee', 'cat', 'donuts', 'time', 'toffee']))
