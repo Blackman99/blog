@@ -1,6 +1,6 @@
 ---
 title: Casual UI
-description: 一个基于Vue3以及React17+的组件库
+description: 一个基于Vue3+, React17+, Svelte3+的组件库
 date: 2022-04-01
 author: Zion Dotson
 location: Beijing
@@ -8,11 +8,12 @@ cover: https://casual-ui-vue.donsen.site/logo.svg
 tags:
   - Vue
   - React
+  - Svelte
 categories:
   - Front-end
 ---
 
-> 为了进一步提升对Vue3、React17以及各自的新生态的运用，写了一个组件库，在这里做一下简单介绍
+> 为了进一步提升对Vue3、React17、Svelte3以及各自的新生态的运用，写了一个组件库，在这里做一下简单介绍
 
 <!-- more -->
 
@@ -85,6 +86,23 @@ function Demo() {
 
   return <CButton label="按钮" />
 }
+```
+
+## Casual UI - Svelte
+
+[在线文档&示例](https://casual-ui-svelte.donsen.site/)
+
+### 安装依赖
+
+<Util-InstallPackage package-name="casual-ui-svelte" />
+
+### svelte文件中使用
+
+```html
+<script>
+  import { CButton } from 'casual-ui-svelte'
+</script>
+<CButton label="一个按钮" />
 ```
 
 ## 结语
