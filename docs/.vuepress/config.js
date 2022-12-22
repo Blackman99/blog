@@ -55,7 +55,7 @@ module.exports = {
       description: 'Vue-powered Static Site Generator',
     },
   },
-  head: [['link', { rel: 'icon', href: '/apple-touch-icon.png' }]],
+  head: [['link', { rel: 'icon', href: '/avatar.jpg' }]],
   themeConfig: {
     copy: true,
     copyright: `© ${new Date().getFullYear()} ❤️ <a target="_blank" rel="external nofollow noopener" href="https://blog.donsen.site/">Zion Dotson</a>`,
@@ -93,7 +93,7 @@ module.exports = {
     paginationComponent: 'CustomPagination',
     dateFormat: 'YYYY-MM-DD',
     smoothScroll: true,
-    logo: '/avatar.png',
+    logo: '/avatar.jpg',
     nav: [
       { text: '博客', link: '/' },
       {

@@ -51,6 +51,7 @@ export default {
 .theme-sidebar
   position fixed
   top 0
+  z-index 9
   bottom 0
   left 0
   border-right 1px solid
@@ -82,10 +83,6 @@ export default {
     &:hover
       .theme-palette
         display flex
-    .theme-palette
-      position: absolute;
-      bottom: 20px;
-      left : 100px;
   &__picture
     padding: 2px;
     width: 8rem;

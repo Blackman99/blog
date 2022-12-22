@@ -96,14 +96,6 @@ export default {
       return `${this.$themeConfig.hostname}${this.$page.path}`
     }
   },
-  mounted() {
-    if (this.$q.platform.is.desktop) {
-      this.$eventBus.$emit('EV_TOGGLE_TOC', true)
-    }
-  },
-  destroyed() {
-    this.$eventBus.$emit('EV_TOGGLE_TOC', false)
-  }
 }
 </script>
 

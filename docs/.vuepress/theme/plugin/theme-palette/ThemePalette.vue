@@ -8,7 +8,7 @@
         class="theme-item"
         :style="{color: `${item.btnColor}`}"
         :title="item.btnColor"
-        @click="setThemeColors(item)"
+        @click.stop="setThemeColors(item)"
       />
     </div>
   </div>
@@ -52,39 +52,46 @@ export default {
 
 <style lang="stylus">
 .theme-palette
-  display none
   align-items center
-  border-radius: 10px;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
+  position: absolute;
+  top: 100px;
+  right: 0px;
+  border-radius: 20px;
+  display: flex
+  flex-direction column
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  cursor pointer
   text-align: center;
+  z-index 3
   background-color: var(--theme-card-background);
   box-shadow: 0px 1px 5px var(--theme-border-color);
   &:hover
-    min-width 110px
-    padding-right 8px
-    & .theme-palette__list
-      visibility visible
+    min-height: 180px;
+    .theme-palette__list 
+        visibility visible
   .theme-item
     background currentColor
-    height 8px
-    width 8px
+    height 12px
+    width 12px
     box-sizing border-box
-    cursor pointer
     &:hover
       opacity .9
-      transform scale(1.2)
+      transform scale(1.4)
   &__emoji
     display flex
     align-items center
     justify-content center
     flex-shrink 0
-    width 20px
-    height 20px
+    width 40px
+    height 40px
+    font-size: 26px
     color var(--theme-accent-color)
   &__list
-    visibility hidden
     display flex
+    flex-direction column
+    align-items center
     width 100px
+    visibility: hidden
 </style>
