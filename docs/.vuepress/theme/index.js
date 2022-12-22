@@ -67,7 +67,7 @@ module.exports = (options, { themeConfig }) => {
           path: '/',
           itemPermalink: '/post/:year/:month/:day/:slug.html',
           pagination: {
-            perPagePosts: 10,
+            perPagePosts: 7,
             prevText: '',
             nextText: ''
           }
@@ -80,7 +80,7 @@ module.exports = (options, { themeConfig }) => {
           path: '/tags/',
           frontmatter: { title: 'Tag' },
           pagination: {
-            lengthPerPage: 10,
+            lengthPerPage: 7,
             prevText: '',
             nextText: ''
           }
@@ -108,6 +108,7 @@ module.exports = (options, { themeConfig }) => {
     require('./plugin/float-menu'),
   ]
   if (themeConfig.palette) {
+    // @ts-ignore
     plugins.push(require('./plugin/theme-palette'))
   }
   const config = {

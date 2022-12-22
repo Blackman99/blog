@@ -5,7 +5,7 @@ import '@quasar/extras/material-icons/material-icons.css'
 
 export default ({
   isServer,
-  Vue, // VuePress 正在使用的 Vue 构造函数
+  Vue,
 }) => {
   if (!isServer) {
     Vue.use(Quasar, {

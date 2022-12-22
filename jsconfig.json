@@ -4,5 +4,8 @@
     "paths": {
       "@vp/*": ["docs/.vuepress/*"]
     }
+  },
+  "vueCompilerOptions": {
+    "target": 2
   }
 }

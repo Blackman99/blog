@@ -119,6 +119,11 @@ module.exports = {
           dirname: '_posts',
           path: '/',
           title: '博客',
+          pagination: {
+            lengthPerPage: 7,
+            prevText: '',
+            nextText: ''
+          }
         },
       ],
       frontmatters: [

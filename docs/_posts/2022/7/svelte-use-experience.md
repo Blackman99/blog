@@ -10,7 +10,7 @@ tags:
   - React
 categories:
   - Front-end
-cover:
+cover: /logos/svelte.svg
 ---
 
 > 在实际的两个项目中尝试了 Svelte3 之后，写下一些体验总结，以及使用分析
@@ -103,7 +103,7 @@ store.commit('decrement')
 ::: slot demo-Svelte
 
 ```js
-import { writable, get } from 'svelte/store'
+import { get, writable } from 'svelte/store'
 
 const count = writable(0)
 

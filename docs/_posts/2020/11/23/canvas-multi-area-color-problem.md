@@ -11,13 +11,16 @@ tags:
   - HTML
 ---
 
+Canvas
+
+<!-- more -->
+
 > ### 问题描述
 > 现有一个`canvas`画布，需要在其上绘制三个矩形，这三个矩形互相有相交部分，下面是重叠区域的填充规则：
 > * 填充一次的区域用：<q-chip color="purple" text-color="white" size="12px" >紫色</q-chip>
 > * 填充两次的区域用：<q-chip color="pink" text-color="white" size="12px">红色</q-chip>
 > * 填充三次的区域用：<q-chip color="cyan" text-color="white" size="12px">青色</q-chip>
 
-<!-- more -->
 
 #### 先从一个区域开始
 
