@@ -45,13 +45,13 @@ const colors = themeColors.map(([hex, rgb]) => ({
 
 module.exports = {
   port: 23456,
-  title: 'Zion Dotson 的个人博客',
+  title: 'Dongsheng 的个人博客',
   description: '偶尔会有一些新奇的想法',
   dest: './output',
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: 'Zion Dotson 的个人博客',
+      title: 'Dongsheng 的个人博客',
       description: 'Vue-powered Static Site Generator',
     },
   },
@@ -93,7 +93,7 @@ module.exports = {
     paginationComponent: 'CustomPagination',
     dateFormat: 'YYYY-MM-DD',
     smoothScroll: true,
-    logo: '/apple-touch-icon.png',
+    logo: '/avatar.png',
     nav: [
       { text: '博客', link: '/' },
       {
