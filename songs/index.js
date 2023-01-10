@@ -6,7 +6,7 @@ const songsInfoFilePath = path.resolve(__dirname, './songsInfo.json')
 const songInfoRawData = fs.readFileSync(songsInfoFilePath)
 const songsInfo = JSON.parse(songInfoRawData)
 
-// 解析并在控制台输出歌词的yml格式，网易云分享的歌曲ID
+// Fetch and show the song lyrics in console
 const parser = (configItem) => {
   const { songId, lyrics: customLyricsArray, customLyrics = false, songUrl } = configItem
   const singleSong = songsInfo[songId]
@@ -28,6 +28,7 @@ const parser = (configItem) => {
     })
     console.log(lyrics)
     lyrics = lyrics.filter(arr => arr && arr[0] !== null && arr[1] !== null)
+    // Use the music.163.com api
     axios.get(`http://music.163.com/api/song/detail/?ids=[${songId}]`).then(({ data: { songs } }) => {
       const songInfo = songs[0]
       const { 
