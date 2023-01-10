@@ -6,8 +6,8 @@
   "scripts": {
     "song": "node songs",
     "dev": "vuepress dev docs --no-cache ",
-    "build": "vuepress build docs",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node songs && vuepress build docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "Javascript",
