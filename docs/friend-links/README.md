@@ -21,4 +21,14 @@ links:
     logo: https://casual-ui-react.donsen.site/logo.svg
     url: https://casual-ui-react.donsen.site
     desc: 一个基于React17的随意的组件库
+  - title: Casual UI - React
+    roundness: true
+    logo: https://casual-ui-svelte.donsen.site/logo.png
+    url: https://casual-ui-svelte.donsen.site
+    desc: 一个基于Svelte的随意的组件库
+  - title: Sveltepress
+    roundness: true
+    logo: https://sveltepress.site/android-chrome-192x192.png
+    url: https://sveltepress.site
+    desc: 一个以内容为中心的站点构建工具
 ---
