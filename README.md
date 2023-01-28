@@ -1,4 +1,4 @@
-# A casual blog
+# My blog site
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d5533516-a9aa-4dd0-a323-dcff95c5c73b/deploy-status)](https://app.netlify.com/sites/hopeful-rosalind-548a7c/deploys)
 
