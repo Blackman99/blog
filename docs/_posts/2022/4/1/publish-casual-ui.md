@@ -23,11 +23,11 @@ categories:
 
 ## Causal UI Vue
 
-[在线文档&示例](https://casual-ui-vue.donsen.site)
+[在线文档&示例](https://vue.casual-ui.site)
 
 ### 安装
 
-<Util-InstallPackage package-name="casual-ui-vue" />
+<Util-InstallPackage package-name="@casual-ui/vue" />
 
 ### 全局使用
 
@@ -35,8 +35,8 @@ categories:
 
 ```js
 import { createApp } from 'vue'
-import CasualUI from 'casual-ui-vue'
-import 'casual-ui-vue/dist/style.css'
+import CasualUI from '@casual-ui/vue'
+import '@casual-ui/vue/dist/style.css'
 
 const app = createApp()
 app.use(CasualUI)
@@ -56,7 +56,7 @@ app.mount('#app')
 
 ```vue
 <script setup>
-import { CButton } from 'casual-ui-vue'
+import { CButton } from '@casual-ui/vue'
 </script>
 <template>
   <c-button label="按钮" />
@@ -69,18 +69,18 @@ import { CButton } from 'casual-ui-vue'
 
 ## Casual UI React
 
-[在线文档&示例](https://casual-ui-react.donsen.site)
+[在线文档&示例](https://react.casual-ui.site)
 
 ### 安装依赖
 
-<Util-InstallPackage package-name="casual-ui-react" />
+<Util-InstallPackage package-name="@casual-ui/react" />
 
 ### jsx 中使用
 
 ```jsx
 import React from 'react'
-import 'casual-ui-react/dist/style.css'
-import { CButton } from 'casual-ui-react'
+import '@casual-ui/react/dist/style.css'
+import { CButton } from '@casual-ui/react'
 
 function Demo() {
 
@@ -90,17 +90,17 @@ function Demo() {
 
 ## Casual UI - Svelte
 
-[在线文档&示例](https://casual-ui-svelte.donsen.site/)
+[在线文档&示例](https://svelte.casual-ui.site/)
 
 ### 安装依赖
 
-<Util-InstallPackage package-name="casual-ui-svelte" />
+<Util-InstallPackage package-name="@casual-ui/svelte" />
 
 ### svelte文件中使用
 
 ```html
 <script>
-  import { CButton } from 'casual-ui-svelte'
+  import { CButton } from '@casual-ui/svelte'
 </script>
 <CButton label="一个按钮" />
 ```
