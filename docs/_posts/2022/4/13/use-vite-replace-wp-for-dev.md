@@ -2,7 +2,7 @@
 title: 再见Webpack，你好Vite
 description: 使用Vite取代Webpack作为开发环境工具，全面提升开发体验
 date: 2022-04-13
-author: Zion Dotson
+author: Dongsheng Zhao
 location: Beijing
 tags:
   - Vue

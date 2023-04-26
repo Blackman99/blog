@@ -6,7 +6,7 @@ categories:
 tags: 
   - Vue
   - Quasar
-author: Zion Dotson
+author: Dongsheng Zhao
 date: 2019-12-20
 location: Beijing
 ---

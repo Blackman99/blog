@@ -2,7 +2,7 @@
 title: 美化windows11的终端
 description: 美化windows11的终端
 date: 2021-11-01
-author: Zion Dotson
+author: Dongsheng Zhao
 location: Beijing
 tags:
   - Windows

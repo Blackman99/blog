@@ -1,7 +1,7 @@
 ---
 title: 用CSS3实现文字颜色渐变动画
 date: 2021-06-22
-author: Zion Dotson
+author: Dongsheng Zhao
 location: Beijing
 tags:
   - CSS

@@ -2,7 +2,7 @@
 title: 下一代前端样式开发工具库——Tailwindcss
 description: 开发业务页面时的利器
 date: 2021-09-24
-author: Zion Dotson
+author: Dongsheng Zhao
 location: Beijing
 tags:
   - Tailwindcss

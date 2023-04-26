@@ -58,7 +58,7 @@ module.exports = {
   head: [['link', { rel: 'icon', href: '/avatar.jpg' }]],
   themeConfig: {
     copy: true,
-    copyright: `© ${new Date().getFullYear()} ❤️ <a target="_blank" rel="external nofollow noopener" href="https://blog.donsen.site/">Zion Dotson</a>`,
+    copyright: `© ${new Date().getFullYear()} ❤️ <a target="_blank" rel="external nofollow noopener" href="https://blog.donsen.site/">Dongsheng Zhao</a>`,
     reward: {
       text: '给我买杯咖啡 ☕.',
       enable: false,

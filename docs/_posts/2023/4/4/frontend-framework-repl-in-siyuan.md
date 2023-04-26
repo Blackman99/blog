@@ -10,8 +10,11 @@ tags:
   - Svelte
 categories:
   - Front-end
-cover: /logos/siyuan-logo.png
 ---
+> 
+> <SpinningLogo />
+
+<!-- more -->
 
 ## 背景
 
@@ -54,6 +57,7 @@ cover: /logos/siyuan-logo.png
   key-prefix="demo"
   :code-types="['Vue-REPL', 'Svelte-REPL', 'React-REPL']"
   default-active-code-type="Vue-REPL"
+  hide-copy
 />
 
 ::: slot demo-Vue-REPL
@@ -91,3 +95,12 @@ cover: /logos/siyuan-logo.png
 * [Vue REPL](https://github.com/vuejs/repl)
 * [React Live](https://formidable.com/open-source/react-live/)
 * [Svelte REPL](https://github.com/sveltejs/sites/tree/master/packages/repl)
+
+<script>
+import SpinningLogo from '@vp/demo-components/SpinningLogo.vue'
+export default {
+  components: {
+    SpinningLogo
+  }
+}
+</script>

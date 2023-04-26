@@ -1,6 +1,6 @@
 ---
 title: 如何给pixel2升级Android版本，并同时解决Pixel2发热易卡顿，高耗电问题
-author: Zion Dotson
+author: Dongsheng Zhao
 location: BeiJing
 date: 2020-11-24
 categories:

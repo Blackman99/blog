@@ -1,7 +1,7 @@
 ---
 title: Vue3使用初体验
 date: 2021-02-03
-author: Zion Dotson
+author: Dongsheng Zhao
 location: Beijing
 categories:
   - Front-end

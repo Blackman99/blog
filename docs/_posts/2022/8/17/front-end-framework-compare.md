@@ -2,7 +2,7 @@
 title: Svelte, Vue, React生态小结
 description: Svelte, Vue, React生态小结
 date: 2022-08-17
-author: Zion Dotson
+author: Dongsheng Zhao
 location: Beijing
 tags:
   - Vue

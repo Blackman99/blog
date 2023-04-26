@@ -2,7 +2,7 @@
 title: Casual UI
 description: 一个基于Vue3+, React17+, Svelte3+的组件库
 date: 2022-04-01
-author: Zion Dotson
+author: Dongsheng Zhao
 location: Beijing
 cover: /logos/casual-ui-logo.png
 tags:

@@ -1,6 +1,6 @@
 ---
 title: canvas多区域根据重叠次数不同填充不同颜色问题
-author: Zion Dotson
+author: Dongsheng Zhao
 location: BeiJing
 date: 2020-11-23
 categories:

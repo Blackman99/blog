@@ -10,7 +10,7 @@ tags:
   - Oauth
 date: 2019-06-09
 location: Beijing
-author: Zion Dotson
+author: Dongsheng Zhao
 ---
 
 > OAuth2.0规范

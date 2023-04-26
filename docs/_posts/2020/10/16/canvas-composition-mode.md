@@ -1,6 +1,6 @@
 ---
 title: canvas元素组合方式
-author: Zion Dotson
+author: Dongsheng Zhao
 location: BeiJing
 date: 2020-10-16
 categories:

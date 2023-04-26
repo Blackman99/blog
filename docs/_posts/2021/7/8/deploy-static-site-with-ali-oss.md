@@ -2,7 +2,7 @@
 title: 使用阿里云OSS部署你的静态站点
 description: 使用阿里云OSS部署你的静态站点
 date: 2021-07-08
-author: Zion Dotson
+author: Dongsheng Zhao
 location: Beijing
 tags:
   - OSS

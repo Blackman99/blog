@@ -2,7 +2,7 @@
 title: 使用Manjaro系统遇到的一些问题以及解决方案
 description: Problems when using Manjaro
 date: 2021-10-20
-author: Zion Dotson
+author: Dongsheng Zhao
 location: Beijing
 tags:
   - Manjaro

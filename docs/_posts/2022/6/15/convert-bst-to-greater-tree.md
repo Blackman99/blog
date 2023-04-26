@@ -2,7 +2,7 @@
 title: leetcode 538 - 把二叉搜索树转换为累加树
 description: 重拾算法 - leetcode 538 & 1038 - 把二叉搜索树转换为累加树
 date: 2022-06-19
-author: Zion Dotson
+author: Dongsheng Zhao
 location: Beijing
 tags:
   - Algorithm

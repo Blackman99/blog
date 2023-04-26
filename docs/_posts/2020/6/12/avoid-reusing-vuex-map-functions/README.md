@@ -7,7 +7,7 @@ tags:
   - Vue
   - Vuex
 date: 2020-06-12
-author: Zion Dotson
+author: Dongsheng Zhao
 location: Beijing
 ---
 

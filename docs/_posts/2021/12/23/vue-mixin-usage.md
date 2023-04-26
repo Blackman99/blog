@@ -2,7 +2,7 @@
 title: Vue2中的mixin使用方式小结
 description: Vue2中的mixin使用方式小结
 date: 2021-12-23
-author: Zion Dotson
+author: Dongsheng Zhao
 location: Beijing
 tags:
   - Vue

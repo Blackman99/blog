@@ -9,7 +9,7 @@ tags:
   - Vue
   - Vuepress
   - Javascript
-author: Zion Dotson
+author: Dongsheng Zhao
 date: 2019-01-01
 location: Beijing
 ---

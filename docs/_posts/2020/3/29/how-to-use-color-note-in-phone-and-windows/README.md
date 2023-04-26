@@ -2,7 +2,7 @@
 title: 在Android和windows中使用ColorNote同步笔记
 description: 在Android和windows中使用ColorNote同步笔记
 date: 2020-03-28
-author: Zion Dotson
+author: Dongsheng Zhao
 location: Beijing
 categories: 
   - Skills

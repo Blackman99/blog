@@ -1,6 +1,6 @@
 ---
 title: 记一次数学在解决实际问题的运用
-author: Zion Dotson
+author: Dongsheng Zhao
 location: BeiJing
 date: 2020-11-20
 categories:

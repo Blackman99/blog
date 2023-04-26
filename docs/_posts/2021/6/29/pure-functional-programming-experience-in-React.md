@@ -1,6 +1,6 @@
 ---
 title: 在 React 中获得纯粹的函数式编程体验
-author: Zion Dotson
+author: Dongsheng Zhao
 location: Beijing
 tags:
   - React

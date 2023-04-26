@@ -2,7 +2,7 @@
 title: 关于重构
 description: 关于重构
 date: 2019-03-03
-author: Zion Dotson
+author: Dongsheng Zhao
 location: Beijing
 categories:
   - Ideas

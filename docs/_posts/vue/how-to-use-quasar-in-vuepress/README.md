@@ -7,7 +7,7 @@ tags:
   - Vue
   - Vuepress
   - Quasar
-author: Zion Dotson
+author: Dongsheng Zhao
 date: 2019-12-01
 location: Beijing
 ---

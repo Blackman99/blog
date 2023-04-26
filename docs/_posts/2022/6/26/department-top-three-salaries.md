@@ -2,7 +2,7 @@
 title: leetcode 185 - 部门收入前三高的所有员工
 description: leetcode 185 - 部门收入前三高的所有员工
 date: 2022-06-26
-author: Zion Dotson
+author: Dongsheng Zhao
 location: Beijing
 tags:
   - MySQL

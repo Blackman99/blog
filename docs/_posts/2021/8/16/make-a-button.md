@@ -2,7 +2,7 @@
 title: 制作一个游戏风格按钮
 description: 制作一个游戏风格按钮
 date: 2021-08-16
-author: Zion Dotson
+author: Dongsheng Zhao
 location: Beijing
 tags:
   - CSS

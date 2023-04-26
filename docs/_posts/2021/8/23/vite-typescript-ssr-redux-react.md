@@ -2,7 +2,7 @@
 title: Vite + typescript + redux + react + Hooks + SSR的使用
 description: Vite + typescript + redux + react + Hooks + SSR的使用
 date: 2021-08-23
-author: Zion Dotson
+author: Dongsheng Zhao
 location: Beijing
 tags:
   - React
