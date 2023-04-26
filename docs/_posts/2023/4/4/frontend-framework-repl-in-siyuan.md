@@ -10,14 +10,15 @@ tags:
   - Svelte
 categories:
   - Front-end
+cover: /logos/siyuan-logo.png
 ---
 
 ## 背景
 
-个人目前使用的是[思源笔记](https://github.com/siyuan-note/siyuan)记录笔记，且会有大量前端流相关的内容，但是存在这几个问题：
+个人目前使用的是[思源笔记](https://github.com/siyuan-note/siyuan)记录笔记，且会有大量 web 前端相关的内容，但是存在这几个问题：
 
-* 思源笔记对主流框架（Vue/React/Svelte）代码高亮支持不是很好
-* 编写 web 或者 Vue/React/Svelte 相关笔记时，只有代码会稍显枯燥，最好能辅以展示效果
+* 思源笔记对主流前端框架（Vue/React/Svelte）代码高亮支持不是很好
+* 编写 web 或者 Vue/React/Svelte 相关笔记时，只有代码会稍显枯燥，我希望能辅以展示效果让笔记更直观
 
 ## REPL 工具调研
 
