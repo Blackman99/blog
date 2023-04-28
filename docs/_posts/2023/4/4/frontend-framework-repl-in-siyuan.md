@@ -10,6 +10,7 @@ tags:
   - Svelte
 categories:
   - Front-end
+cover: /logos/siyuan-with-frameworks
 ---
 > 
 > <SpinningLogo />
