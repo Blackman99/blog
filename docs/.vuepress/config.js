@@ -163,12 +163,6 @@ module.exports = {
   plugins: [
     'vuepress-plugin-smooth-scroll',
     '@vuepress/last-updated',
-    [
-      '@vuepress/google-analytics',
-      {
-        ga: 'UA-168133590-1',
-      },
-    ],
   ],
   alias: {
     '@src': resolve(process.cwd()),
