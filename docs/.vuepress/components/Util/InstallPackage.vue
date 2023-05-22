@@ -25,16 +25,19 @@ export default {
     packageName: {
       type: String,
       required: true
+    },
+    installScriptMap: {
+      type: Object,
+      default: () => ({
+        npm: 'install',
+        yarn: 'add',
+        pnpm: 'add'
+      })
     }
   },
   data() {
     return {
       types: ['npm', 'yarn', 'pnpm'],
-      installScriptMap: {
-        npm: 'install',
-        yarn: 'add',
-        pnpm: 'add'
-      }
     }
   }
 }
