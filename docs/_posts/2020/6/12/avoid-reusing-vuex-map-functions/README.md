@@ -77,12 +77,8 @@ this.$store.commit('moduleA/setName')
 
 ::: slot map-functions-mapState&mapMutations
 ```vue
-<style>
-</style>
-<template>
-</template>
 <script>
-import { mapState, mapMutations } from 'vuex
+import { mapMutations, mapState } from 'vuex'
 export default {
   computed: {
     ...mapState('moduleA', [
@@ -90,7 +86,7 @@ export default {
     ])
   },
   methods: {
-    ...mapMutations('moduleA, [
+    ...mapMutations('moduleA', [
       'setName'
     ])
   }
@@ -102,7 +98,7 @@ export default {
 ::: slot map-functions-组件中使用
 ```js
 this.name // this.$store.state.moduleA.name
-this.setName() // this.$store.commit('moduleA/setName') 
+this.setName() // this.$store.commit('moduleA/setName')
 ```
 :::
 
@@ -115,10 +111,6 @@ this.setName() // this.$store.commit('moduleA/setName')
 />
 ::: slot create-namespace-createNamespacedHelpers
 ```vue
-<style>
-</style>
-<template>
-</template>
 <script>
 import { createNamespacedHelpers } from 'vuex'
 const { mapState, mapMutations } = createNamespacedHelpers('moduleA')
@@ -169,10 +161,6 @@ export default {
 
 ::: slot use-mixin-组件中使用
 ```vue
-<style>
-</style>
-<template>
-</template>
 <script>
 import moduleAMixin from 'path/to/moduleAMixin.js'
 export default {
