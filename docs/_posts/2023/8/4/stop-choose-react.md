@@ -28,7 +28,7 @@ cover: /images/stop-react.png
 
 ## React 是其他项目的基石
 
-React 为在其之后出现的其他框架提供了很多可以参考借鉴的地方。比如：[Vue3 的组合式 API](https://vuejs.org/api/composition-api-setup.html) 借鉴了 Hooks，Svelte 目前的语法也能见到 JSX 身影，Solid 的 [`createSignal`](https://docs.solidjs.com/references/api-reference/basic-reactivity/createSignal) 跟 `useState` 用法类似
+React 为在其之后出现的其他框架提供了很多可以参考借鉴的地方。比如：[Vue3 的组合式 API](https://vuejs.org/api/composition-api-setup.html) 借鉴了 Hooks，Svelte 目前的语法也能见到 JSX 的身影，Solid 的 [`createSignal`](https://docs.solidjs.com/references/api-reference/basic-reactivity/createSignal) 跟 `useState` 用法类似
 
 **但是这些新生代框架都在性能以及开发体验上做了更多的提升**
 
@@ -68,7 +68,6 @@ React 为在其之后出现的其他框架提供了很多可以参考借鉴的�
 * 内存占用  
   ![内存占用](./image.png)
 
-
 可以看到综合性能，React 远远落后于其他框架，同时值得一提的是最年轻的 Solid 反而拥有接近原生的性能
 
 所以你绝对不会因为性能选择 React，因为它是最差的
@@ -90,11 +89,13 @@ Next.js 也排在 SvelteKit 以及 Astro 之后：
 
 ## 开发成本/学习成本
 
-如果你同时具有 React，Vue，Svelte，Solid 的使用经验，你绝对不会认为 React 是最容易上手的。并且，在其他框架中已经给你处理好的问题你在 React 中需要手动处理，比如：`useEffect` 依赖列表，还有你需要手动避免无限循环，即使你没有写循环（是的，你没看错）
+如果你同时具有 React，Vue，Svelte，Solid 的使用经验，你绝对不会认为 React 是最容易上手的。并且，在其他框架中已经给你处理好的问题你在 React 中需要手动处理，比如：
 
-总的来说用 React 心会很累，并且优化到极致性能还是落后于其他框架
+* `useEffect` 依赖列表（在其他框架中均是依赖自动追踪）
+* 在 React 需要手动避免无限循环，即使你没有写循环（是的，就是这么离谱）
+* 
 
-所以，就开发/学习成本来说，React 非常高
+我还可以举出更多的例子，足以证明就开发/学习成本来说，React 非常高
 
 ## 可持续性
 
@@ -128,6 +129,6 @@ React 在坐拥最大社区的同时，也毫无疑问具有最多的项目案�
 
 ## 结语
 
-综上所述，只能得到一个结论：**React 除了受欢迎之外已经不具有任何优势**
+综上所述，只能得到一个结论：**React 除了受欢迎之外已经不具有任何优势**。
 
 如果你能对下一个应用的技术栈做出决策，**请不要因为 React 受欢迎这个理由而选择它**。
