@@ -110,7 +110,7 @@ Next.js 也排在 SvelteKit 以及 Astro 之后：
 
 也许会有人很多人担心这个问题，实际上我在了解之前也非常担心，因为谁都不希望自己所使用的框架在某一天落到无人维护的境地，相信有很多人会因为 React 背靠 Facebook 而选择它
 
-目前我并未在 Solid，Svelte，Vue，Angular 这些框架的社区中看到贡献者不活跃的情况，而且 Angular 背靠谷歌，Svelte 中有两名核心成员被 Vercel 雇佣，Vue 跟 Solid 都拥有巨量的企业捐赠支持，对于这些优秀的知名前端开源框架，资金支持并不会成为问题。
+目前我并未在 Solid，Svelte，Vue，Angular 这些框架的社区中看到贡献者不活跃的情况，而且 Angular 背靠谷歌，Svelte 中有两名核心成员被 Vercel 雇佣（其中包括 Svelte 的作者 [Rich Harris](https://twitter.com/Rich_Harris)），Vue 跟 Solid 都拥有巨量的企业捐赠支持，对于这些优秀的知名前端开源框架，资金支持并不会成为问题。
 
 ## 大型复杂应用的可行性
 
