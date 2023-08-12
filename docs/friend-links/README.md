@@ -16,11 +16,6 @@ links:
     logo: https://vue.casual-ui.site/logo.png
     url: https://vue.casual-ui.site
     desc: 一个基于 Vue3 的随意的组件库
-  - title: Casual UI - React
-    roundness: true
-    logo: https://react.casual-ui.site/logo.png
-    url: https://react.casual-ui.site
-    desc: 一个基于 React17 的随意的组件库
   - title: Casual UI - Svelte
     roundness: true
     logo: https://react.casual-ui.site/logo.png
