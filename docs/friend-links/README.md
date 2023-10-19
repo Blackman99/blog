@@ -27,7 +27,7 @@ links:
     url: https://sveltepress.site
     desc: 一个以内容为中心的站点构建工具，基于 Sveltekit 构建
   - title: Toryz 的个人博客
-  - roundness: true
-  - url: https://toryz-me.netlify.app/
-  - logo: https://toryz-me.netlify.app/logo.svg
+    roundness: true
+    url: https://toryz-me.netlify.app/
+    logo: https://toryz-me.netlify.app/logo.svg
 ---
