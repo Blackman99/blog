@@ -46,7 +46,7 @@ const colors = themeColors.map(([hex, rgb]) => ({
 module.exports = {
   port: 23456,
   title: 'Dongsheng 的个人博客',
-  description: '偶尔会有一些新奇的想法',
+  description: '丈夫·父亲·咖啡·健身·偶尔会有一些新奇的想法',
   dest: './output',
   locales: {
     '/': {
