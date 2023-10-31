@@ -96,6 +96,7 @@ module.exports = {
     logo: '/avatar.jpg',
     nav: [
       { text: '博客', link: '/' },
+      { text: '我的开源', link: '/projects/' },
       {
         text: '听听歌吧',
         link: '/listen/',
@@ -125,6 +126,17 @@ module.exports = {
             nextText: ''
           }
         },
+        {
+          id: 'projects',
+          dirname: '_projects',
+          path: '/projects/',
+          title: '我的开源',
+          pagination: {
+            lengthPerPage: 7,
+            prevText: '',
+            nextText: ''
+          }
+        }
       ],
       frontmatters: [
         {
