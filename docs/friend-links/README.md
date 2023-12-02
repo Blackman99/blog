@@ -11,14 +11,9 @@ links:
     logo: https://common-lisp.net/static/imgs/favicon.ico
     url: https://acl-chinese.donsen.site
     desc: ANSI Common LISP 中文版 - 为了更友好的阅读体验
-  - title: Casual UI - Vue
-    roundness: true
-    logo: https://vue.casual-ui.site/logo.png
-    url: https://vue.casual-ui.site
-    desc: 一个基于 Vue3 的随意的组件库
   - title: Casual UI - Svelte
     roundness: true
-    logo: https://react.casual-ui.site/logo.png
+    logo: https://svelte.casual-ui.site/logo.png
     url: https://svelte.casual-ui.site
     desc: 一个基于 Svelte3 的随意的组件库
   - title: Sveltepress
