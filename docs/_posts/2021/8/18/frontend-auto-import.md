@@ -49,7 +49,7 @@ const routes = [
 ### `require.context`介绍
 
 ```js
-require.context(directory, useSubdirectories = true, regExp = /^\.\/.*$/, mode = 'sync');
+require.context(directory, useSubdirectories = true, regExp = /^\.\/.*$/, mode = 'sync')
 ```
 
 该方法接受四个参数：
@@ -125,26 +125,26 @@ export default {
                       label: 'profile', 
                       icon: 'folder',
                       children: [
-                        { label: 'basic.vue', img: 'https://v3.cn.vuejs.org/logo.png' },
-                        { label: 'vip.vue', img: 'https://v3.cn.vuejs.org/logo.png' }
+                        { label: 'basic.vue', img: '/logos/vue-logo.png' },
+                        { label: 'vip.vue', img: '/logos/vue-logo.png' }
                       ] 
                     },
-                    { label: 'orders.vue', img: 'https://v3.cn.vuejs.org/logo.png' },
-                    { label: 'settings.vue', img: 'https://v3.cn.vuejs.org/logo.png' }
+                    { label: 'orders.vue', img: '/logos/vue-logo.png' },
+                    { label: 'settings.vue', img: '/logos/vue-logo.png' }
                   ]
                 },
                 {
                   label: 'system',
                   icon: 'folder',
                   children: [
-                    { label: 'user.vue', img: 'https://v3.cn.vuejs.org/logo.png' },
-                    { label: 'role.vue', img: 'https://v3.cn.vuejs.org/logo.png' },
-                    { label: 'authority.vue', img: 'https://v3.cn.vuejs.org/logo.png' },
+                    { label: 'user.vue', img: '/logos/vue-logo.png' },
+                    { label: 'role.vue', img: '/logos/vue-logo.png' },
+                    { label: 'authority.vue', img: '/logos/vue-logo.png' },
                   ]
                 },
                 {
                   label: 'login.vue',
-                  img: 'https://v3.cn.vuejs.org/logo.png'
+                  img: '/logos/vue-logo.png'
                 }
               ]
             }
