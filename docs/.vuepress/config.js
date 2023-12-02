@@ -97,6 +97,7 @@ module.exports = {
     nav: [
       { text: '博客', link: '/' },
       { text: '我的开源', link: '/projects/' },
+      { text: '健身随记', link: '/fitness/' },
       {
         text: '听听歌吧',
         link: '/listen/',
@@ -131,6 +132,17 @@ module.exports = {
           dirname: '_projects',
           path: '/projects/',
           title: '我的开源',
+          pagination: {
+            lengthPerPage: 7,
+            prevText: '',
+            nextText: ''
+          }
+        },
+        {
+          id: 'fitness',
+          dirname: '_fitness',
+          path: '/fitness/',
+          title: '健身相关',
           pagination: {
             lengthPerPage: 7,
             prevText: '',

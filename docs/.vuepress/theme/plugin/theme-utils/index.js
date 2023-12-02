@@ -40,7 +40,7 @@ module.exports = (options = {}, context) => ({
       $page.pageType = 'tagItem'
       return
     }
-    if ($page.path === '/' || $page.path.startsWith('/page/') || $page.path === '/projects/') {
+    if ($page.path === '/' || $page.path.startsWith('/page/') || $page.path === '/projects/' || $page.path.startsWith('/fitness/')) {
       $page.pageType = 'home'
       return
     }
