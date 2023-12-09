@@ -2,7 +2,7 @@
 title: Negozio
 description: 一个可用于 React18+ 的原子化状态管理模型
 date: 2023-12-05
-author: Zion Dotson
+author: Dongsheng Zhao
 location: Beijing
 tags:
   - React
