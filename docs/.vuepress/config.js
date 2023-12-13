@@ -111,7 +111,7 @@ module.exports = {
       },
       {
         type: 'github',
-        link: 'Blackman99',
+        link: 'Blackman99/blog',
       },
     ],
     blog: {
