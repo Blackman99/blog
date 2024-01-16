@@ -1,6 +1,6 @@
 ---
-title: Negozio
-description: 一个可用于 React18+ 的原子化状态管理模型
+title: Atomique
+description: 一个可用于 React18+ 的原子化状态管理模型，芥子纳须弥
 date: 2023-12-05
 author: Dongsheng Zhao
 location: Beijing
@@ -10,7 +10,7 @@ categories:
   - Front-end
 ---
 
-> 一个可用于 React18+ 的原子化状态管理模型，介子那须臾
+> 一个可用于 React18+ 的原子化状态管理模型，芥子纳须弥
 
 <!-- more -->
 
@@ -22,13 +22,13 @@ categories:
 
 ```sh
 # via npm
-npm i --save negozio
+npm i --save atomique
 
 # via yarn
-yarn add negozio
+yarn add atomique
 
 # via pnpm
-pnpm i negozio
+pnpm i atomique
 ```
 
 ## 使用 
@@ -55,13 +55,13 @@ export default function App() {
 
 :::: slot usage-use-count.js
 ```jsx
-import negozio from 'negozio'
+import atomique from 'atomique'
 
-export const useCount = negozio(0)
+export const { useAtom: useCount, update } = atomique(0)
 ```
 
 ::: tip 提示
-`negozio` 可以接受任何数据类型，如数组，对象等，该函数是基于 [`useSyncExternalStore `](https://react.dev/reference/react/useSyncExternalStore) 的轻量级封装 
+`atomique` 可以接受任何数据类型，如数组，对象等，该函数是基于 [`useSyncExternalStore `](https://react.dev/reference/react/useSyncExternalStore) 的轻量级封装 
 :::
 ::::
 
@@ -69,7 +69,7 @@ export const useCount = negozio(0)
 
 ::: slot usage-display-count.jsx
 ```jsx
-import useCount from './use-count'
+import { useCount } from './use-count'
 
 export default function DisplayCount() {
   const [count] = useCount()
@@ -81,7 +81,7 @@ export default function DisplayCount() {
 
 ::: slot usage-add-count.jsx
 ```jsx
-import useCount from './use-count'
+import { useCount } from './use-count'
 
 export default function AddCount() {
   const [, setCount] = useCount()
