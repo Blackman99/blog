@@ -16,7 +16,7 @@ categories:
 
 ## Github
 
-[Negozio](https://github.com/Blackman99/negozio)
+[Atomique](https://github.com/Blackman99/atomique)
 
 ## 安装
 
@@ -93,5 +93,4 @@ export default function AddCount() {
 :::
 
 ![Result](./magasin-count.gif)
-
 
