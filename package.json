@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "donsen的个人博客",
   "main": "index.js",
+  "packageManager": "pnpm@9.15.0",
   "scripts": {
     "song": "node songs",
     "dev": "vuepress dev docs --no-cache ",
