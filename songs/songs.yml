@@ -1,6 +1,6 @@
 -
   songId: 865251
-  songUrl: https://donsen-songs.oss-cn-beijing.aliyuncs.com/X%20JAPAN%20-%20ENDLESS%20RAIN.mp3
+  songUrl: /songs/X%20JAPAN%20-%20ENDLESS%20RAIN.mp3
   customLyrics: true
   lyrics: 
     - 
@@ -191,7 +191,7 @@
       - Let me forget all of the hate. All of the sadness
       - 让我忘记一切的悲哀与怨恨 
 -
-  songUrl: https://donsen-songs.oss-cn-beijing.aliyuncs.com/%E7%8B%BC%20-%20%E9%9F%A6%E7%A4%BC%E5%AE%89.mp3
+  songUrl: /songs/%E7%8B%BC%20-%20%E9%9F%A6%E7%A4%BC%E5%AE%89.mp3
   songId: 28285400
   customLyrics: true
   lyrics:
