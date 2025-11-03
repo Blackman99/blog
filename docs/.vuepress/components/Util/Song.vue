@@ -81,10 +81,14 @@
       </div>
       <div ref="lyricsContainer" class="lyrics">
         <div v-for="([, ...lines], i) in nowPlayingSong.lyrics" ref="lines" :key="i">
-          <div :class="['single-line', { 'active-line': currentHilightLyricIndex === i }, 'q-mb-md']">
+          <div :class="['single-line', { 'active-line': currentHilightLyricIndex === i }]">
             <div
               v-for="(l, j) in lines"
               :key="j"
+              :style="{
+                transform: `scale(${Math.max(1 - Math.abs(i - currentHilightLyricIndex) * 0.1, 0.6)})`,
+                filter: `blur(${Math.min(Math.abs(i - currentHilightLyricIndex) * 0.3, 2)}px)`
+              }"
             >
               {{ l }}
             </div>
@@ -149,13 +153,13 @@
             />
           </div>
           <div class="flex items-center col" style="max-width: 61.8vw;">
-            <div>
+            <div class="font-mono">
               {{ currentSecondsInMinuteFormat }}
             </div>
             <div class="col q-px-sm flex items-center">
               <q-slider v-model="currentSeconds" :min="0" :max="totalSeconds" @change="secondsChange" />
             </div>
-            <div>
+            <div class="font-mono">
               {{ totalSecondsInMinuteFormat }}
             </div>
           </div>
@@ -433,6 +437,10 @@ export default {
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
 }
+.font-mono {
+  font-family: monospace;
+  font-size: 12px;
+}
 .custom-player {
   border-radius 8px;
   position relative;
@@ -465,9 +473,15 @@ export default {
     .play-list {
       width: 20vw;
     }
+    .lyrics {
+      padding: 30vh 0;
+    }
     &.mobile {
       .play-list {
         width: 100%;
+      }
+      .lyrics {
+        padding: 35vh 0;
       }
     }
   }
@@ -532,6 +546,8 @@ export default {
   }
   .lyrics {
     text-align center
+    font-size: 18px;
+    line-height: 2em;
     width 80%;
     color: #aeaeae;
     height 50%;
@@ -542,8 +558,8 @@ export default {
     overflow auto;
     padding: 20vh 0;
     .single-line {
+      transition: transform .3s, filter .3s, color .3s;
       &.active-line {
-        font-size 1.25em;
         color: #fff;
       }
     }
