@@ -8,7 +8,7 @@ A blog static site using [Vuepress(v1)](https://vuepress.vuejs.org/) and inspire
 
 ## Online Demo
 
-[My blog site](https://blog.donsen.site)
+[My blog site](https://dongsheng-blog.netlify.app/)
 
 ## Install
 
