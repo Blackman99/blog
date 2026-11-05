@@ -1,0 +1,1 @@
+[{"slug":"how-to-buid-vuecli3-project-to-war","title":"将Vue-cli3.0搭建的前端项目构建并打包成war文件","date":"2019-10-05","tags":["Vue","Tomcat","Java"],"category":"Server-side","excerpt":"公司新项目采用前后分离，前端Vue，后端SpringBoot，部署平台只接受war包，需求就是把前端build之后的资源打成war包","author":"Dongsheng Zhao","readingTime":1}]

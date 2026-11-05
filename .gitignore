@@ -1,8 +1,7 @@
 node_modules
-.vscode
-yarn.lock
-package-lock.json
-*.log
-output
-logs
-test.js
+.svelte-kit
+dist
+.DS_Store
+migration-report.json
+node_modules
+pnpm-lock.yaml
