@@ -4,7 +4,7 @@
     <title>Dongsheng 的个人博客</title>
     <link>https://dongsheng-blog.netlify.app</link>
     <description>丈夫·父亲·咖啡·健身·偶尔会有一些新奇的想法</description>
-    <lastBuildDate>Fri, 06 Nov 2026 01:56:57 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 02:31:07 GMT</lastBuildDate>
     <copyright>© 2026 Dongsheng Zhao</copyright>
     
     <item>
@@ -99,6 +99,13 @@
       <category>Front-end</category>
     </item>
     <item>
+      <title>个人开发的 Grok Bot + Claude/Codex  替代选项</title>
+      <link>https://dongsheng-blog.netlify.app/posts/deskfolk</link>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+      <description>目前的 AI 工具，我总是会遇到这些问题，这里举几个例子： Grok Bot 额度不透明，模型路由黑盒，且你的其他 AI 订阅完全没法接入 Claude 模型很强，但封号完全不可控，且几乎无法申诉 Codex 降智几乎天天在发生，且不断轮回</description>
+      <category>project</category>
+    </item>
+    <item>
       <title>leetcode 498 - 对角线遍历</title>
       <link>https://dongsheng-blog.netlify.app/posts/diagonal-traverse</link>
       <pubDate>Tue, 14 Jun 2022 00:00:00 GMT</pubDate>
@@ -139,13 +146,6 @@
       <pubDate>Wed, 26 Apr 2023 00:00:00 GMT</pubDate>
       <description>在思源笔记中嵌入 Vue/Svelte/React 交互式编辑器</description>
       <category>project</category>
-    </item>
-    <item>
-      <title>你好，世界</title>
-      <link>https://dongsheng-blog.netlify.app/posts/hello-world</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 GMT</pubDate>
-      <description>这篇博客是我用Vuepress搭建撰写的第一篇博客。Vuepress上手简单，可扩展性也很高，功能非常强大。使用Vuepress的过程中遇到了很多问题，解决问题的过程也是一种成长</description>
-      <category>Ideas</category>
     </item>
   </channel>
 </rss>
