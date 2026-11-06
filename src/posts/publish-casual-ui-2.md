@@ -115,7 +115,7 @@ import { CButton } from '@casual-ui/react'
 
 function Demo() {
 
-  return 
+  return <CButton label="按钮" />
 }
 ```
 
@@ -151,7 +151,7 @@ pnpm add @casual-ui/svelte
 <script>
   import { CButton } from '@casual-ui/svelte'
 </script>
-
+<CButton label="一个按钮" />
 ```
 
 ## 结语

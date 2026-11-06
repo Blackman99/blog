@@ -54,9 +54,9 @@ export default ({
 <style>
 </style>
 <template>
-  
-    
-  
+  <ClientOnly>
+    <ParentGlobalLayout />
+  </ClientOnly>
 </template>
 <script>
 export default {
@@ -73,7 +73,7 @@ export default {
 
 ```vue
 <template>
-  
+  <ClientOnly>
     <q-layout view="hHh lpR fFf">
       <q-header reveal elevated>
 			<!-- 头部 -->
@@ -85,7 +85,7 @@ export default {
 			<!-- 页脚 -->
       </q-footer>
     </q-layout>
-  
+  </ClientOnly>
 </template>
 ```
 ::::
