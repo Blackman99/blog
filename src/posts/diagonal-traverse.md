@@ -16,6 +16,8 @@ tags:
 
 ### 示例
 
+<DiagonalTraverse-Example />
+
 如图：
 * 输入：
 ```js
@@ -44,7 +46,8 @@ tags:
 
 ### 代码
 
-### solution-javascript
+::::code-tabs{active="javascript"}
+### javascript
 
 ```js
 /**
@@ -102,7 +105,7 @@ const findDiagonalOrder = function (mat) {
 }
 ```
 
-### solution-run
+### run
 
 ```js
 console.log(
@@ -121,7 +124,7 @@ console.log(
 )
 ```
 
-### solution-output
+### output
 
 ```js
 [
@@ -134,17 +137,8 @@ console.log(
   98, 20
 ]
 ```
+::::
 
 ### 参考
 
 * [498. 对角线遍历 - 力扣（LeetCode）](https://leetcode.cn/problems/diagonal-traverse/)
-
-<script>
-import Example from '@vp/demo-components/Algorithm/DiagonalTraverse/Example.vue'
-
-export default {
-  components: {
-    Example
-  }
-}
-</script>

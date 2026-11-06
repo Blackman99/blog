@@ -11,7 +11,8 @@ tags:
 
 ### 基础使用
 
-### base-simpleMxin.js
+::::code-tabs{active="simpleMxin.js"}
+### simpleMxin.js
 
 ```js
 export default {
@@ -23,7 +24,7 @@ export default {
 }
 ```
 
-### base-componentA.vue
+### componentA.vue
 
 ```vue
 <template>
@@ -44,15 +45,17 @@ export default {
 </script>
 ```
 
-### base-结果
+### 结果
 
 ```yml
 someData: someValue
 ```
+::::
 
 ### 多个mixin
 
-### multiple-mixin1.js
+::::code-tabs{active="mixin1.js"}
+### mixin1.js
 
 ```js
 export default {
@@ -65,7 +68,7 @@ export default {
 }
 ```
 
-### multiple-mixin2.js
+### mixin2.js
 
 ```js
 export default {
@@ -78,7 +81,7 @@ export default {
 }
 ```
 
-### multiple-componentA.vue
+### componentA.vue
 
 ```vue
 <template>
@@ -103,17 +106,19 @@ export default {
 </script>
 ```
 
-### multiple-结果
+### 结果
 
 ```yml
 data1: value1
 data2: value2
 otherData: innerValue
 ```
+::::
 
 ### 嵌套使用
 
-### nest-mixin1.js
+::::code-tabs{active="mixin1.js"}
+### mixin1.js
 
 ```js
 export default {
@@ -126,7 +131,7 @@ export default {
 }
 ```
 
-### nest-mixin2.js
+### mixin2.js
 
 ```js
 import mixin1 from 'path/to/mixin1'
@@ -142,7 +147,7 @@ export default {
 }
 ```
 
-### nest-componentA.vue
+### componentA.vue
 
 ```vue
 <template>
@@ -165,17 +170,19 @@ export default {
 </script>
 ```
 
-### nest-结果
+### 结果
 
 ```yml
 someData1: someValue1
 someData2: someValue2
 otherData: innerValue
 ```
+::::
 
 ### 动态mixin
 
-### dynamic-createSomeMixin.js
+::::code-tabs{active="createSomeMixin.js"}
+### createSomeMixin.js
 
 ```js
 export default (dataName, dataDefaultValue) => {
@@ -189,7 +196,7 @@ export default (dataName, dataDefaultValue) => {
 }
 ```
 
-### dynamic-componentA.vue
+### componentA.vue
 
 ```vue
 <template>
@@ -210,11 +217,12 @@ export default {
 </script>
 ```
 
-### dynamic-结果
+### 结果
 
 ```yml
 dynamicData: dynamicValue
 ```
+::::
 
 ### 示例：动态创建需要的`v-model`
 
@@ -224,7 +232,8 @@ dynamicData: dynamicValue
 
 下面的示例展示了通过参数自定义`v-model`所需要的一些相关选项，并提供默认`v-model`行为
 
-### vmodel-createModelMixin.js
+::::code-tabs{active="createModelMixin.js"}
+### createModelMixin.js
 
 ```js
 const createModelMixin = (
@@ -274,7 +283,7 @@ export default createModelMixin
 
 ```
 
-### vmodel-CustomInput.vue
+### CustomInput.vue
 
 ```vue
 <template>
@@ -294,7 +303,7 @@ export default {
 </script>
 ```
 
-### vmodel-CustomCheckbox.vue
+### CustomCheckbox.vue
 
 ```vue
 <template>
@@ -319,13 +328,13 @@ export default {
 </script>
 ```
 
-### vmodel-使用
+### 使用
 
 ```vue
 <template>
   <div>
-    
-    
+    <CustomCheckboxm v-model="checked" />
+    <CustomInput v-model="value" />
   </div>
 </template>
 <script>
@@ -346,6 +355,7 @@ export default {
 }
 </script>
 ```
+::::
 
 ### 参考
 

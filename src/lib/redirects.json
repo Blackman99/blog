@@ -1,234 +1,902 @@
 [
   {
+    "from": "/2020/10/16/canvas-composition-mode/",
+    "to": "/posts/canvas-composition-mode/"
+  },
+  {
     "from": "/2020/10/16/canvas-composition-mode.html",
-    "to": "/posts/canvas-composition-mode"
+    "to": "/posts/canvas-composition-mode/"
+  },
+  {
+    "from": "/2020/10/16/canvas-composition-mode/index.html",
+    "to": "/posts/canvas-composition-mode/"
+  },
+  {
+    "from": "/_posts/2020/10/16/canvas-composition-mode.html",
+    "to": "/posts/canvas-composition-mode/"
+  },
+  {
+    "from": "/2020/11/20/path-problem/",
+    "to": "/posts/path-problem/"
   },
   {
     "from": "/2020/11/20/path-problem.html",
-    "to": "/posts/path-problem"
+    "to": "/posts/path-problem/"
+  },
+  {
+    "from": "/2020/11/20/path-problem/index.html",
+    "to": "/posts/path-problem/"
+  },
+  {
+    "from": "/_posts/2020/11/20/path-problem.html",
+    "to": "/posts/path-problem/"
+  },
+  {
+    "from": "/2020/11/23/canvas-multi-area-color-problem/",
+    "to": "/posts/canvas-multi-area-color-problem/"
   },
   {
     "from": "/2020/11/23/canvas-multi-area-color-problem.html",
-    "to": "/posts/canvas-multi-area-color-problem"
+    "to": "/posts/canvas-multi-area-color-problem/"
+  },
+  {
+    "from": "/2020/11/23/canvas-multi-area-color-problem/index.html",
+    "to": "/posts/canvas-multi-area-color-problem/"
+  },
+  {
+    "from": "/_posts/2020/11/23/canvas-multi-area-color-problem.html",
+    "to": "/posts/canvas-multi-area-color-problem/"
+  },
+  {
+    "from": "/2020/11/24/how-to-update-andriod-for-pixel2/",
+    "to": "/posts/how-to-update-andriod-for-pixel2/"
   },
   {
     "from": "/2020/11/24/how-to-update-andriod-for-pixel2.html",
-    "to": "/posts/how-to-update-andriod-for-pixel2"
+    "to": "/posts/how-to-update-andriod-for-pixel2/"
   },
   {
-    "from": "/2020/03/29/how-to-use-color-note-in-phone-and-windows.html",
-    "to": "/posts/how-to-use-color-note-in-phone-and-windows"
+    "from": "/2020/11/24/how-to-update-andriod-for-pixel2/index.html",
+    "to": "/posts/how-to-update-andriod-for-pixel2/"
+  },
+  {
+    "from": "/_posts/2020/11/24/how-to-update-andriod-for-pixel2.html",
+    "to": "/posts/how-to-update-andriod-for-pixel2/"
+  },
+  {
+    "from": "/2020/03/28/how-to-use-color-note-in-phone-and-windows/",
+    "to": "/posts/how-to-use-color-note-in-phone-and-windows/"
+  },
+  {
+    "from": "/2020/03/28/how-to-use-color-note-in-phone-and-windows.html",
+    "to": "/posts/how-to-use-color-note-in-phone-and-windows/"
+  },
+  {
+    "from": "/2020/03/28/how-to-use-color-note-in-phone-and-windows/index.html",
+    "to": "/posts/how-to-use-color-note-in-phone-and-windows/"
+  },
+  {
+    "from": "/_posts/2020/3/29/how-to-use-color-note-in-phone-and-windows/",
+    "to": "/posts/how-to-use-color-note-in-phone-and-windows/"
+  },
+  {
+    "from": "/2023/12/02/_2/",
+    "to": "/posts/2/"
+  },
+  {
+    "from": "/2023/12/02/_2.html",
+    "to": "/posts/2/"
+  },
+  {
+    "from": "/2023/12/02/_2/index.html",
+    "to": "/posts/2/"
+  },
+  {
+    "from": "/_fitness/2023/12/2/",
+    "to": "/posts/2/"
+  },
+  {
+    "from": "/2020/04/01/use-css-loading/",
+    "to": "/posts/use-css-loading/"
   },
   {
     "from": "/2020/04/01/use-css-loading.html",
-    "to": "/posts/use-css-loading"
+    "to": "/posts/use-css-loading/"
+  },
+  {
+    "from": "/2020/04/01/use-css-loading/index.html",
+    "to": "/posts/use-css-loading/"
+  },
+  {
+    "from": "/_posts/2020/4/1/use-css-loading/",
+    "to": "/posts/use-css-loading/"
+  },
+  {
+    "from": "/2020/06/12/avoid-reusing-vuex-map-functions/",
+    "to": "/posts/avoid-reusing-vuex-map-functions/"
   },
   {
     "from": "/2020/06/12/avoid-reusing-vuex-map-functions.html",
-    "to": "/posts/avoid-reusing-vuex-map-functions"
+    "to": "/posts/avoid-reusing-vuex-map-functions/"
   },
   {
-    "from": "/2020/06/12/find-a-times-in-list.html",
-    "to": "/posts/find-a-times-in-list"
+    "from": "/2020/06/12/avoid-reusing-vuex-map-functions/index.html",
+    "to": "/posts/avoid-reusing-vuex-map-functions/"
+  },
+  {
+    "from": "/_posts/2020/6/12/avoid-reusing-vuex-map-functions/",
+    "to": "/posts/avoid-reusing-vuex-map-functions/"
+  },
+  {
+    "from": "/2021/10/20/problems-when-using-manjaro/",
+    "to": "/posts/problems-when-using-manjaro/"
   },
   {
     "from": "/2021/10/20/problems-when-using-manjaro.html",
-    "to": "/posts/problems-when-using-manjaro"
+    "to": "/posts/problems-when-using-manjaro/"
   },
   {
-    "from": "/2021/11.html",
-    "to": "/posts/beautify-windows-terminal"
+    "from": "/2021/10/20/problems-when-using-manjaro/index.html",
+    "to": "/posts/problems-when-using-manjaro/"
+  },
+  {
+    "from": "/_posts/2021/10/20/problems-when-using-manjaro.html",
+    "to": "/posts/problems-when-using-manjaro/"
+  },
+  {
+    "from": "/2020/06/12/find-a-times-in-list/",
+    "to": "/posts/find-a-times-in-list/"
+  },
+  {
+    "from": "/2020/06/12/find-a-times-in-list.html",
+    "to": "/posts/find-a-times-in-list/"
+  },
+  {
+    "from": "/2020/06/12/find-a-times-in-list/index.html",
+    "to": "/posts/find-a-times-in-list/"
+  },
+  {
+    "from": "/_posts/2020/6/12/find-a-times-in-list/",
+    "to": "/posts/find-a-times-in-list/"
+  },
+  {
+    "from": "/2021/12/23/vue-mixin-usage/",
+    "to": "/posts/vue-mixin-usage/"
   },
   {
     "from": "/2021/12/23/vue-mixin-usage.html",
-    "to": "/posts/vue-mixin-usage"
+    "to": "/posts/vue-mixin-usage/"
   },
   {
-    "from": "/2021/02/02/vue3-use-experience.html",
-    "to": "/posts/vue3-use-experience"
+    "from": "/2021/12/23/vue-mixin-usage/index.html",
+    "to": "/posts/vue-mixin-usage/"
+  },
+  {
+    "from": "/_posts/2021/12/23/vue-mixin-usage.html",
+    "to": "/posts/vue-mixin-usage/"
+  },
+  {
+    "from": "/2021/02/03/vue3-use-experience/",
+    "to": "/posts/vue3-use-experience/"
+  },
+  {
+    "from": "/2021/02/03/vue3-use-experience.html",
+    "to": "/posts/vue3-use-experience/"
+  },
+  {
+    "from": "/2021/02/03/vue3-use-experience/index.html",
+    "to": "/posts/vue3-use-experience/"
+  },
+  {
+    "from": "/_posts/2021/2/2/vue3-use-experience.html",
+    "to": "/posts/vue3-use-experience/"
+  },
+  {
+    "from": "/2021/07/01/pure-functional-programming-experience-in-react/",
+    "to": "/posts/pure-functional-programming-experience-in-React/"
+  },
+  {
+    "from": "/2021/07/01/pure-functional-programming-experience-in-react.html",
+    "to": "/posts/pure-functional-programming-experience-in-React/"
+  },
+  {
+    "from": "/2021/07/01/pure-functional-programming-experience-in-react/index.html",
+    "to": "/posts/pure-functional-programming-experience-in-React/"
+  },
+  {
+    "from": "/_posts/2021/6/29/pure-functional-programming-experience-in-React.html",
+    "to": "/posts/pure-functional-programming-experience-in-React/"
+  },
+  {
+    "from": "/2021/06/22/css-text-gradient-animation/",
+    "to": "/posts/css-text-gradient-animation/"
   },
   {
     "from": "/2021/06/22/css-text-gradient-animation.html",
-    "to": "/posts/css-text-gradient-animation"
+    "to": "/posts/css-text-gradient-animation/"
   },
   {
-    "from": "/2021/06/29/pure-functional-programming-experience-in-React.html",
-    "to": "/posts/pure-functional-programming-experience-in-React"
+    "from": "/2021/06/22/css-text-gradient-animation/index.html",
+    "to": "/posts/css-text-gradient-animation/"
+  },
+  {
+    "from": "/_posts/2021/6/22/css-text-gradient-animation.html",
+    "to": "/posts/css-text-gradient-animation/"
+  },
+  {
+    "from": "/2021/06/06/less-loop/",
+    "to": "/posts/less-loop/"
   },
   {
     "from": "/2021/06/06/less-loop.html",
-    "to": "/posts/less-loop"
+    "to": "/posts/less-loop/"
+  },
+  {
+    "from": "/2021/06/06/less-loop/index.html",
+    "to": "/posts/less-loop/"
+  },
+  {
+    "from": "/_posts/2021/6/6/less-loop.html",
+    "to": "/posts/less-loop/"
+  },
+  {
+    "from": "/2021/07/08/deploy-static-site-with-ali-oss/",
+    "to": "/posts/deploy-static-site-with-ali-oss/"
   },
   {
     "from": "/2021/07/08/deploy-static-site-with-ali-oss.html",
-    "to": "/posts/deploy-static-site-with-ali-oss"
+    "to": "/posts/deploy-static-site-with-ali-oss/"
+  },
+  {
+    "from": "/2021/07/08/deploy-static-site-with-ali-oss/index.html",
+    "to": "/posts/deploy-static-site-with-ali-oss/"
+  },
+  {
+    "from": "/_posts/2021/7/8/deploy-static-site-with-ali-oss.html",
+    "to": "/posts/deploy-static-site-with-ali-oss/"
+  },
+  {
+    "from": "/2021/08/16/make-a-button/",
+    "to": "/posts/make-a-button/"
   },
   {
     "from": "/2021/08/16/make-a-button.html",
-    "to": "/posts/make-a-button"
+    "to": "/posts/make-a-button/"
+  },
+  {
+    "from": "/2021/08/16/make-a-button/index.html",
+    "to": "/posts/make-a-button/"
+  },
+  {
+    "from": "/_posts/2021/8/16/make-a-button.html",
+    "to": "/posts/make-a-button/"
+  },
+  {
+    "from": "/2021/08/18/frontend-auto-import/",
+    "to": "/posts/frontend-auto-import/"
   },
   {
     "from": "/2021/08/18/frontend-auto-import.html",
-    "to": "/posts/frontend-auto-import"
+    "to": "/posts/frontend-auto-import/"
+  },
+  {
+    "from": "/2021/08/18/frontend-auto-import/index.html",
+    "to": "/posts/frontend-auto-import/"
+  },
+  {
+    "from": "/_posts/2021/8/18/frontend-auto-import.html",
+    "to": "/posts/frontend-auto-import/"
+  },
+  {
+    "from": "/2021/08/23/vite-typescript-ssr-redux-react/",
+    "to": "/posts/vite-typescript-ssr-redux-react/"
   },
   {
     "from": "/2021/08/23/vite-typescript-ssr-redux-react.html",
-    "to": "/posts/vite-typescript-ssr-redux-react"
+    "to": "/posts/vite-typescript-ssr-redux-react/"
+  },
+  {
+    "from": "/2021/08/23/vite-typescript-ssr-redux-react/index.html",
+    "to": "/posts/vite-typescript-ssr-redux-react/"
+  },
+  {
+    "from": "/_posts/2021/8/23/vite-typescript-ssr-redux-react.html",
+    "to": "/posts/vite-typescript-ssr-redux-react/"
+  },
+  {
+    "from": "/2021/09/24/next-generation-css-utils-tailwindcss/",
+    "to": "/posts/next-generation-css-utils-tailwindcss/"
   },
   {
     "from": "/2021/09/24/next-generation-css-utils-tailwindcss.html",
-    "to": "/posts/next-generation-css-utils-tailwindcss"
+    "to": "/posts/next-generation-css-utils-tailwindcss/"
+  },
+  {
+    "from": "/2021/09/24/next-generation-css-utils-tailwindcss/index.html",
+    "to": "/posts/next-generation-css-utils-tailwindcss/"
+  },
+  {
+    "from": "/_posts/2021/9/24/next-generation-css-utils-tailwindcss.html",
+    "to": "/posts/next-generation-css-utils-tailwindcss/"
+  },
+  {
+    "from": "/2022/04/01/publish-casual-ui/",
+    "to": "/posts/publish-casual-ui-2/"
   },
   {
     "from": "/2022/04/01/publish-casual-ui.html",
-    "to": "/posts/publish-casual-ui"
+    "to": "/posts/publish-casual-ui-2/"
   },
   {
-    "from": "/2022/04/13/use-vite-replace-wp-for-dev.html",
-    "to": "/posts/use-vite-replace-wp-for-dev"
+    "from": "/2022/04/01/publish-casual-ui/index.html",
+    "to": "/posts/publish-casual-ui-2/"
+  },
+  {
+    "from": "/_projects/2022/4/1/publish-casual-ui.html",
+    "to": "/posts/publish-casual-ui-2/"
+  },
+  {
+    "from": "/2022/06/01/implement-link-list/",
+    "to": "/posts/implement-link-list/"
   },
   {
     "from": "/2022/06/01/implement-link-list.html",
-    "to": "/posts/implement-link-list"
+    "to": "/posts/implement-link-list/"
+  },
+  {
+    "from": "/2022/06/01/implement-link-list/index.html",
+    "to": "/posts/implement-link-list/"
+  },
+  {
+    "from": "/_posts/2022/6/1/implement-link-list.html",
+    "to": "/posts/implement-link-list/"
+  },
+  {
+    "from": "/2022/04/13/use-vite-replace-wp-for-dev/",
+    "to": "/posts/use-vite-replace-wp-for-dev/"
+  },
+  {
+    "from": "/2022/04/13/use-vite-replace-wp-for-dev.html",
+    "to": "/posts/use-vite-replace-wp-for-dev/"
+  },
+  {
+    "from": "/2022/04/13/use-vite-replace-wp-for-dev/index.html",
+    "to": "/posts/use-vite-replace-wp-for-dev/"
+  },
+  {
+    "from": "/_posts/2022/4/13/use-vite-replace-wp-for-dev.html",
+    "to": "/posts/use-vite-replace-wp-for-dev/"
+  },
+  {
+    "from": "/2022/06/11/solve-n-queens/",
+    "to": "/posts/solve-n-queens/"
   },
   {
     "from": "/2022/06/11/solve-n-queens.html",
-    "to": "/posts/solve-n-queens"
+    "to": "/posts/solve-n-queens/"
+  },
+  {
+    "from": "/2022/06/11/solve-n-queens/index.html",
+    "to": "/posts/solve-n-queens/"
+  },
+  {
+    "from": "/_posts/2022/6/11/solve-n-queens.html",
+    "to": "/posts/solve-n-queens/"
+  },
+  {
+    "from": "/2022/06/14/diagonal-traverse/",
+    "to": "/posts/diagonal-traverse/"
   },
   {
     "from": "/2022/06/14/diagonal-traverse.html",
-    "to": "/posts/diagonal-traverse"
+    "to": "/posts/diagonal-traverse/"
   },
   {
-    "from": "/2022/06/15/convert-bst-to-greater-tree.html",
-    "to": "/posts/convert-bst-to-greater-tree"
+    "from": "/2022/06/14/diagonal-traverse/index.html",
+    "to": "/posts/diagonal-traverse/"
+  },
+  {
+    "from": "/_posts/2022/6/14/diagonal-traverse.html",
+    "to": "/posts/diagonal-traverse/"
+  },
+  {
+    "from": "/2022/06/19/convert-bst-to-greater-tree/",
+    "to": "/posts/convert-bst-to-greater-tree/"
+  },
+  {
+    "from": "/2022/06/19/convert-bst-to-greater-tree.html",
+    "to": "/posts/convert-bst-to-greater-tree/"
+  },
+  {
+    "from": "/2022/06/19/convert-bst-to-greater-tree/index.html",
+    "to": "/posts/convert-bst-to-greater-tree/"
+  },
+  {
+    "from": "/_posts/2022/6/15/convert-bst-to-greater-tree.html",
+    "to": "/posts/convert-bst-to-greater-tree/"
+  },
+  {
+    "from": "/2022/06/26/department-top-three-salaries/",
+    "to": "/posts/department-top-three-salaries/"
   },
   {
     "from": "/2022/06/26/department-top-three-salaries.html",
-    "to": "/posts/department-top-three-salaries"
+    "to": "/posts/department-top-three-salaries/"
   },
   {
-    "from": "/2022/07/28/leetcode-2306.html",
-    "to": "/posts/leetcode-2306"
+    "from": "/2022/06/26/department-top-three-salaries/index.html",
+    "to": "/posts/department-top-three-salaries/"
   },
   {
-    "from": "/2022/7.html",
-    "to": "/posts/svelte-use-experience"
+    "from": "/_posts/2022/6/26/department-top-three-salaries.html",
+    "to": "/posts/department-top-three-salaries/"
+  },
+  {
+    "from": "/2022/07/08/leetcode-2306/",
+    "to": "/posts/leetcode-2306/"
+  },
+  {
+    "from": "/2022/07/08/leetcode-2306.html",
+    "to": "/posts/leetcode-2306/"
+  },
+  {
+    "from": "/2022/07/08/leetcode-2306/index.html",
+    "to": "/posts/leetcode-2306/"
+  },
+  {
+    "from": "/_posts/2022/7/28/leetcode-2306.html",
+    "to": "/posts/leetcode-2306/"
+  },
+  {
+    "from": "/2022/08/17/front-end-framework-compare/",
+    "to": "/posts/front-end-framework-compare/"
   },
   {
     "from": "/2022/08/17/front-end-framework-compare.html",
-    "to": "/posts/front-end-framework-compare"
+    "to": "/posts/front-end-framework-compare/"
+  },
+  {
+    "from": "/2022/08/17/front-end-framework-compare/index.html",
+    "to": "/posts/front-end-framework-compare/"
+  },
+  {
+    "from": "/_posts/2022/8/17/front-end-framework-compare.html",
+    "to": "/posts/front-end-framework-compare/"
+  },
+  {
+    "from": "/2022/07/01/svelte-use-experience/",
+    "to": "/posts/svelte-use-experience/"
+  },
+  {
+    "from": "/2022/07/01/svelte-use-experience.html",
+    "to": "/posts/svelte-use-experience/"
+  },
+  {
+    "from": "/2022/07/01/svelte-use-experience/index.html",
+    "to": "/posts/svelte-use-experience/"
+  },
+  {
+    "from": "/_posts/2022/7/svelte-use-experience.html",
+    "to": "/posts/svelte-use-experience/"
+  },
+  {
+    "from": "/2023/12/05/old-computer-install-truenas/",
+    "to": "/posts/old-computer-install-truenas/"
   },
   {
     "from": "/2023/12/05/old-computer-install-truenas.html",
-    "to": "/posts/old-computer-install-truenas"
+    "to": "/posts/old-computer-install-truenas/"
   },
   {
-    "from": "/architecture/about-reconstruction.html",
-    "to": "/posts/about-reconstruction"
+    "from": "/2023/12/05/old-computer-install-truenas/index.html",
+    "to": "/posts/old-computer-install-truenas/"
   },
   {
-    "from": "/funny/compare-java-node-python.html",
-    "to": "/posts/compare-java-node-python"
+    "from": "/_posts/2023/12/5/old-computer-install-truenas.html",
+    "to": "/posts/old-computer-install-truenas/"
   },
   {
-    "from": "/funny/programmer-conversation-with-other-people.html",
-    "to": "/posts/programmer-conversation-with-other-people"
+    "from": "/2019/01/01/hello-world/",
+    "to": "/posts/hello-world/"
   },
   {
-    "from": "/hello-world.html",
-    "to": "/posts/hello-world"
+    "from": "/2019/01/01/hello-world.html",
+    "to": "/posts/hello-world/"
   },
   {
-    "from": "/java/mysql-aouth2-springboot-config.html",
-    "to": "/posts/mysql-aouth2-springboot-config"
+    "from": "/2019/01/01/hello-world/index.html",
+    "to": "/posts/hello-world/"
   },
   {
-    "from": "/javascript/do-not-define-any-variables-to-swap-adjacent-elements-of-the-array.html",
-    "to": "/posts/do-not-define-any-variables-to-swap-adjacent-elements-of-the-array"
+    "from": "/_posts/hello-world/",
+    "to": "/posts/hello-world/"
   },
   {
-    "from": "/javascript/useful-array-methods-in-javascript.html",
-    "to": "/posts/useful-array-methods-in-javascript"
+    "from": "/2019/06/09/mysql-aouth2-springboot-config/",
+    "to": "/posts/mysql-aouth2-springboot-config/"
   },
   {
-    "from": "/laravel/laravel-api-ahthentication.html",
-    "to": "/posts/laravel-api-ahthentication"
+    "from": "/2019/06/09/mysql-aouth2-springboot-config.html",
+    "to": "/posts/mysql-aouth2-springboot-config/"
   },
   {
-    "from": "/laravel/laravel-preview.html",
-    "to": "/posts/laravel-preview"
+    "from": "/2019/06/09/mysql-aouth2-springboot-config/index.html",
+    "to": "/posts/mysql-aouth2-springboot-config/"
   },
   {
-    "from": "/lisp/define-a-function.html",
-    "to": "/posts/define-a-function"
+    "from": "/_posts/java/mysql-aouth2-springboot-config/",
+    "to": "/posts/mysql-aouth2-springboot-config/"
   },
   {
-    "from": "/lisp/lisp-basic-practice.html",
-    "to": "/posts/lisp-basic-practice"
+    "from": "/2019/07/07/do-not-define-any-variables-to-swap-adjacent-elements-of-the-array/",
+    "to": "/posts/do-not-define-any-variables-to-swap-adjacent-elements-of-the-array/"
   },
   {
-    "from": "/lisp/special-data-type-practice.html",
-    "to": "/posts/special-data-type-practice"
+    "from": "/2019/07/07/do-not-define-any-variables-to-swap-adjacent-elements-of-the-array.html",
+    "to": "/posts/do-not-define-any-variables-to-swap-adjacent-elements-of-the-array/"
   },
   {
-    "from": "/php/how-to-modify-external-param-with-a-closure-in-php.html",
-    "to": "/posts/how-to-modify-external-param-with-a-closure-in-php"
+    "from": "/2019/07/07/do-not-define-any-variables-to-swap-adjacent-elements-of-the-array/index.html",
+    "to": "/posts/do-not-define-any-variables-to-swap-adjacent-elements-of-the-array/"
   },
   {
-    "from": "/vue/how-to-buid-vuecli3-project-to-war.html",
-    "to": "/posts/how-to-buid-vuecli3-project-to-war"
+    "from": "/_posts/javascript/do-not-define-any-variables-to-swap-adjacent-elements-of-the-array/",
+    "to": "/posts/do-not-define-any-variables-to-swap-adjacent-elements-of-the-array/"
   },
   {
-    "from": "/vue/how-to-use-quasar-in-vuepress.html",
-    "to": "/posts/how-to-use-quasar-in-vuepress"
+    "from": "/2020/04/01/useful-array-methods-in-javascript/",
+    "to": "/posts/useful-array-methods-in-javascript/"
   },
   {
-    "from": "/vue/vuepress-theme-development.html",
-    "to": "/posts/vuepress-theme-development"
+    "from": "/2020/04/01/useful-array-methods-in-javascript.html",
+    "to": "/posts/useful-array-methods-in-javascript/"
   },
   {
-    "from": "/vue/why-every-vue-developer-should-be-happy-for-quasar-1.0.html",
-    "to": "/posts/why-every-vue-developer-should-be-happy-for-quasar-1.0"
+    "from": "/2020/04/01/useful-array-methods-in-javascript/index.html",
+    "to": "/posts/useful-array-methods-in-javascript/"
   },
   {
-    "from": "/2022/04/01/publish-casual-ui.html",
-    "to": "/posts/publish-casual-ui-2"
+    "from": "/_posts/javascript/useful-array-methods-in-javascript/",
+    "to": "/posts/useful-array-methods-in-javascript/"
+  },
+  {
+    "from": "/2019/09/01/laravel-api-ahthentication/",
+    "to": "/posts/laravel-api-ahthentication/"
+  },
+  {
+    "from": "/2019/09/01/laravel-api-ahthentication.html",
+    "to": "/posts/laravel-api-ahthentication/"
+  },
+  {
+    "from": "/2019/09/01/laravel-api-ahthentication/index.html",
+    "to": "/posts/laravel-api-ahthentication/"
+  },
+  {
+    "from": "/_posts/laravel/laravel-api-ahthentication/",
+    "to": "/posts/laravel-api-ahthentication/"
+  },
+  {
+    "from": "/2019/08/15/laravel-preview/",
+    "to": "/posts/laravel-preview/"
+  },
+  {
+    "from": "/2019/08/15/laravel-preview.html",
+    "to": "/posts/laravel-preview/"
+  },
+  {
+    "from": "/2019/08/15/laravel-preview/index.html",
+    "to": "/posts/laravel-preview/"
+  },
+  {
+    "from": "/_posts/laravel/laravel-preview/",
+    "to": "/posts/laravel-preview/"
+  },
+  {
+    "from": "/2019/09/09/define-a-function/",
+    "to": "/posts/define-a-function/"
+  },
+  {
+    "from": "/2019/09/09/define-a-function.html",
+    "to": "/posts/define-a-function/"
+  },
+  {
+    "from": "/2019/09/09/define-a-function/index.html",
+    "to": "/posts/define-a-function/"
+  },
+  {
+    "from": "/_posts/lisp/define-a-function/",
+    "to": "/posts/define-a-function/"
+  },
+  {
+    "from": "/2019/05/12/compare-java-node-python/",
+    "to": "/posts/compare-java-node-python/"
+  },
+  {
+    "from": "/2019/05/12/compare-java-node-python.html",
+    "to": "/posts/compare-java-node-python/"
+  },
+  {
+    "from": "/2019/05/12/compare-java-node-python/index.html",
+    "to": "/posts/compare-java-node-python/"
+  },
+  {
+    "from": "/_posts/funny/compare-java-node-python/",
+    "to": "/posts/compare-java-node-python/"
+  },
+  {
+    "from": "/2019/11/16/special-data-type-practice/",
+    "to": "/posts/special-data-type-practice/"
+  },
+  {
+    "from": "/2019/11/16/special-data-type-practice.html",
+    "to": "/posts/special-data-type-practice/"
+  },
+  {
+    "from": "/2019/11/16/special-data-type-practice/index.html",
+    "to": "/posts/special-data-type-practice/"
+  },
+  {
+    "from": "/_posts/lisp/special-data-type-practice/",
+    "to": "/posts/special-data-type-practice/"
+  },
+  {
+    "from": "/2019/11/21/how-to-modify-external-param-with-a-closure-in-php/",
+    "to": "/posts/how-to-modify-external-param-with-a-closure-in-php/"
+  },
+  {
+    "from": "/2019/11/21/how-to-modify-external-param-with-a-closure-in-php.html",
+    "to": "/posts/how-to-modify-external-param-with-a-closure-in-php/"
+  },
+  {
+    "from": "/2019/11/21/how-to-modify-external-param-with-a-closure-in-php/index.html",
+    "to": "/posts/how-to-modify-external-param-with-a-closure-in-php/"
+  },
+  {
+    "from": "/_posts/php/how-to-modify-external-param-with-a-closure-in-php/",
+    "to": "/posts/how-to-modify-external-param-with-a-closure-in-php/"
+  },
+  {
+    "from": "/2019/10/01/lisp-basic-practice/",
+    "to": "/posts/lisp-basic-practice/"
+  },
+  {
+    "from": "/2019/10/01/lisp-basic-practice.html",
+    "to": "/posts/lisp-basic-practice/"
+  },
+  {
+    "from": "/2019/10/01/lisp-basic-practice/index.html",
+    "to": "/posts/lisp-basic-practice/"
+  },
+  {
+    "from": "/_posts/lisp/lisp-basic-practice/",
+    "to": "/posts/lisp-basic-practice/"
+  },
+  {
+    "from": "/2019/12/20/why-every-vue-developer-should-be-happy-for-quasar-1-0/",
+    "to": "/posts/why-every-vue-developer-should-be-happy-for-quasar-1.0/"
+  },
+  {
+    "from": "/2019/12/20/why-every-vue-developer-should-be-happy-for-quasar-1-0.html",
+    "to": "/posts/why-every-vue-developer-should-be-happy-for-quasar-1.0/"
+  },
+  {
+    "from": "/2019/12/20/why-every-vue-developer-should-be-happy-for-quasar-1-0/index.html",
+    "to": "/posts/why-every-vue-developer-should-be-happy-for-quasar-1.0/"
+  },
+  {
+    "from": "/_posts/vue/why-every-vue-developer-should-be-happy-for-quasar-1.0/",
+    "to": "/posts/why-every-vue-developer-should-be-happy-for-quasar-1.0/"
+  },
+  {
+    "from": "/2019/04/12/programmer-conversation-with-other-people/",
+    "to": "/posts/programmer-conversation-with-other-people/"
+  },
+  {
+    "from": "/2019/04/12/programmer-conversation-with-other-people.html",
+    "to": "/posts/programmer-conversation-with-other-people/"
+  },
+  {
+    "from": "/2019/04/12/programmer-conversation-with-other-people/index.html",
+    "to": "/posts/programmer-conversation-with-other-people/"
+  },
+  {
+    "from": "/_posts/funny/programmer-conversation-with-other-people/",
+    "to": "/posts/programmer-conversation-with-other-people/"
+  },
+  {
+    "from": "/2023/10/31/joueur/",
+    "to": "/posts/joueur/"
   },
   {
     "from": "/2023/10/31/joueur.html",
-    "to": "/posts/joueur"
+    "to": "/posts/joueur/"
+  },
+  {
+    "from": "/2023/10/31/joueur/index.html",
+    "to": "/posts/joueur/"
+  },
+  {
+    "from": "/_projects/2023/10/31/joueur.html",
+    "to": "/posts/joueur/"
+  },
+  {
+    "from": "/2023/12/05/negozio/",
+    "to": "/posts/negozio/"
   },
   {
     "from": "/2023/12/05/negozio.html",
-    "to": "/posts/negozio"
+    "to": "/posts/negozio/"
   },
   {
-    "from": "/2023/04/04/frontend-framework-repl-in-siyuan.html",
-    "to": "/posts/frontend-framework-repl-in-siyuan"
+    "from": "/2023/12/05/negozio/index.html",
+    "to": "/posts/negozio/"
+  },
+  {
+    "from": "/_projects/2023/12/5/negozio.html",
+    "to": "/posts/negozio/"
+  },
+  {
+    "from": "/2023/04/26/frontend-framework-repl-in-siyuan/",
+    "to": "/posts/frontend-framework-repl-in-siyuan/"
+  },
+  {
+    "from": "/2023/04/26/frontend-framework-repl-in-siyuan.html",
+    "to": "/posts/frontend-framework-repl-in-siyuan/"
+  },
+  {
+    "from": "/2023/04/26/frontend-framework-repl-in-siyuan/index.html",
+    "to": "/posts/frontend-framework-repl-in-siyuan/"
+  },
+  {
+    "from": "/_projects/2023/4/4/frontend-framework-repl-in-siyuan.html",
+    "to": "/posts/frontend-framework-repl-in-siyuan/"
+  },
+  {
+    "from": "/2023/05/22/sveltepress/",
+    "to": "/posts/sveltepress/"
   },
   {
     "from": "/2023/05/22/sveltepress.html",
-    "to": "/posts/sveltepress"
+    "to": "/posts/sveltepress/"
+  },
+  {
+    "from": "/2023/05/22/sveltepress/index.html",
+    "to": "/posts/sveltepress/"
+  },
+  {
+    "from": "/_projects/2023/5/22/sveltepress.html",
+    "to": "/posts/sveltepress/"
+  },
+  {
+    "from": "/2025/05/26/vscode-freemarker/",
+    "to": "/posts/vscode-freemarker/"
   },
   {
     "from": "/2025/05/26/vscode-freemarker.html",
-    "to": "/posts/vscode-freemarker"
+    "to": "/posts/vscode-freemarker/"
+  },
+  {
+    "from": "/2025/05/26/vscode-freemarker/index.html",
+    "to": "/posts/vscode-freemarker/"
+  },
+  {
+    "from": "/_projects/2025/5/26/vscode-freemarker.html",
+    "to": "/posts/vscode-freemarker/"
+  },
+  {
+    "from": "/2026/04/13/claude-feishu-channel/",
+    "to": "/posts/claude-feishu-channel/"
   },
   {
     "from": "/2026/04/13/claude-feishu-channel.html",
-    "to": "/posts/claude-feishu-channel"
+    "to": "/posts/claude-feishu-channel/"
   },
   {
-    "from": "/2023/12/02/2.html",
-    "to": "/posts/2"
+    "from": "/2026/04/13/claude-feishu-channel/index.html",
+    "to": "/posts/claude-feishu-channel/"
+  },
+  {
+    "from": "/_projects/2026/4/13/claude-feishu-channel.html",
+    "to": "/posts/claude-feishu-channel/"
+  },
+  {
+    "from": "/2019/10/05/how-to-buid-vuecli3-project-to-war/",
+    "to": "/posts/how-to-buid-vuecli3-project-to-war/"
+  },
+  {
+    "from": "/2019/10/05/how-to-buid-vuecli3-project-to-war.html",
+    "to": "/posts/how-to-buid-vuecli3-project-to-war/"
+  },
+  {
+    "from": "/2019/10/05/how-to-buid-vuecli3-project-to-war/index.html",
+    "to": "/posts/how-to-buid-vuecli3-project-to-war/"
+  },
+  {
+    "from": "/_posts/vue/how-to-buid-vuecli3-project-to-war/",
+    "to": "/posts/how-to-buid-vuecli3-project-to-war/"
+  },
+  {
+    "from": "/2021/11/01/beautify-windows-terminal/",
+    "to": "/posts/beautify-windows-terminal/"
+  },
+  {
+    "from": "/2021/11/01/beautify-windows-terminal.html",
+    "to": "/posts/beautify-windows-terminal/"
+  },
+  {
+    "from": "/2021/11/01/beautify-windows-terminal/index.html",
+    "to": "/posts/beautify-windows-terminal/"
+  },
+  {
+    "from": "/_posts/2021/11/beautify-windows-terminal.html",
+    "to": "/posts/beautify-windows-terminal/"
+  },
+  {
+    "from": "/2019/12/08/vuepress-theme-development/",
+    "to": "/posts/vuepress-theme-development/"
+  },
+  {
+    "from": "/2019/12/08/vuepress-theme-development.html",
+    "to": "/posts/vuepress-theme-development/"
+  },
+  {
+    "from": "/2019/12/08/vuepress-theme-development/index.html",
+    "to": "/posts/vuepress-theme-development/"
+  },
+  {
+    "from": "/_posts/vue/vuepress-theme-development/",
+    "to": "/posts/vuepress-theme-development/"
+  },
+  {
+    "from": "/2019/03/03/about-reconstruction/",
+    "to": "/posts/about-reconstruction/"
+  },
+  {
+    "from": "/2019/03/03/about-reconstruction.html",
+    "to": "/posts/about-reconstruction/"
+  },
+  {
+    "from": "/2019/03/03/about-reconstruction/index.html",
+    "to": "/posts/about-reconstruction/"
+  },
+  {
+    "from": "/_posts/architecture/about-reconstruction/",
+    "to": "/posts/about-reconstruction/"
+  },
+  {
+    "from": "/2019/12/01/how-to-use-quasar-in-vuepress/",
+    "to": "/posts/how-to-use-quasar-in-vuepress/"
+  },
+  {
+    "from": "/2019/12/01/how-to-use-quasar-in-vuepress.html",
+    "to": "/posts/how-to-use-quasar-in-vuepress/"
+  },
+  {
+    "from": "/2019/12/01/how-to-use-quasar-in-vuepress/index.html",
+    "to": "/posts/how-to-use-quasar-in-vuepress/"
+  },
+  {
+    "from": "/_posts/vue/how-to-use-quasar-in-vuepress/",
+    "to": "/posts/how-to-use-quasar-in-vuepress/"
+  },
+  {
+    "from": "/archives/",
+    "to": "/timeline/"
   },
   {
     "from": "/projects/",
-    "to": "/categories/project"
+    "to": "/categories/project/"
   },
   {
     "from": "/fitness/",
-    "to": "/categories/fitness"
+    "to": "/categories/fitness/"
+  },
+  {
+    "from": "/songs/",
+    "to": "/listen/"
+  },
+  {
+    "from": "/categories/",
+    "to": "/"
   }
 ]

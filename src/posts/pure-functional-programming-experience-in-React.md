@@ -17,7 +17,8 @@ tags:
 
 
 
-### todo-children
+::::code-tabs{active="children"}
+### children
 
 ```tsx
 import React, { useState } from 'react'
@@ -34,8 +35,8 @@ interface TodoPropType {
   onTodoListChange: (newTodoList: TodoList) => void;
 }
 
-const Todo: React.FC = ({ todoList, onTodoListChange }) => {
-  const [item, setItem] = useState({
+const Todo: React.FC<TodoPropType> = ({ todoList, onTodoListChange }) => {
+  const [item, setItem] = useState<TodoItem>({
     label: '',
     date: ''
   })
@@ -83,16 +84,14 @@ export {
 }
 ```
 
-
-
-### todo-parent
+### parent
 
 ```tsx
 import React, { useState } from 'react'
 import { Todo, TodoList } from './_components/Todo'
 
 const Parent = () => {
-  const [todoList, setTodoList] = useState([{
+  const [todoList, setTodoList] = useState<TodoList>([{
     label: 'Event1',
     date: '2021-07-01'
   }])
@@ -100,10 +99,11 @@ const Parent = () => {
   return (
     <>
       <h1>Welcome</h1>
-      
+      <Todo todoList={todoList} onTodoListChange={setTodoList} />
     </>
   )
 }
 
 export { Parent }
 ```
+::::

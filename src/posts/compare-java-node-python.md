@@ -26,7 +26,8 @@ tags:
 
 
 
-### solution1-python
+::::code-tabs{active="python"}
+### python
 
 ```python
 import time
@@ -71,9 +72,7 @@ end = time.time()
 print ('Time cost:' + str((end - start)))
 ```
 
-
-
-### solution1-node
+### node
 
 ```js
 console.time('Time cost')
@@ -112,9 +111,7 @@ console.log(`微信ID：NY${getWechatID(707829217)}`);
 console.timeEnd('Time cost')
 ```
 
-
-
-### solution1-java
+### java
 
 ```java
 public class Test {
@@ -168,6 +165,7 @@ public class Test {
     }
 }
 ```
+::::
 
 
 ### 运行结果
@@ -347,7 +345,8 @@ f(4) = 1 </br>
 
 
 
-### solution2-java
+::::code-tabs{active="java"}
+### java
 
 ```java
     //获取3出现的次数
@@ -380,9 +379,7 @@ f(4) = 1 </br>
     }
 ```
 
-
-
-### solution2-node
+### node
 
 ```js
 //得到3出现的次数
@@ -411,9 +408,7 @@ const f = pow => {
 };
 ```
 
-
-
-### solution2-python
+### python
 
 ```python
 # 获取3出现的次数
@@ -437,6 +432,7 @@ def f(pow):
         return 1
     return 10*f(pow - 1) + math.pow(10, pow-1)/2
 ```
+::::
 
 
 ### 优化结果

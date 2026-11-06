@@ -40,7 +40,8 @@ tags:
 
 
 
-### sort-lisp
+::::code-tabs{active="lisp"}
+### lisp
 
 ```lisp
 (defun my-sort (l)
@@ -53,13 +54,15 @@ tags:
 (format t "~A ~%" (my-sort '(8 z 6 a 2 i 3 (1 8) (j k) 5)))
 ; Expected: (2 3 5 6 8 Z A I (1 8) (J K))
 ```
+::::
 
 
 ### 复合使用
 
 
 
-### combine-lisp
+::::code-tabs{active="lisp"}
+### lisp
 
 ```lisp
 ;;; 统计在列表中，每个字母出现的次数，并将结果按照出现次数由大到小排序
@@ -85,3 +88,4 @@ tags:
 (format t "~A" (occurrences '(a b a d a c d c a)))
 ; Expected: ((A . 4) (C . 2) (D . 2) (B . 1))
 ```
+::::

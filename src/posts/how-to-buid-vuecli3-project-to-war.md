@@ -11,23 +11,20 @@ tags:
 ---
 > 最近需要将vue项目打包的结果构建成war包（部署平台只接受war包），特在此记录步骤
 
-
-
 ### 步骤
 
 #### 搭建一个普通的Java web 工程
 
 #### 目录结构
 
-![image.png](https://img.hacpai.com/file/2019/10/image-9f171cd4.png)
+![image.png](/images/hacpai-image-9f171cd4.png)
 
 #### 将前端项目构建之后的所有文件放到web根目录下
 
 #### web/WEB-INF/web.xml配置
 
-
-
-### web-xml
+::::code-tabs{active="xml"}
+### xml
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -81,7 +78,7 @@ tags:
     </error-page>
 </web-app>
 ```
-
+::::
 
 这里的配置含义如下：
 
@@ -97,16 +94,14 @@ tags:
 * Build -> Build Artifacts
 * 在输出目录找到war包
 
-
 > **警告：注意**
 >
-
-由于这个项目使用的是vue-cli3.0
-
-* **`war`包的名称**
-
-* **`vue.config.js` 文件里的 `publichPath`**
-
-* **`vue-router`的`base`**
-
-需要保持一致！！！
+> 由于这个项目使用的是vue-cli3.0
+>
+> * **`war`包的名称**
+>
+> * **`vue.config.js` 文件里的 `publichPath`**
+>
+> * **`vue-router`的`base`**
+>
+> 需要保持一致！！！

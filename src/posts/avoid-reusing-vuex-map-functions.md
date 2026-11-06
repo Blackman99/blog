@@ -17,7 +17,8 @@ tags:
 
 
 
-### define-store-state.js
+::::code-tabs{active="state.js"}
+### state.js
 
 ```js
 const state = {
@@ -45,6 +46,7 @@ const state = {
   }
 }
 ```
+::::
 
 
 ### 通过 `this.$store.xxx` 直接使用
@@ -52,12 +54,14 @@ const state = {
 
 
 
-### direct-use-直接使用
+::::code-tabs{active="直接使用"}
+### 直接使用
 
 ```js
 this.$store.state.moduleA.name
 this.$store.commit('moduleA/setName')
 ```
+::::
 
 
 ### `mapState`，`mapMutations` 的使用
@@ -65,7 +69,8 @@ this.$store.commit('moduleA/setName')
 
 
 
-### map-functions-mapState&mapMutations
+::::code-tabs{active="mapState&mapMutations"}
+### mapState&mapMutations
 
 ```vue
 <script>
@@ -85,21 +90,21 @@ export default {
 </script>
 ```
 
-
-
-### map-functions-组件中使用
+### 组件中使用
 
 ```js
 this.name // this.$store.state.moduleA.name
 this.setName() // this.$store.commit('moduleA/setName')
 ```
+::::
 
 
 ### 使用 `createNamespacedHelpers` 简化 `mapXXX` 的映射
 
 
 
-### create-namespace-createNamespacedHelpers
+::::code-tabs{active="createNamespacedHelpers"}
+### createNamespacedHelpers
 
 ```vue
 <script>
@@ -119,6 +124,7 @@ export default {
 }
 </script>
 ```
+::::
 
 
 ### 使用 `mixins` 选项
@@ -126,7 +132,8 @@ export default {
 
 
 
-### use-mixin-moduleAMixin.js
+::::code-tabs{active="moduleAMixin.js"}
+### moduleAMixin.js
 
 ```js
 import { createNamespacedHelpers } from 'vuex'
@@ -145,9 +152,7 @@ export default {
 }
 ```
 
-
-
-### use-mixin-组件中使用
+### 组件中使用
 
 ```vue
 <script>
@@ -157,6 +162,7 @@ export default {
 }
 </script>
 ```
+::::
 
 
 对于 moduleB 或者其他任何你想跨组件共享的 store 模块，都可以使用类似的方式

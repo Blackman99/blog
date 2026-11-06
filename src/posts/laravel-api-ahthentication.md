@@ -26,7 +26,8 @@ tags:
 
 
 
-### auth-php
+::::code-tabs{active="php"}
+### php
 
 ```php
 'guards' => [
@@ -43,6 +44,7 @@ tags:
         ]
 ]
 ```
+::::
 
 
 
@@ -75,7 +77,8 @@ EmployeeToken的代码如下
 
 
 
-### middleware-php
+::::code-tabs{active="php"}
+### php
 
 ```php
 <?php
@@ -118,6 +121,7 @@ class EmployeeToken
     }
 }
 ```
+::::
 
 
 * 检查请求输入参数`api_token`是否存在

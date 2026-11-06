@@ -23,7 +23,8 @@ tags:
 
 
 
-### pop-js
+::::code-tabs{active="js"}
+### js
 
 ```js
 const sourceData = ['a', 'b', 'c']
@@ -31,6 +32,7 @@ const lastElement = sourceData.pop()
 console.log(lastElement)
 // Expected: 'c'
 ```
+::::
 
 
 
@@ -48,13 +50,15 @@ console.log(lastElement)
 
 
 
-### splice-js
+::::code-tabs{active="js"}
+### js
 
 ```js
 const filePath = '/foo/bar/file.ext'
 console.log(filePath.split('/').splice(-2, 1))
 //Expected: bar
 ```
+::::
 
 
 ## Array.pototype.map(processor)
@@ -71,7 +75,8 @@ console.log(filePath.split('/').splice(-2, 1))
 
 
 
-### map-js
+::::code-tabs{active="js"}
+### js
 
 ```js
 const soureData = [{
@@ -97,6 +102,7 @@ console.log(targetData )
 }]
 */
 ```
+::::
 
 
 
@@ -114,7 +120,8 @@ console.log(targetData )
 
 
 
-### filter-js
+::::code-tabs{active="js"}
+### js
 
 ```js
 const sourceData = [92, 45, 78, 32, 100]
@@ -123,6 +130,7 @@ const targetData = sourceData.filter(rule)
 console.log(targetData)
 // Expected: [92, 78, 100]
 ```
+::::
 
 
 ## Array.prototype.reduce(reducer, initialValue)
@@ -135,7 +143,8 @@ console.log(targetData)
 
 
 
-### reduce-js
+::::code-tabs{active="js"}
+### js
 
 ```js
 const sourceData = [1, 2, 3, 4, 5]
@@ -144,6 +153,7 @@ const score = sourceData.reduce(reducer, 0)
 console.log(score)
 // Expected: 15
 ```
+::::
 
 
 acc代表上一次累加的结果，obj是当前遍历元素, 0是初始值
@@ -158,7 +168,8 @@ acc代表上一次累加的结果，obj是当前遍历元素, 0是初始值
 
 
 
-### every-js
+::::code-tabs{active="js"}
+### js
 
 ```js
 const sourceData = [20, 40,  60, 80, 100, -20]
@@ -167,6 +178,7 @@ const pass = sourceData.every(condition)
 console.log(pass)
 // Expected: false
 ```
+::::
 
 
 
@@ -180,7 +192,8 @@ console.log(pass)
 
 
 
-### includes-js
+::::code-tabs{active="js"}
+### js
 
 ```js
 const sourceData = ['bar', 'foo', 'zoo']
@@ -188,6 +201,7 @@ const isFooIn = sourceData.includes('foo')
 console.log(isFooIn)
 // Expected: true
 ```
+::::
 
 
 ## Array.prototype.find(condition)
@@ -205,7 +219,8 @@ console.log(isFooIn)
 
 
 
-### find-js
+::::code-tabs{active="js"}
+### js
 
 ```js
 const isJSFile = str => /\.js$/.test(str)
@@ -214,3 +229,4 @@ const firstJSFile = sourceData.find(isJSFile )
 console.log(firstJSFile)
 // Expected: 'xyz.js'
 ```
+::::

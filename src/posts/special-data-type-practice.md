@@ -23,7 +23,8 @@ tags:
 
 
 
-### binary-search-lisp
+::::code-tabs{active="lisp"}
+### lisp
 
 ```lisp
 ;;; 二分搜索
@@ -51,6 +52,7 @@ tags:
 (format t "~A~%" (b-search 3 #(0 1 2 3 4 5 6 7 8 9)))
 ; Expected: 3
 ```
+::::
 
 
 ### 不使用原生`reverse`方法将列表倒序
@@ -67,7 +69,8 @@ tags:
 
 
 
-### reverse-order-lisp
+::::code-tabs{active="lisp"}
+### lisp
 
 ```lisp
 ;;; 将列表倒序
@@ -79,6 +82,7 @@ tags:
 (format t "~A~%" (my-rev-lst '(a b c d)))
 ; Expected: (D C B A)
 ```
+::::
 
 
 ### 不使用原生`copy-list`复制列表
@@ -93,7 +97,8 @@ tags:
 
 
 
-### copy-list-lisp
+::::code-tabs{active="lisp"}
+### lisp
 
 ```lisp
 ;;; 复制列表
@@ -108,6 +113,7 @@ tags:
 
 (format t "~A~%" (my-cp-lst '(a b c d)))
 ```
+::::
 
 
 ### 将一个相同维度的数组顺时针转 90 度
@@ -122,7 +128,8 @@ tags:
 
 
 
-### rotate-array-lisp
+::::code-tabs{active="lisp"}
+### lisp
 
 ```lisp
 ; 将一个等纬度的二维数组顺时针旋转90度
@@ -151,6 +158,7 @@ tags:
 ; Before rotate: #2A((1 2 3) (4 5 6) (7 8 9))
 ; After rotate: #2A((7 4 1) (8 5 2) (9 6 3))
 ```
+::::
 
 
 ### 哈希表与关联列表的相互转换
@@ -165,7 +173,8 @@ tags:
 
 
 
-### hash-to-list-lisp
+::::code-tabs{active="lisp"}
+### lisp
 
 ```lisp
 ;;; 哈希表转关联列表
@@ -203,3 +212,4 @@ tags:
 ; - = subtract
 ; + = add
 ```
+::::

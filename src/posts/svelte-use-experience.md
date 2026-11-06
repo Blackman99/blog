@@ -30,7 +30,8 @@ Vue，React 都是基于虚拟 DOM 的，对比没有虚拟 DOM 带来的好处�
 
 下面分别用 Redux，Vuex，Svelte 编写一个 count 逻辑
 
-### demo-Redux
+::::code-tabs{active="Redux"}
+### Redux
 
 ```jsx
 import { createStore } from 'redux'
@@ -54,7 +55,7 @@ store.dispatch({ type: 'counter/incremented' })
 store.dispatch({ type: 'counter/decremented' })
 ```
 
-### demo-Vuex
+### Vuex
 
 ```js
 import Vue from 'vue'
@@ -85,7 +86,7 @@ store.commit('increment')
 store.commit('decrement')
 ```
 
-### demo-Svelte
+### Svelte
 
 ```js
 import { get, writable } from 'svelte/store'
@@ -98,6 +99,7 @@ count.set(get(count) + 1)
 count.set(get(count) + 1)
 count.set(get(count) - 1)
 ```
+::::
 
 ### 量化分析
 

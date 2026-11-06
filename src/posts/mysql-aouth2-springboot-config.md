@@ -43,7 +43,7 @@ autoapprove: 1
 
 ### application.propertites配置
 
-```
+```properties
 spring.datasource.url=jdbc:mysql://你的数据库ip:你的数据库端口?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
 spring.datasource.username=你的数据库用户名
 spring.datasource.password=你的数据密码
@@ -54,7 +54,8 @@ server.port=你的项目监听端口
 
 
 
-### maven-xml
+::::code-tabs{active="xml"}
+### xml
 
 ```xml
 <!-- SpringBoot基本配置 -->
@@ -86,6 +87,7 @@ server.port=你的项目监听端口
 	<version>2.3.5.RELEASE</version>
 </dependency>
 ```
+::::
 
 
 这里的OAuth2.0核心配置需要注意，根据2.1.4版本的官方文档：
@@ -114,7 +116,8 @@ public class Application {
 
 
 
-### rs-java
+::::code-tabs{active="java"}
+### java
 
 ```java
 /*
@@ -141,6 +144,7 @@ public class RSConfig extends ResourceServerConfigurerAdapter {
     }
 }
 ```
+::::
 
 
 这里就是配置/demo/下的任何请求都需要认证，并且将数据库的那一条记录的resource_ids里的demo注册为资源
@@ -151,7 +155,8 @@ public class RSConfig extends ResourceServerConfigurerAdapter {
 
 
 
-### as-java
+::::code-tabs{active="java"}
+### java
 
 ```java
 /*
@@ -178,6 +183,7 @@ public class ASConfig extends AuthorizationServerConfigurerAdapter {
     }
 }
 ```
+::::
 
 
 这里的DataSource就是application.propertities里配置的，SpringBoot自动注入了，不用我们关心。  
@@ -188,7 +194,8 @@ public class ASConfig extends AuthorizationServerConfigurerAdapter {
 
 
 
-### security-java
+::::code-tabs{active="java"}
+### java
 
 ```java
 /*
@@ -211,6 +218,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 }
 ```
+::::
 
 
 

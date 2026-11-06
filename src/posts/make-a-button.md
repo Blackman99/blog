@@ -10,28 +10,42 @@ tags:
 ---
 > 如何制作一个游戏风格按钮
 
+## 效果与代码
 
+```svelte live title="GameButton.svelte"
+<div class="game-button">
+  一个游戏风格的按钮
+</div>
 
-## 效果
-
-
-
-## 代码
-
-
-
-
-### Button-GameButton.vue
-
-<<< @/docs/.vuepress/demo-components/Button/GameButton.vue
-
-
-<script>
-import GameButton from '@vp/demo-components/Button/GameButton.vue'
-
-export default {
-  components: {
-    GameButton
+<style>
+  .game-button {
+    --btn-shadow-width: 5px;
+    --shadow: #0099c0;
+    border-radius: 30px;
+    padding: 12px 20px;
+    user-select: none;
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    border: none;
+    display: inline-block;
+    font-weight: bold;
+    background-color: unset;
+    transform: translateY(-2.5px);
+    box-shadow: 0px var(--btn-shadow-width) 0px var(--shadow);
+    color: #fff;
+    background-color: #00bbec;
+    &:hover {
+      transform: translateY(0);
+      box-shadow: 0px 0px 0px var(--shadow);
+    }
+    &:active {
+      background-color: #0099c0;
+      box-shadow: inset 0px 5px 0px #0086a9;
+      transform: translateY(2.5px);
+      color: #fff;
+    }
   }
-}
-</script>
+</style>
+```

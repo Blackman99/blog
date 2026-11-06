@@ -26,7 +26,8 @@ tags:
 
 
 
-### max-lisp
+::::code-tabs{active="lisp"}
+### lisp
 
 ```lisp
 ;;; 获取两个数字中大的那一个，若x与y中的任何一个不为数字则返回nil
@@ -41,6 +42,7 @@ tags:
   (format t "The bigger number of ~A and ~A is: ~A ~%" num1 num2 (bigger-number num1 num2)))
 ; 期望值：2
 ```
+::::
 
 
 ### 迭代
@@ -59,7 +61,8 @@ tags:
 
 
 
-### iteration-lisp
+::::code-tabs{active="lisp"}
+### lisp
 
 ```lisp
 ;;; 获取列表的第四个元素，若列表长度小于4，则返回nil
@@ -73,6 +76,7 @@ tags:
 ; 期望值：2
 
 ```
+::::
 
 
 ### 类型
@@ -90,7 +94,8 @@ tags:
 
 
 
-### typep-lisp
+::::code-tabs{active="lisp"}
+### lisp
 
 ```lisp
 ;;; 判断列表l中是否有类型为列表的元素
@@ -109,6 +114,7 @@ tags:
 ; List (A B C D) has list element: nil
 ; List (1 2 (1 2)) has list element: T
 ```
+::::
 
 
 ### 结论

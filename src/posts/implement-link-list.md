@@ -58,7 +58,8 @@ MyLinkedList.prototype.toString = function () {
 }
 ```
 
-### ll-javascript
+::::code-tabs{active="javascript"}
+### javascript
 
 ```js
 function MyLinkedList () {
@@ -124,7 +125,7 @@ MyLinkedList.prototype.deleteAtIndex = function (index) {
 }
 ```
 
-### ll-run
+### run
 
 ```js
 const myLinkedList = new MyLinkedList()
@@ -141,7 +142,7 @@ console.log('delete node from index 1:', myLinkedList.toString())
 console.log('get val from index 1:', myLinkedList.get(1))
 ```
 
-### ll-output
+### output
 
 ```yaml
 initial: HEAD->TAIL
@@ -152,6 +153,7 @@ get val from index 1: 2
 delete node from index 1: HEAD->1->3->TAIL
 get val from index 1: 3
 ```
+::::
 
 ### 参考
 

@@ -1,0 +1,10 @@
+# Sveltepress (SvelteKit + adapter-static) build. The old VuePress site wrote
+# to output/; this one writes to dist/. Old URLs are redirected by
+# static/_redirects, which ends up at dist/_redirects.
+[build]
+  command = "pnpm build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "24"
+  PNPM_VERSION = "9.15.0"

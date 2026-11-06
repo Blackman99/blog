@@ -1,1 +1,0 @@
-[{"slug":"pure-functional-programming-experience-in-React","title":"在 React 中获得纯粹的函数式编程体验","date":"2021-07-01","tags":["React","Typescript","Functional Programming"],"category":"Front-end","excerpt":"使用 React Hooks 以及 Typescript，采用函数式编程风格编写组件 代码 todo-children import React, { useState } from 'react' interface TodoItem {","author":"Dongsheng Zhao","readingTime":1}]

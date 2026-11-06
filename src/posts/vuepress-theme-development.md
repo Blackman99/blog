@@ -21,7 +21,8 @@ tags:
 
 
 
-### enhanceApp-enhanceApp
+::::code-tabs{active="enhanceApp"}
+### enhanceApp
 
 ```js
 import pageComponents from '@internal/page-components'
@@ -40,6 +41,7 @@ export default ({
 	}
 }
 ```
+::::
 
 
 
@@ -69,7 +71,8 @@ module.exports = {
 
 
 
-### template-html-dev
+::::code-tabs{active="dev"}
+### dev
 
 ```html
 <!DOCTYPE html>
@@ -87,9 +90,7 @@ module.exports = {
 </html>
 ```
 
-
-
-### template-html-ssr
+### ssr
 
 ```html
 <!DOCTYPE html>
@@ -111,6 +112,7 @@ module.exports = {
   </body>
 </html>
 ```
+::::
 
 
 

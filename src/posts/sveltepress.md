@@ -20,6 +20,26 @@ Sveltepress 是一个以内容为中心的站点构建工具，基于 [SvelteKit
 
 快速创建项目
 
+::::code-tabs{active="npm"}
+### npm
+
+```sh
+npm create @sveltepress
+```
+
+### yarn
+
+```sh
+yarn create @sveltepress
+```
+
+### pnpm
+
+```sh
+pnpm create @sveltepress
+```
+::::
+
 阅读官方文档 [Sveltepress](https://sveltepress.site/) 来获得更多信息
 该站点本身就是使用 Sveltepress 构建的，使用的是默认主题
 

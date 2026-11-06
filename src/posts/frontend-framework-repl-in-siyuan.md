@@ -11,7 +11,7 @@ tags:
   - Svelte
 ---
 > 
-> 
+> <SpinningLogo />
 
 ## 背景
 
@@ -50,17 +50,19 @@ tags:
 
 ## 效果演示
 
-### demo-Vue-REPL
+::::code-tabs{active="Vue-REPL" hide-copy}
+### Vue-REPL
 
 ![Vue REPL](/posts/demo-vue.gif)
 
-### demo-Svelte-REPL
+### Svelte-REPL
 
 ![Svelte REPL](/posts/demo-svelte.gif)
 
-### demo-React-REPL
+### React-REPL
 
 ![React REPL](/posts/demo-react.gif)
+::::
 
 ## 功能
 
@@ -83,12 +85,3 @@ tags:
 * [Vue REPL](https://github.com/vuejs/repl)
 * [React Live](https://formidable.com/open-source/react-live/)
 * [Svelte REPL](https://github.com/sveltejs/sites/tree/master/packages/repl)
-
-<script>
-import SpinningLogo from '@vp/demo-components/SpinningLogo.vue'
-export default {
-  components: {
-    SpinningLogo
-  }
-}
-</script>

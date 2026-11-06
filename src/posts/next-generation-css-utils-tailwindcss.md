@@ -10,8 +10,6 @@ tags:
 ---
 > 你是否还在因为业务页面频繁变化而烦恼，使用Tailwindcss开发也许能帮助你解决问题
 
-
-
 ## 背景
 
 在前端开发过程中，是否总是会不断遇到这样的情景：
@@ -32,24 +30,17 @@ tags:
 
 ### 一些用户的使用感受
 
-
-> **提示：<q-avatar><img src="https://tailwindcss.com/_next/static/media/ryan-florence.34fb7796afb30db4ae598b06a00cbee3.jpg"></q-avatar> Guillermo Rauch (Remix & React Training)**
+> **提示：** <img src="/images/tailwind-ryan-florence.jpg" alt="Ryan Florence" width="48" height="48" style="border-radius:50%;object-fit:cover;vertical-align:middle;margin:0 .4em"> Ryan Florence (Remix & React Training)
 >
-I feel like an idiot for not using Tailwind CSS until now.
+> I feel like an idiot for not using Tailwind CSS until now.
 
-
-
-> **提示：<q-avatar><img src="https://tailwindcss.com/_next/static/media/guillermo-rauch.f9555769f9ff1d42057c689278bc0876.jpg"></q-avatar> Guillermo Rauch (Vercel)**
+> **提示：** <img src="/images/tailwind-guillermo-rauch.jpg" alt="Guillermo Rauch" width="48" height="48" style="border-radius:50%;object-fit:cover;vertical-align:middle;margin:0 .4em"> Guillermo Rauch (Vercel)
 >
-If I had to recommend a way of getting into programming today, it would be HTML + CSS with Tailwind CSS.
+> If I had to recommend a way of getting into programming today, it would be HTML + CSS with Tailwind CSS.
 
-
-
-
-> **提示：<q-avatar><img src="https://tailwindcss.com/_next/static/media/sara-vieira.53f08a9bc2787e4ee05e4678577a05fe.jpg"></q-avatar> Sara Vieira (CodeSandbox)**
+> **提示：** <img src="/images/tailwind-sara-vieira.jpg" alt="Sara Vieira" width="48" height="48" style="border-radius:50%;object-fit:cover;vertical-align:middle;margin:0 .4em"> Sara Vieira (CodeSandbox)
 >
-I have no design skills and with Tailwind I can actually make good looking websites with ease and it's everything I ever wanted in a CSS framework.
-
+> I have no design skills and with Tailwind I can actually make good looking websites with ease and it's everything I ever wanted in a CSS framework.
 
 可以看到使用者对于它的评价相当高
 

@@ -12,13 +12,9 @@ tags:
 ---
 在Vite项目中，基于`vite-plugin-ssr`，使用`Typescript`, `SSR`, `Redux`进行整合
 
-
-
-
 > **提示：兼容性注意**
 >
-Vite 需要 Node.js 版本 >= 12.0.0
-
+> Vite 需要 Node.js 版本 >= 12.0.0
 
 ## 创建基于`vite-plugin-ssr`的项目
 
@@ -35,10 +31,8 @@ npm install --save @reduxjs/toolkit react-redux redux
 
 ### 创建store文件夹，并添加`index.ts`与`todo.ts`，内容如下：
 
-
-
-
-### store-todo.ts
+::::code-tabs{active="todo.ts"}
+### todo.ts
 
 ```ts
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
@@ -53,7 +47,7 @@ const todoSlice = createSlice({
   name: 'todoList',
   initialState,
   reducers: {
-    add: (state, action: PayloadAction) => [
+    add: (state, action: PayloadAction<TodoItem>) => [
       ...state,
       action.payload
     ],
@@ -69,9 +63,7 @@ export const { add, del } = todoSlice.actions
 export default todoSlice.reducer
 ```
 
-
-
-### store-index.ts
+### index.ts
 
 ```ts
 import { createStore, combineReducers } from 'redux'
@@ -86,19 +78,17 @@ const store = createAppStore()
 
 export type RootState = ReturnType<typeof store.getState>
 export type AppDispatch = typeof store.dispatch
-export const useAppSelector: TypedUseSelectorHook = useSelector
-export const useAppDispatch = () => useDispatch()
+export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector
+export const useAppDispatch = () => useDispatch<AppDispatch>()
 ```
-
+::::
 
 这里主要是创建一个包含`todo`模块的store状态
 
 ### 更改`pages/_default/_default.page.server.ts`与`pages/_default/_default.page.ts`
 
-
-
-
-### page-_default.page.server.ts
+::::code-tabs{active="_default.page.server.ts"}
+### _default.page.server.ts
 
 ```ts
 import { renderToString } from 'react-dom/server'
@@ -117,11 +107,11 @@ function render(pageContext: PageContext) {
   const store = createAppStore()
 
   const pageHtml = renderToString(
-    
-      
-        
-      
-    
+    <Provider store={store}>
+      <PageLayout>
+        <Page {...pageProps} />
+      </PageLayout>
+    </Provider>
   )
 
   const { documentProps } = pageContext
@@ -147,9 +137,7 @@ function render(pageContext: PageContext) {
 export { render, passToClient }
 ```
 
-
-
-### page-_default.page.client.ts
+### _default.page.client.ts
 
 ```ts
 import ReactDOM from 'react-dom'
@@ -165,18 +153,16 @@ async function hydrate() {
   const { Page, pageProps } = pageContext
 
   ReactDOM.hydrate(
-    
-      
-    
+    <Provider store={createAppStore()}>
+      <Page {...pageProps} />
+    </Provider>
     ,
     document.getElementById('page-view')
   )
 }
 ```
 
-
-
-### page-types.ts
+### types.ts
 
 ```ts
 export type ReactComponent = (pageProps: PageProps) => JSX.Element;
@@ -194,14 +180,12 @@ export interface PageContext {
   pageHtml: string;
 }
 ```
-
+::::
 
 ## 在某个组件中使用
 
-
-
-
-### usage-todo.ts
+::::code-tabs{active="todo.ts"}
+### todo.ts
 
 ```ts
 import React, { useState } from 'react'
@@ -216,7 +200,7 @@ interface TodoItem {
 type TodoList = TodoItem[];
 
 const Todo = () => {
-  const [item, setItem] = useState({
+  const [item, setItem] = useState<TodoItem>({
     label: '',
     date: ''
   })
@@ -275,7 +259,7 @@ export {
   TodoList
 }
 ```
-
+::::
 
 ## 参考
 

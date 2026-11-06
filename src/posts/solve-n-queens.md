@@ -26,6 +26,8 @@ $1 <= n <= 9$
 
 当`n = 4`时，应该有两个解，如下图：
 
+<Demo-NQueen-4 />
+
 ### 分析
 
 * 从第一行开始的第一格开始放置皇后
@@ -34,19 +36,20 @@ $1 <= n <= 9$
 
 > **提示：如何表示两条斜线**
 >
-
-设`i`为行下标，`j`为列下标
-
-* 对于左上至右下斜同一条斜线需要满足`i - j`的值相等
-* 对于右上至左下斜同一条斜线需要满足`i + j`的值相等
-
-这里以5x5的棋盘为例说明：
+> 设`i`为行下标，`j`为列下标
+>
+> * 对于左上至右下斜同一条斜线需要满足`i - j`的值相等
+> * 对于右上至左下斜同一条斜线需要满足`i + j`的值相等
+>
+> 这里以5x5的棋盘为例说明：
+>
+> <Slashes7 />
 
 ### 代码
 
-### solveNQueens-javascript
+::::code-tabs{active="javascript"}
+### javascript
 
-  
 ```js
 /**
  * @param {number} n
@@ -91,13 +94,13 @@ const solveNQueens = function (n) {
 }
 ```
 
-### solveNQueens-run
+### run
 
 ```js
 console.log(solveNQueens(4))
 ```
 
-### solveNQueens-output
+### output
 
 ```js
 [
@@ -115,22 +118,14 @@ console.log(solveNQueens(4))
   ]
 ]
 ```
+::::
 
 ### 动画演示
 
 下面以动画演示5x5的一种解
 
+<AnimationDemo />
+
 ### 参考
 
 * [51. N 皇后 - 力扣（LeetCode）](https://leetcode.cn/problems/n-queens/)
-
-<script>
-import Slashes7 from '@vp/demo-components/Algorithm/SolveNQueen/Slashes7.vue'
-import AnimationDemo from '@vp/demo-components/Algorithm/SolveNQueen/AnimationDemo.vue'
-export default {
-  components: {
-    Slashes7,
-    AnimationDemo
-  }
-}
-</script>

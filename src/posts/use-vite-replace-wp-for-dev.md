@@ -16,7 +16,47 @@ tags:
 
 * 安装 Vite
 
+::::code-tabs{active="npm"}
+### npm
+
+```sh
+npm install -D vite
+```
+
+### yarn
+
+```sh
+yarn add -D vite
+```
+
+### pnpm
+
+```sh
+pnpm add -D vite
+```
+::::
+
 * 安装Vite的Vue2插件
+
+::::code-tabs{active="npm"}
+### npm
+
+```sh
+npm install -D vite-plugin-vue2
+```
+
+### yarn
+
+```sh
+yarn add -D vite-plugin-vue2
+```
+
+### pnpm
+
+```sh
+pnpm add -D vite-plugin-vue2
+```
+::::
 
 * 根目录下新建 vite.config.js，并写入如下内容
 
@@ -61,7 +101,8 @@ export default {
 
 下面以 `/customApi/foo/bar` => `http://your.custom.api.com/foo/bar` 为例给出对应的 vue-cli 配置以及 vite 配置
 
-### dev-proxy-vue.config.js
+::::code-tabs{active="vue.config.js"}
+### vue.config.js
 
 ```js
 module.exports = {
@@ -78,7 +119,7 @@ module.exports = {
 }
 ```
 
-### dev-proxy-vite.config.js
+### vite.config.js
 
 ```js
 export default {
@@ -92,13 +133,15 @@ export default {
   }
 }
 ```
+::::
 
 ### 全局样式导入转换
 
 因为我改造的这个项目用到了 [vue-cli-plugin-style-resources-loader](https://www.npmjs.com/package/vue-cli-plugin-style-resources-loader)
 所以需要将对应的全局导入样式变量进行对等转换，下面给出对应的 vue-cli 配置以及 vite 配置
 
-### global-css-vue.config.js
+::::code-tabs{active="vue.config.js"}
+### vue.config.js
 
 ```js
 module.exports = {
@@ -111,7 +154,7 @@ module.exports = {
 }
 ```
 
-### global-css-vite.config.js
+### vite.config.js
 
 ```js
 import { readFileSync } from 'fs'
@@ -129,13 +172,15 @@ export default {
   },
 }
 ```
+::::
 
 ### 静态 & 动态导入后缀名问题
 
 * 在 Webpack 项目中，vue 文件的导入可以不用加 `.vue` 后缀
 * 而在 Vite 中，必须显示指出 `.vue` 后缀
 
-### import-vite
+::::code-tabs{active="vite"}
+### vite
 
 ```vue
 <script>
@@ -143,13 +188,14 @@ import SomeComponent from '/path/to/SomeComponent.vue'
 </script>
 ```
 
-### import-webpack
+### webpack
 
 ```vue
 <script>
 import SomeComponent from '/path/to/SomeComponent'
 </script>
 ```
+::::
 
 > **提示**
 >
@@ -161,7 +207,8 @@ import SomeComponent from '/path/to/SomeComponent'
 * 在Webpack项目中，可以使用`import`或者`require`导入模块或者资源（图片、json数据等）
 * 而在Vite中，只能使用`import`导入内容，需要将所有的`require`改为`import`导入
 
-### require-vite
+::::code-tabs{active="vite"}
+### vite
 
 ```vue
 <script>
@@ -173,13 +220,14 @@ import imgSrc from '/path/to/img.png'
 </template>
 ```
 
-### require-webpack
+### webpack
 
 ```vue
 <template>
   <img :src="require('/path/to/img.png')">
 </template>
 ```
+::::
 
 ### 差异化API
 
@@ -187,7 +235,8 @@ import imgSrc from '/path/to/img.png'
 替换方法可以查看我的另一片文章：[前端工程中的自动化导入](/2021/08/18/frontend-auto-import/)  
 最好将差异化 API 调用提取为公共判断流程函数，下面是我的解决方案：
 
-### context-predictEnv.js
+::::code-tabs{active="predictEnv.js"}
+### predictEnv.js
 
 ```js
 export default (viteCallback, webpackCallback) => {
@@ -201,7 +250,7 @@ export default (viteCallback, webpackCallback) => {
 }
 ```
 
-### context-router.js
+### router.js
 
 ```js
 import predictEnv from '/path/to/predictEnv.js'
@@ -217,6 +266,7 @@ predictEnv(
   }
 )
 ```
+::::
 
 ### 环境变量 & 模式
 
@@ -225,7 +275,8 @@ predictEnv(
 * Vue-cli 项目中的环境变量获取是通过 `process.env.xxx` 进行的，并且暴露给客户端的变量都必须以 `VUE_APP_` 开头
 * 而在 Vite 中，环境变量需要通过 `import.meta.env.xxx` 获取，默认暴露给客户端的变量都必须以 `VITE_` 开头，幸运的是 Vite 支持通过配置 [envPrefix](https://cn.vitejs.dev/config/#envprefix) 来自定义暴露前缀，所以只需要通过配置此项为 `VUE_APP_` 即可，下面是配置参考
 
-### env-vite.config.js
+::::code-tabs{active="vite.config.js"}
+### vite.config.js
 
 ```js
 export default {
@@ -234,6 +285,7 @@ export default {
   // ...其他配置
 }
 ```
+::::
 
 到这里为止，如果各项都完成的情况下，运行 `npm run dev:vite`，应该是可以看到vite成功启动了
 但是，还有最后一个问题，该问题会发生在 Webpack 环境时，因为这里生产我并没有做变更，所以打包时还是会有下面的问题：  
@@ -244,7 +296,8 @@ Webpack 不能解析 `import.meta.xxx` 相关代码
 
 我这里的解决方案是自写 loader，配置自定义注释，在 Webpack 生产环境下，手动移除 `import.meta.env` 相关代码，这里改写上面提到的自动注册路由代码作为示例：
 
-### ignore-ignoreLoader.js
+::::code-tabs{active="ignoreLoader.js"}
+### ignoreLoader.js
 
 ```js
 module.exports = function (source) {
@@ -255,7 +308,7 @@ module.exports = function (source) {
 }
 ```
 
-### ignore-vue.config.js
+### vue.config.js
 
 ```js
 module.exports = {
@@ -279,7 +332,7 @@ module.exports = {
 }
 ```
 
-### ignore-router.js
+### router.js
 
 ```js
 import predictEnv from '/path/to/predictEnv.js'
@@ -297,6 +350,7 @@ predictEnv(
   }
 )
 ```
+::::
 
 这就是所有内容啦，从现在起就可以在开发环境使用 Vite，打包延用 Webpack，提升开发体验了，改造的过程虽然痛苦，对于开发体验的提升却是十分巨大的
 

@@ -23,12 +23,17 @@ const config = defineConfig({
           { title: '博客', to: '/' },
           { title: '我的开源', to: '/categories/project/' },
           { title: '健身随记', to: '/categories/fitness/' },
+          { title: '听听歌吧', to: '/listen/' },
+          { title: '友情链接', to: '/friend-links/' },
           { title: '时间线', to: '/timeline/' },
           { title: '标签', to: '/tags/' },
         ],
         rss: {
           enabled: true,
           copyright: `© ${new Date().getFullYear()} Dongsheng Zhao`,
+        },
+        liveCode: {
+          sourceLabel: '查看代码',
         },
         themeColor: {
           primary: '#673ab7',
@@ -44,7 +49,10 @@ const config = defineConfig({
       },
     }),
   ],
-  server: { port: 23456 },
+  server: {
+    port: 23456,
+    host: true,
+  },
   ssr: {
     noExternal: ['@fontsource-variable/fraunces', '@fontsource/inter'],
   },

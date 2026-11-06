@@ -22,6 +22,26 @@ tags:
 
 ### 安装
 
+::::code-tabs{active="npm"}
+### npm
+
+```sh
+npm install @casual-ui/vue
+```
+
+### yarn
+
+```sh
+yarn add @casual-ui/vue
+```
+
+### pnpm
+
+```sh
+pnpm add @casual-ui/vue
+```
+::::
+
 ### 全局使用
 
 #### 在项目的入口文件中
@@ -66,6 +86,26 @@ import { CButton } from '@casual-ui/vue'
 
 ### 安装依赖
 
+::::code-tabs{active="npm"}
+### npm
+
+```sh
+npm install @casual-ui/react
+```
+
+### yarn
+
+```sh
+yarn add @casual-ui/react
+```
+
+### pnpm
+
+```sh
+pnpm add @casual-ui/react
+```
+::::
+
 ### jsx 中使用
 
 ```jsx
@@ -84,6 +124,26 @@ function Demo() {
 [在线文档&示例](https://svelte.casual-ui.site/)
 
 ### 安装依赖
+
+::::code-tabs{active="npm"}
+### npm
+
+```sh
+npm install @casual-ui/svelte
+```
+
+### yarn
+
+```sh
+yarn add @casual-ui/svelte
+```
+
+### pnpm
+
+```sh
+pnpm add @casual-ui/svelte
+```
+::::
 
 ### svelte文件中使用
 

@@ -42,7 +42,8 @@ I have a dream
 
 
 
-### gradient-text-html
+::::code-tabs{active="html"}
+### html
 
 ```html
 <span class="gradient-color-text">
@@ -50,9 +51,7 @@ I have a dream
 </span>
 ```
 
-
-
-### gradient-text-css
+### css
 
 ```css
 @keyframes text-color-gradient {
@@ -69,3 +68,4 @@ I have a dream
   font-size: 48px;
 }
 ```
+::::

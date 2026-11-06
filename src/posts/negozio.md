@@ -28,7 +28,8 @@ pnpm i atomique
 
 ## 使用 
 
-### usage-App.jsx
+::::code-tabs{active="App.jsx"}
+### App.jsx
 
 ```jsx
 import DisplayCount from './display-count'
@@ -36,13 +37,13 @@ import AddCount from './add-count'
 
 export default function App() {
   return <div>
-    
-    
+    <DisplayCount />
+    <AddCount />
   </div>
 }
 ```
 
-### usage-use-count.js
+### use-count.js
 
 ```jsx
 import atomique from 'atomique'
@@ -54,7 +55,7 @@ export const { useAtom: useCount, update } = atomique(0)
 >
 > `atomique` 可以接受任何数据类型，如数组，对象等，该函数是基于 [`useSyncExternalStore `](https://react.dev/reference/react/useSyncExternalStore) 的轻量级封装 
 
-### usage-display-count.jsx
+### display-count.jsx
 
 ```jsx
 import { useCount } from './use-count'
@@ -66,7 +67,7 @@ export default function DisplayCount() {
 }
 ```
 
-### usage-add-count.jsx
+### add-count.jsx
 
 ```jsx
 import { useCount } from './use-count'
@@ -78,5 +79,6 @@ export default function AddCount() {
 }
 
 ```
+::::
 
 ![Result](/posts/magasin-count.gif)

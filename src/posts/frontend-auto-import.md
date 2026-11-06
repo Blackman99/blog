@@ -8,20 +8,20 @@ tags:
   - Automation
 ---
 > 在前端项目开发过程中，在很多地方都会遇到需要导入某一个文件夹下的某些文件，而且通常最后组织的方式跟文件的目录结构一致，在这种时候，也许我们就需要使用
-
-
-
+<Badge vertical="middle" text="自动化导入" />
 
 ## 场景描述
 
 * 假设现有如下的Vue项目结构
-<q-tree default-expand-all :nodes="fileConstructure" node-key="label" />
+
+<Demo-ViewsTree />
+
 * 现在需要将这些Vue文件注册为路由，并且路由路径与文件路径一致
 * 例如：`/src/views/user/profile/basic.vue`应当注册为`/user/profile/basic`
 * 如果使用最基础的方式，就得一个个的导入，下面是手动导入的示例
 
-
-### manual-import-手动导入
+::::code-tabs{active="手动导入"}
+### 手动导入
 
 ```js
 const routes = [
@@ -32,14 +32,12 @@ const routes = [
   // ...其他的路由
 ]
 ```
-
-
+::::
 
 > **提示**
 >
-这里假设已将`@/**/*`路径指向了`src/**/*`  
-下文中的示例代码假设都与`src`位于同一个层级
-
+> 这里假设已将`@/**/*`路径指向了`src/**/*`  
+> 下文中的示例代码假设都与`src`位于同一个层级
 
 ## Webpack中的自动化导入
 
@@ -63,10 +61,8 @@ require.context(directory, useSubdirectories = true, regExp = /^\.\/.*$/, mode =
 
 ## 示例
 
-
-
-
-### auto-webpack自动导入示例
+::::code-tabs{active="webpack自动导入示例"}
+### webpack自动导入示例
 
 ```js
 const importViews = require.context('./src/views', true, /\.vue$/)
@@ -76,9 +72,7 @@ const routes = importViews.keys().map(filePath => ({
 }))
 ```
 
-
-
-### auto-vite自动导入示例
+### vite自动导入示例
 
 ```js
 const modules = import.meta.glob('./src/views/**/*.vue')
@@ -88,7 +82,7 @@ const routes = Object.entries(modules).map(([filePath, importFunction]) => ({
   component: importFunction
 }))
 ```
-
+::::
 
 ## 总结
 
@@ -100,60 +94,3 @@ const routes = Object.entries(modules).map(([filePath, importFunction]) => ({
 
 * [Vite自动导入](https://cn.vitejs.dev/guide/features.html#glob-import)
 * [Webpack自动导入](https://webpack.docschina.org/guides/dependency-management/#requirecontext)
-
-<script>
-export default {
-  data() {
-    return {
-      fileConstructure: [
-        {
-          label: 'src',
-          icon: 'folder',
-          children: [
-            { 
-              label: 'views',
-              icon: 'folder',
-              children: [
-                { 
-                  label: 'user',
-                  icon: 'folder',
-                  children: [
-                    { 
-                      label: 'profile', 
-                      icon: 'folder',
-                      children: [
-                        { label: 'basic.vue', img: '/logos/vue-logo.png' },
-                        { label: 'vip.vue', img: '/logos/vue-logo.png' }
-                      ] 
-                    },
-                    { label: 'orders.vue', img: '/logos/vue-logo.png' },
-                    { label: 'settings.vue', img: '/logos/vue-logo.png' }
-                  ]
-                },
-                {
-                  label: 'system',
-                  icon: 'folder',
-                  children: [
-                    { label: 'user.vue', img: '/logos/vue-logo.png' },
-                    { label: 'role.vue', img: '/logos/vue-logo.png' },
-                    { label: 'authority.vue', img: '/logos/vue-logo.png' },
-                  ]
-                },
-                {
-                  label: 'login.vue',
-                  img: '/logos/vue-logo.png'
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  }
-}
-</script>
-<style scoped lang="stylus">
->>> .q-tree__img {
-  height: 20px;
-}
-</style>

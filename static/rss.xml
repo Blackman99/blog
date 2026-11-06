@@ -4,7 +4,7 @@
     <title>Dongsheng 的个人博客</title>
     <link>https://dongsheng-blog.netlify.app</link>
     <description>丈夫·父亲·咖啡·健身·偶尔会有一些新奇的想法</description>
-    <lastBuildDate>Thu, 05 Nov 2026 03:15:29 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 01:56:57 GMT</lastBuildDate>
     <copyright>© 2026 Dongsheng Zhao</copyright>
     
     <item>
@@ -39,14 +39,14 @@
       <title>canvas元素组合方式</title>
       <link>https://dongsheng-blog.netlify.app/posts/canvas-composition-mode</link>
       <pubDate>Fri, 16 Oct 2020 00:00:00 GMT</pubDate>
-      <description>现在有一个canvas容器，在其上面填充两个矩形 &amp;#x3C;canvas width=&quot;200&quot; height=&quot;200&quot;&gt;&amp;#x3C;/canvas&gt; &amp;#x3C;script&gt; const canvas = document.getE</description>
+      <description>现在有一个canvas容器，在其上面填充两个矩形 可以看到第二个紫色的矩形是覆盖在第一个粉色的矩形之上进行绘制的 这是默认的source-over模式 实际上，除了这种覆盖模式，浏览器还提供了其他组合方式，下面依次演示 各种组合方式的演示</description>
       <category>Front-end</category>
     </item>
     <item>
       <title>canvas多区域根据重叠次数不同填充不同颜色问题</title>
       <link>https://dongsheng-blog.netlify.app/posts/canvas-multi-area-color-problem</link>
       <pubDate>Mon, 23 Nov 2020 00:00:00 GMT</pubDate>
-      <description>Canvas 问题描述 现有一个canvas画布，需要在其上绘制三个矩形，这三个矩形互相有相交部分，下面是重叠区域的填充规则： 填充一次的区域用：紫色 填充两次的区域用：红色 填充三次的区域用：青色 先从一个区域开始 在一个空的画布上直接画</description>
+      <description>Canvas 问题描述 现有一个canvas画布，需要在其上绘制三个矩形，这三个矩形互相有相交部分，下面是重叠区域的填充规则： 填充一次的区域用： 填充两次的区域用： 填充三次的区域用： 先从一个区域开始 在一个空的画布上直接画第一个矩形，</description>
       <category>Math</category>
     </item>
     <item>
@@ -74,7 +74,7 @@
       <title>用CSS3实现文字颜色渐变动画</title>
       <link>https://dongsheng-blog.netlify.app/posts/css-text-gradient-animation</link>
       <pubDate>Tue, 22 Jun 2021 00:00:00 GMT</pubDate>
-      <description>如何用CSS3实现文字颜色渐变动画 效果如下： I have a dream @keyframes text-color-gradient { 0%{background-position:0% 50%} 50%{background-po</description>
+      <description>如何用CSS3实现文字颜色渐变动画 效果如下： I have a dream 思路 使用-webkit-background-clip: text;实现背景渐变按照文字裁剪 使用@keyframes定义动画关键帧配合background-p</description>
       <category>Front-end</category>
     </item>
     <item>

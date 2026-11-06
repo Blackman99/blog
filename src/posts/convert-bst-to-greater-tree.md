@@ -32,7 +32,8 @@ tags:
 
 ### 代码
 
-### solution-javascript
+::::code-tabs{active="javascript"}
+### javascript
 
 ```js
 /**
@@ -76,7 +77,7 @@ const convertBST = function (root) {
 }
 ```
 
-### solution-run
+### run
 
 ```js
 const tree = {
@@ -110,7 +111,7 @@ const tree = {
 console.log(convertBST(tree))
 ```
 
-### solution-result
+### result
 
 ```js
 {
@@ -141,6 +142,7 @@ console.log(convertBST(tree))
   }
 }
 ```
+::::
 
 ### 参考
 

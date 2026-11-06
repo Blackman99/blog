@@ -11,23 +11,18 @@ tags:
 ---
 > Vue3已经发布beta版，作为一个紧跟时事的前端开发，选择在Beta版时就直接将Vue3应用到开发中，使用了也有4个月的时间了，谈谈Vue3的一些个人使用体验
 
-
-
 ### Composition-API 对比 Option-API
 
 我们现在来写一个简单的todo-list，用Quasar组件，不熟悉的童鞋可以看下官方文档：[Quasar官网](https://quasar.dev/)
 
 #### 效果如下
 
-
-
+<Demo-TodoList />
 
 #### 选项式（Option-API）
 
-
-
-
-### optionapi-template
+::::code-tabs{active="template"}
+### template
 
 ```html
 <div class="todo-list">
@@ -53,9 +48,7 @@ tags:
 </div>
 ```
 
-
-
-### optionapi-script
+### script
 
 ```js
 export default {
@@ -86,9 +79,7 @@ export default {
 }
 ```
 
-
-
-### optionapi-style
+### style
 
 ```stylus
 .todo-list {
@@ -104,16 +95,14 @@ export default {
   }
 }
 ```
-
+::::
 
 #### 组合式（Composition-API）
 
 组合式在template与style上没有什么差异，下面只写script部分
 
-
-
-
-### composition-api-script
+::::code-tabs{active="script"}
+### script
 
 ```js
 import { reactive, ref } from 'vue'
@@ -158,7 +147,7 @@ export default {
   }
 }
 ```
-
+::::
 
 #### 对比
 
@@ -168,20 +157,13 @@ export default {
 > * 而且，在Option-API中，会大量出现`this`的使用，且所有的`methods`都是function形式的
 > * 而在Composition-API中，完全不需要使用`function`以及`this`，可以享受纯粹的函数式编程体验
 
-
 ### v-model的使用区别
 
+:::::code-tabs{active="vue2" hide-copy}
+### vue2
 
-
-
-
-### v-model-vue2
-
-
-
-
-
-### v-model-vue2-子组件
+::::code-tabs{active="子组件" vertical}
+#### 子组件
 
 ```vue
 <template>
@@ -220,13 +202,11 @@ export default {
 </style>
 ```
 
-
-
-### v-model-vue2-父组件
+#### 父组件
 
 ```vue
 <template>
-  
+  <Child v-model="outerValue" />
 </template>
 <script>
 export default {
@@ -243,16 +223,12 @@ export default {
 <style>
 </style>
 ```
+::::
 
+### vue3
 
-
-### v-model-vue3
-
-
-
-
-
-### v-model-vue3-子组件
+::::code-tabs{active="子组件" vertical}
+#### 子组件
 
 ```vue
 <template>
@@ -284,13 +260,11 @@ export default {
 </style>
 ```
 
-
-
-### v-model-vue3-父组件
+#### 父组件
 
 ```vue
 <template>
-  
+  <Child v-model="outerValue" />
 </template>
 <script>
 import { ref } from 'vue'
@@ -309,7 +283,8 @@ export default {
 <style>
 </style>
 ```
-
+::::
+:::::
 
 ### 参考
 

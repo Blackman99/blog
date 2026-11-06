@@ -16,7 +16,8 @@ tags:
 
 
 
-### loop-lisp
+::::code-tabs{active="lisp"}
+### lisp
 
 ```lisp
 (defun a-times-loop (lst)
@@ -37,6 +38,7 @@ tags:
 ; 期待输出：
 ; A in list (A B C D) is: 1
 ```
+::::
 
 
 
@@ -44,7 +46,8 @@ tags:
 
 
 
-### recursive-lisp
+::::code-tabs{active="lisp"}
+### lisp
 
 ```lisp
 (defun a-times-recursive (lst)
@@ -58,3 +61,4 @@ tags:
 ; 期待输出：
 ; A in list (A B C D) is: 1
 ```
+::::

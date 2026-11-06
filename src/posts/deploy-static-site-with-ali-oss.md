@@ -10,8 +10,6 @@ tags:
 ---
 > 使用阿里OSS部署静态站点，保持访问速度的情况下，最小化站点维护成本
 
-
-
 ## 背景
 
 已知的很多免费静态站点部署方式，例如：
@@ -24,19 +22,17 @@ tags:
 以40G资源包为例（**40G为最小的资源包购买单位**）：  
 40G/3年：30RMB左右
 
-
 > **警告：访问流量额外计费**
 >
-资源包仅可用作存储空间费用  
-站点浏览的流量是另计费，如果站点访问量并不是很大，总体上一定比单独购买服务器划算  
-如果站点访问量比较大，还是自购服务器比较合适
-
+> 资源包仅可用作存储空间费用  
+> 站点浏览的流量是另计费，如果站点访问量并不是很大，总体上一定比单独购买服务器划算  
+> 如果站点访问量比较大，还是自购服务器比较合适
 
 并且40G的容量意味着可以部署非常多的静态站点，比如此篇博客更新后本站点的大小在5M左右
 
 > **警告**
 >
-更多的站点意味着更高的访问流量，请确保了解后果
+> 更多的站点意味着更高的访问流量，请确保了解后果
 
 本站点就是部署在OSS上，以下步骤也为亲身实践得出，希望可以帮到有需要的人  
 
@@ -56,22 +52,16 @@ tags:
 
 ### 开通OSS并新建Bucket
 
-
 * 注册阿里云账号
 * 开通OSS服务
 * 购买资源包
 * 新建bucket
 
-
-
 > **提示**
 >
-新建的Bucket需要设置成**公共读**权限
-
-
+> 新建的Bucket需要设置成**公共读**<Badge text="重要" type="" />权限
 
 ### 对Bucket进行一些必要设置
-
 
 #### 静态托管
 
@@ -89,11 +79,9 @@ tags:
 * 将域名绑定到bucket上
 * 上传的https证书（如果有需要的话）
 
-
 > **提示**
 >
-详细步骤可以参考[阿里云官方静态托管文档](https://help.aliyun.com/document_detail/31872.html)
-
+> 详细步骤可以参考[阿里云官方静态托管文档](https://help.aliyun.com/document_detail/31872.html)
 
 ## 部署
 
@@ -112,25 +100,24 @@ tags:
 
 * 安装
 
-
-### deploy-ali-oss-npm
+::::code-tabs{active="npm"}
+### npm
 
 ```sh
 npm install ali-oss-static-web-deploy
 ```
 
-
-
-### deploy-ali-oss-yarn
+### yarn
 
 ```sh
 yarn add ali-oss-static-web-deploy
 ```
+::::
 
 * 使用
 
-
-### deploy-ali-oss-demo
+::::code-tabs{active="demo"}
+### demo
 
 ```js
 const aliOSSStaicWebDeploy = require('ali-oss-static-web-deploy')
@@ -142,13 +129,11 @@ aliOSSStaicWebDeploy({
   staticWebAppPath: 'Your local path to deploy', // for example: require('path').resolve(process.cwd(), 'dist')
 })
 ```
-
-
+::::
 
 > **注意**
 >
-该工具会在清空bucket之后将`staticWebAppPath`中的所有文件上传至bucket中
-
+> 该工具会在清空bucket之后将`staticWebAppPath`中的所有文件上传至bucket中
 
 ## 参考
 

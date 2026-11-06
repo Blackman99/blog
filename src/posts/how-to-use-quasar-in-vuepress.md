@@ -11,18 +11,14 @@ tags:
 ---
 > 在Vuepress中使用Quasar正确姿势
 
-
-
 ## 使用方式
 
 ### 在`enhanceApp.js`文件中引入Quasar相关依赖
 
 * `.vuepress/theme/enhanceApp.js`
 
-
-
-
-### enhanceApp-use-quasar
+::::code-tabs{active="use-quasar"}
+### use-quasar
 
 ```js
 import Quasar from 'quasar'
@@ -42,21 +38,17 @@ export default ({
 	}
 }
 ```
-
-
+::::
 
 > **警告：使用Quasar时注意**
 >
-由于Quasar的某些组件使用到了浏览器的API，根据Vuepress文档：  
-[浏览器的-api-访问限制](https://v1.vuepress.vuejs.org/zh/guide/using-vue.html#%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84-api-%E8%AE%BF%E9%97%AE%E9%99%90%E5%88%B6)  
-**必须重写GlobalLayout组件，使用ClientOnly组件包裹！**  
-自定义的全局组件大致内容如下：
+> 由于Quasar的某些组件使用到了浏览器的API，根据Vuepress文档：  
+> [浏览器的-api-访问限制](https://v1.vuepress.vuejs.org/zh/guide/using-vue.html#%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84-api-%E8%AE%BF%E9%97%AE%E9%99%90%E5%88%B6)  
+> **必须重写GlobalLayout组件，使用ClientOnly组件包裹！**  
+> 自定义的全局组件大致内容如下：
 
-
-
-
-
-### custom-global-layout-custom-global-layout
+::::code-tabs{active="custom-global-layout"}
+### custom-global-layout
 
   ```vue
 <style>
@@ -72,13 +64,12 @@ export default {
 }
 </script>
 ```
-
+::::
 
 * `.vuepress/theme/layouts/GlobalLayout.vue`
 
-
-
-### global-layout-GlobalLayout
+::::code-tabs{active="GlobalLayout"}
+### GlobalLayout
 
 ```vue
 <template>
@@ -97,7 +88,7 @@ export default {
   
 </template>
 ```
-
+::::
 
 ### Material Icon的样式文件应该在哪里引入？
 
@@ -106,10 +97,8 @@ export default {
 * `.vuepress/theme/templates/dev.html`
 * `.vuepress/theme/templates/ssr.html`
 
-
-
-
-### template-dev
+::::code-tabs{active="dev"}
+### dev
 
 ```html {7}
 <!DOCTYPE html>
@@ -126,9 +115,7 @@ export default {
 </html>
 ```
 
-
-
-### template-ssr
+### ssr
 
 ```html {6}
 <!DOCTYPE html>
@@ -150,15 +137,11 @@ export default {
   </body>
 </html>
 ```
-
-
+::::
 
 > **注意**
 >
-
-所有的template文件的更改最好基于[官方默认的模板](https://github.com/vuejs/vuepress/blob/master/packages/%40vuepress/core/lib/client/index.dev.html)进行
-
-
+> 所有的template文件的更改最好基于[官方默认的模板](https://github.com/vuejs/vuepress/blob/master/packages/%40vuepress/core/lib/client/index.dev.html)进行
 
 #### 方案二：使用Quasar提供的extras库
 
@@ -166,12 +149,12 @@ export default {
 
 使用YARN
 
-```
+```sh
 yarn add -D @quasar/extras
 ```
 
 使用NPM
 
-```
+```sh
 npm isntall --save-dev @quasar/extras
 ```
