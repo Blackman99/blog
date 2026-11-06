@@ -2,7 +2,7 @@
 title: Vue3使用初体验
 date: 2021-02-03
 author: "Dongsheng Zhao"
-cover: /logos/vue-logo.png
+cover: /covers/vue3-use-experience.jpg
 category: Front-end
 tags:
   - Vue

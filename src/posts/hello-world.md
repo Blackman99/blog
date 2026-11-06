@@ -3,7 +3,7 @@ title: 你好，世界
 date: 2019-01-01
 excerpt: 这篇博客是我用Vuepress搭建撰写的第一篇博客。Vuepress上手简单，可扩展性也很高，功能非常强大。使用Vuepress的过程中遇到了很多问题，解决问题的过程也是一种成长
 author: "Dongsheng Zhao"
-cover: /images/star-sky.jpg
+cover: /covers/hello-world.jpg
 category: Ideas
 tags:
   - Vue

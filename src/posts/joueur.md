@@ -3,7 +3,7 @@ title: Joueur
 date: 2023-10-31
 excerpt: "Joueur - 一个小巧精美的跨平台音乐播放器"
 author: "Dongsheng Zhao"
-cover: /logos/joueur.png
+cover: /covers/joueur.jpg
 category: project
 tags:
   - Svelte

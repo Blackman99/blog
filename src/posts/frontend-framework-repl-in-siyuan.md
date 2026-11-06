@@ -3,7 +3,7 @@ title: "在思源笔记中嵌入 Vue/Svelte/React 交互式编辑器"
 date: 2023-04-26
 excerpt: "在思源笔记中嵌入 Vue/Svelte/React 交互式编辑器"
 author: "Dongsheng Zhao"
-cover: /logos/siyuan-with-frameworks.png
+cover: /covers/frontend-framework-repl-in-siyuan.jpg
 category: project
 tags:
   - Vue

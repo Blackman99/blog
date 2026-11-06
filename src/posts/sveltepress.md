@@ -3,7 +3,7 @@ title: Sveltepress
 date: 2023-05-22
 excerpt: "Sveltepress - 一个站点构建工具"
 author: "Dongsheng Zhao"
-cover: /logos/sveltepress.svg
+cover: /covers/sveltepress.jpg
 category: project
 tags:
   - Svelte

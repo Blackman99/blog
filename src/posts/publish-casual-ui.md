@@ -3,7 +3,7 @@ title: "Casual UI"
 date: 2022-04-01
 excerpt: "一个基于Vue3+, React17+, Svelte3+的组件库"
 author: "Dongsheng Zhao"
-cover: /logos/casual-ui-logo.png
+cover: /covers/publish-casual-ui.jpg
 category: Front-end
 tags:
   - Vue

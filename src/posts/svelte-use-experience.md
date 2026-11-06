@@ -3,7 +3,7 @@ title: Svelte使用分析
 date: 2022-07-01
 excerpt: Svelte使用分析
 author: "Dongsheng Zhao"
-cover: /logos/svelte.svg
+cover: /covers/svelte-use-experience.jpg
 category: Front-end
 tags:
   - Svelte
