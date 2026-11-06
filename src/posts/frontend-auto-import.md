@@ -3,6 +3,7 @@ title: 前端工程中的自动化导入
 date: 2021-08-18
 excerpt: 学会使用前端工程中的自动化导入
 author: "Dongsheng Zhao"
+cover: /covers/frontend-auto-import.jpg
 category: Front-end
 tags:
   - Automation

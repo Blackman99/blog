@@ -3,6 +3,7 @@ title: 美化windows11的终端
 date: 2021-11-01
 excerpt: 美化windows11的终端
 author: "Dongsheng Zhao"
+cover: /covers/beautify-windows-terminal.jpg
 category: Skills
 tags:
   - Windows

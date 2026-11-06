@@ -2,6 +2,7 @@
 title: "个人开发的 Grok Bot + Claude/Codex  替代选项"
 date: 2026-11-05
 author: "Dongsheng Zhao"
+cover: /covers/deskfolk.jpg
 category: project
 tags:
   - Deskfolk

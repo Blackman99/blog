@@ -3,6 +3,7 @@ title: "Laravel 框架学习——多表 api 认证"
 date: 2019-09-01
 excerpt: Laravel提供了API认证，但是只支持一张表，如何完成多表API认证呢
 author: "Dongsheng Zhao"
+cover: /covers/laravel-api-ahthentication.jpg
 category: Server-side
 tags:
   - PHP

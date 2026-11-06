@@ -3,6 +3,7 @@ title: "leetcode 538 - 把二叉搜索树转换为累加树"
 date: 2022-06-19
 excerpt: "重拾算法 - leetcode 538 & 1038 - 把二叉搜索树转换为累加树"
 author: "Dongsheng Zhao"
+cover: /covers/convert-bst-to-greater-tree.jpg
 category: Algorithm
 tags:
   - Algorithm

@@ -3,6 +3,7 @@ title: 使用阿里云OSS部署你的静态站点
 date: 2021-07-08
 excerpt: 使用阿里云OSS部署你的静态站点
 author: "Dongsheng Zhao"
+cover: /covers/deploy-static-site-with-ali-oss.jpg
 category: Front-end
 tags:
   - OSS

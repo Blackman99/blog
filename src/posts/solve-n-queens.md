@@ -3,6 +3,7 @@ title: "leetcode 51 - N 皇后"
 date: 2022-06-11
 excerpt: 重拾算法，重新开始
 author: "Dongsheng Zhao"
+cover: /covers/solve-n-queens.jpg
 category: Algorithm
 tags:
   - Algorithm

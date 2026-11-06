@@ -3,6 +3,7 @@ title: 制作一个游戏风格按钮
 date: 2021-08-16
 excerpt: 制作一个游戏风格按钮
 author: "Dongsheng Zhao"
+cover: /covers/make-a-button.jpg
 category: Front-end
 tags:
   - CSS

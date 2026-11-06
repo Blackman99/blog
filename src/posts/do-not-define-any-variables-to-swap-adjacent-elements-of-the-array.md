@@ -3,6 +3,7 @@ title: 不定义任何变量交互数组中相邻元素
 date: 2019-07-07
 excerpt: 不定义任何变量交互数组中相邻元素
 author: "Dongsheng Zhao"
+cover: /covers/do-not-define-any-variables-to-swap-adjacent-elements-of-the-array.jpg
 category: Front-end
 tags:
   - Javascript

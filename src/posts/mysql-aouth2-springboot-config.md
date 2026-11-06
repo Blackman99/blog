@@ -3,6 +3,7 @@ title: MySQL+SpringBoot+OAuth2.0配置
 date: 2019-06-09
 excerpt: MySQL+SpringBoot+OAuth2.0配置
 author: "Dongsheng Zhao"
+cover: /covers/mysql-aouth2-springboot-config.jpg
 category: Server-side
 tags:
   - Spring

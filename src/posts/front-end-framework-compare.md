@@ -3,6 +3,7 @@ title: "Svelte, Vue, React生态小结"
 date: 2022-08-17
 excerpt: "Svelte, Vue, React生态小结"
 author: "Dongsheng Zhao"
+cover: /covers/front-end-framework-compare.jpg
 category: Front-end
 tags:
   - Vue

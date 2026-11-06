@@ -3,6 +3,7 @@ title: Atomique
 date: 2023-12-05
 excerpt: "一个可用于 React18+ 的原子化状态管理模型，芥子纳须弥"
 author: "Dongsheng Zhao"
+cover: /covers/negozio.jpg
 category: project
 tags:
   - React

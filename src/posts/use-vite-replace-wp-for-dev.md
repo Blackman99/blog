@@ -3,6 +3,7 @@ title: "再见 Webpack，你好 Vite"
 date: 2022-04-13
 excerpt: "使用 Vite 取代 Webpack 作为开发环境工具，全面提升开发体验"
 author: "Dongsheng Zhao"
+cover: /covers/use-vite-replace-wp-for-dev.jpg
 category: Front-end
 tags:
   - Vue

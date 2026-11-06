@@ -2,6 +2,7 @@
 title: 用CSS3实现文字颜色渐变动画
 date: 2021-06-22
 author: "Dongsheng Zhao"
+cover: /covers/css-text-gradient-animation.jpg
 category: Front-end
 tags:
   - CSS

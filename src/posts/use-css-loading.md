@@ -3,6 +3,7 @@ title: 在Vue中使用Stylus编写loading特效
 date: 2020-04-01
 excerpt: 在Vue中使用Stylus编写loading特效
 author: "Dongsheng Zhao"
+cover: /covers/use-css-loading.jpg
 category: Front-end
 tags:
   - Vue

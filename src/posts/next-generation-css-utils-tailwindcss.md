@@ -3,6 +3,7 @@ title: 下一代前端样式开发工具库——Tailwindcss
 date: 2021-09-24
 excerpt: 开发业务页面时的利器
 author: "Dongsheng Zhao"
+cover: /covers/next-generation-css-utils-tailwindcss.jpg
 category: Front-end
 tags:
   - Tailwindcss

@@ -3,6 +3,7 @@ title: "leetcode 2306 -　公司命名"
 date: 2022-07-08
 excerpt: 重拾算法，重新开始
 author: "Dongsheng Zhao"
+cover: /covers/leetcode-2306.jpg
 category: Algorithm
 tags:
   - Algorithm

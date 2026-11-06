@@ -2,6 +2,7 @@
 title: 记一次数学在解决实际问题的运用
 date: 2020-11-20
 author: "Dongsheng Zhao"
+cover: /covers/path-problem.jpg
 category: Math
 tags:
   - Canvas

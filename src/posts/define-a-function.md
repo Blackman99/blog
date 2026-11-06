@@ -3,6 +3,7 @@ title: LISP练习——定义一个函数，接受一个列表并返回一个列
 date: 2019-09-09
 excerpt: LISP函数练习
 author: "Dongsheng Zhao"
+cover: /covers/define-a-function.jpg
 category: "Expand Learning"
 tags:
   - Lisp

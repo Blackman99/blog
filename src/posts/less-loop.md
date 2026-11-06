@@ -2,6 +2,7 @@
 title: Less中的循环（each方式）
 date: 2021-06-06
 author: "Dongsheng Zhao"
+cover: /covers/less-loop.jpg
 category: Front-end
 tags:
   - Less

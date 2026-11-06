@@ -3,6 +3,7 @@ title: "Vite + typescript + redux + react + Hooks + SSR的使用"
 date: 2021-08-23
 excerpt: "Vite + typescript + redux + react + Hooks + SSR的使用"
 author: "Dongsheng Zhao"
+cover: /covers/vite-typescript-ssr-redux-react.jpg
 category: Front-end
 tags:
   - React

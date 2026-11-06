@@ -2,6 +2,7 @@
 title: canvas元素组合方式
 date: 2020-10-16
 author: "Dongsheng Zhao"
+cover: /covers/canvas-composition-mode.jpg
 category: Front-end
 tags:
   - Canvas

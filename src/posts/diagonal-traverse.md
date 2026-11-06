@@ -3,6 +3,7 @@ title: "leetcode 498 - 对角线遍历"
 date: 2022-06-14
 excerpt: 重拾算法，重新开始
 author: "Dongsheng Zhao"
+cover: /covers/diagonal-traverse.jpg
 category: Algorithm
 tags:
   - Algorithm

@@ -3,6 +3,7 @@ title: 关于重构
 date: 2019-03-03
 excerpt: 关于重构
 author: "Dongsheng Zhao"
+cover: /covers/about-reconstruction.jpg
 category: Ideas
 tags:
   - Refactor

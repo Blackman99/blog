@@ -3,6 +3,7 @@ title: Java，Node，Python运行速度比较
 date: 2019-05-12
 excerpt: Java，Node，Python运行速度比较
 author: "Dongsheng Zhao"
+cover: /covers/compare-java-node-python.jpg
 category: Server-side
 tags:
   - Java

@@ -3,6 +3,7 @@ title: 程序员与其他人的日常对话
 date: 2019-04-12
 excerpt: 程序员与其他人的日常对话
 author: "Dongsheng Zhao"
+cover: /covers/programmer-conversation-with-other-people.jpg
 category: Ideas
 tags:
   - Programmer

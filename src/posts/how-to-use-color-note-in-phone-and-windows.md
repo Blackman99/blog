@@ -3,6 +3,7 @@ title: 在Android和windows中使用ColorNote同步笔记
 date: 2020-03-28
 excerpt: 在Android和windows中使用ColorNote同步笔记
 author: "Dongsheng Zhao"
+cover: /covers/how-to-use-color-note-in-phone-and-windows.jpg
 category: Skills
 tags:
   - Windows

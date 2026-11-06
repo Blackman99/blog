@@ -2,6 +2,7 @@
 title: canvas多区域根据重叠次数不同填充不同颜色问题
 date: 2020-11-23
 author: "Dongsheng Zhao"
+cover: /covers/canvas-multi-area-color-problem.jpg
 category: Math
 tags:
   - Canvas

@@ -3,6 +3,7 @@ title: PHP中如何在匿名函数中修改外部变量
 date: 2019-11-21
 excerpt: 在PHP中使用闭包时，会遇到需要修改闭包外部的变量操作，这时该如何操作呢？
 author: "Dongsheng Zhao"
+cover: /covers/how-to-modify-external-param-with-a-closure-in-php.jpg
 category: Server-side
 tags:
   - PHP

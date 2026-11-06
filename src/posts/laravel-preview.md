@@ -3,6 +3,7 @@ title: "Laravel框架学习 - 概览"
 date: 2019-08-15
 excerpt: 预览Laravel框架
 author: "Dongsheng Zhao"
+cover: /covers/laravel-preview.jpg
 category: Server-side
 tags:
   - PHP

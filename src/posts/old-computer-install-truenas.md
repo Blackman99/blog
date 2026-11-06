@@ -3,6 +3,7 @@ title: "将闲置电脑改装成 NAS 服务器"
 date: 2023-12-05
 excerpt: "家里有一台闲置电脑，所性直接改装成 NASA 服务器"
 author: "Dongsheng Zhao"
+cover: /covers/old-computer-install-truenas.jpg
 category: "Operating System"
 tags:
   - NAS

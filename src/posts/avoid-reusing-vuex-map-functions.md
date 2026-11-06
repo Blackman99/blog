@@ -3,6 +3,7 @@ title: "避免在 Vuex 中重复使用 this.$store 以及 mapXXX 函数"
 date: 2020-06-12
 excerpt: "Vuex 使得在 Vue 组件中可以跨组件共享同一个或多个状态，但是如何避免在不同的组件中重复引用 store 呢？"
 author: "Dongsheng Zhao"
+cover: /covers/avoid-reusing-vuex-map-functions.jpg
 category: Front-end
 tags:
   - Vue

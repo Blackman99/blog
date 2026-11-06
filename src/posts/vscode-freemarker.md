@@ -3,6 +3,7 @@ title: "Freemarker Plus"
 date: 2025-05-26
 excerpt: "在 VSCode 中 提供 freemarker 语言支持"
 author: "Dongsheng Zhao"
+cover: /covers/vscode-freemarker.jpg
 category: project
 tags:
   - Java

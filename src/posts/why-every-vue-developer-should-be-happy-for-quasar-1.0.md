@@ -3,6 +3,7 @@ title: 为什么每个Vue的开发者应该为Quasar1.0的到来而高兴
 date: 2019-12-20
 excerpt: 为什么每个Vue的开发者应该为Quasar1.0的到来而高兴
 author: "Dongsheng Zhao"
+cover: /covers/why-every-vue-developer-should-be-happy-for-quasar-1.0.jpg
 category: Front-end
 tags:
   - Vue

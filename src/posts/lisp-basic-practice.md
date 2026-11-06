@@ -3,6 +3,7 @@ title: LISP基础练习
 date: 2019-10-01
 excerpt: LISP基础练习
 author: "Dongsheng Zhao"
+cover: /covers/lisp-basic-practice.jpg
 category: "Expand Learning"
 tags:
   - Lisp

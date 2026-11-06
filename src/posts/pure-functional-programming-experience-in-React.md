@@ -2,6 +2,7 @@
 title: "在 React 中获得纯粹的函数式编程体验"
 date: 2021-07-01
 author: "Dongsheng Zhao"
+cover: /covers/pure-functional-programming-experience-in-React.jpg
 category: Front-end
 tags:
   - React

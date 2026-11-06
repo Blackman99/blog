@@ -3,6 +3,7 @@ title: "LISP练习——找到\"a\"在列表中出现的次数"
 date: 2020-06-12
 excerpt: 在LISP中用循环以及递归两种方式实现：找到a在列表中出现的次数
 author: "Dongsheng Zhao"
+cover: /covers/find-a-times-in-list.jpg
 category: "Expand Learning"
 tags:
   - Lisp

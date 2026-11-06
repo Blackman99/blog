@@ -3,6 +3,7 @@ title: "LISP 学习——特殊数据类型的操作练习"
 date: 2019-11-16
 excerpt: LISP数据类型学习
 author: "Dongsheng Zhao"
+cover: /covers/special-data-type-practice.jpg
 category: "Expand Learning"
 tags:
   - Lisp

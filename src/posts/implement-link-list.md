@@ -3,6 +3,7 @@ title: "leetcode 707 - 设计链表"
 date: 2022-06-01
 excerpt: 重拾算法，重新开始
 author: "Dongsheng Zhao"
+cover: /covers/implement-link-list.jpg
 category: Algorithm
 tags:
   - Algorithm

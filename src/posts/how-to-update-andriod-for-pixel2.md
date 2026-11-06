@@ -2,6 +2,7 @@
 title: 如何给pixel2升级Android版本，并同时解决Pixel2发热易卡顿，高耗电问题
 date: 2020-11-24
 author: "Dongsheng Zhao"
+cover: /covers/how-to-update-andriod-for-pixel2.jpg
 category: Skills
 tags:
   - Android

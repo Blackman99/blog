@@ -3,6 +3,7 @@ title: Vuepress主题开发
 date: 2019-12-08
 excerpt: Vuepress主题开发
 author: "Dongsheng Zhao"
+cover: /covers/vuepress-theme-development.jpg
 category: Front-end
 tags:
   - Vue

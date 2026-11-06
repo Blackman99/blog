@@ -3,6 +3,7 @@ title: "Claude Feishu Channel"
 date: 2026-04-13
 excerpt: "将 Claude Code 会话桥接到飞书群聊机器人"
 author: "Dongsheng Zhao"
+cover: /covers/claude-feishu-channel.jpg
 category: project
 tags:
   - Claude

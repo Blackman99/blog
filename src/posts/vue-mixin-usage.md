@@ -3,6 +3,7 @@ title: Vue2中的mixin使用方式小结
 date: 2021-12-23
 excerpt: Vue2中的mixin使用方式小结
 author: "Dongsheng Zhao"
+cover: /covers/vue-mixin-usage.jpg
 category: Front-end
 tags:
   - Vue

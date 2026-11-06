@@ -3,6 +3,7 @@ title: "leetcode 185 - 部门收入前三高的所有员工"
 date: 2022-06-26
 excerpt: "leetcode 185 - 部门收入前三高的所有员工"
 author: "Dongsheng Zhao"
+cover: /covers/department-top-three-salaries.jpg
 category: Database
 tags:
   - MySQL

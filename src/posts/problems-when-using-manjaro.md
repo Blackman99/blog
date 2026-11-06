@@ -3,6 +3,7 @@ title: 使用Manjaro系统遇到的一些问题以及解决方案
 date: 2021-10-20
 excerpt: "Problems when using Manjaro"
 author: "Dongsheng Zhao"
+cover: /covers/problems-when-using-manjaro.jpg
 category: "Operating System"
 tags:
   - Manjaro

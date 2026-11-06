@@ -3,6 +3,7 @@ title: JavaScript数组常用方法
 date: 2020-04-01
 excerpt: JavaScript数组常用且实用的方法
 author: "Dongsheng Zhao"
+cover: /covers/useful-array-methods-in-javascript.jpg
 category: Front-end
 tags:
   - Javascript

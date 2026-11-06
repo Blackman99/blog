@@ -3,6 +3,7 @@ title: 如何在Vuepress中使用Quasar？
 date: 2019-12-01
 excerpt: 如何在Vuepress中使用Quasar？
 author: "Dongsheng Zhao"
+cover: /covers/how-to-use-quasar-in-vuepress.jpg
 category: Front-end
 tags:
   - Vue
