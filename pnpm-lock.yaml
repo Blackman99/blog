@@ -18,8 +18,8 @@ importers:
         specifier: ^7.3.1
         version: 7.3.1(svelte@5.57.3)(vite@8.3.6(@types/node@24.19.2)(jiti@2.7.0)(sass@1.108.0)(yaml@2.9.1))
       '@sveltepress/theme-blog':
-        specifier: ^1.2.0
-        version: 1.2.0(2ohovnh2xe7cx7fqo7f73hgi3m)
+        specifier: ^1.3.0
+        version: 1.3.0(2ohovnh2xe7cx7fqo7f73hgi3m)
       '@sveltepress/vite':
         specifier: ^1.10.0
         version: 1.10.0(@sveltejs/kit@2.70.4(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.3)(vite@8.3.6(@types/node@24.19.2)(jiti@2.7.0)(sass@1.108.0)(yaml@2.9.1)))(svelte@5.57.3)(typescript@6.0.3)(vite@8.3.6(@types/node@24.19.2)(jiti@2.7.0)(sass@1.108.0)(yaml@2.9.1)))(@sveltejs/vite-plugin-svelte@7.3.1(svelte@5.57.3)(vite@8.3.6(@types/node@24.19.2)(jiti@2.7.0)(sass@1.108.0)(yaml@2.9.1)))(svelte@5.57.3)(vite@8.3.6(@types/node@24.19.2)(jiti@2.7.0)(sass@1.108.0)(yaml@2.9.1))
@@ -702,8 +702,8 @@ packages:
       svelte: ^5.46.4
       vite: ^8.0.0-beta.7 || ^8.0.0
 
-  '@sveltepress/theme-blog@1.2.0':
-    resolution: {integrity: sha512-SSe+arLOs58e7041TdoYrmT5FLEFFTX3NclNKl8hRuuMMy93MSMNLBf/Y06/DAnvMpM7aqvrkzZbKP1sJU2wNg==}
+  '@sveltepress/theme-blog@1.3.0':
+    resolution: {integrity: sha512-S0LVR4wU6Mi/ATDs4JmddlSFFaOaEBEqmxi9y0QEpeTWh/z9v5VKl4tIWbUuqDouWfEnlNIbM0EimizOjvPQhw==}
     peerDependencies:
       '@sveltejs/kit': ^2.65.1 || ^3.0.0
       '@sveltejs/vite-plugin-svelte': ^7.3.1
@@ -2390,7 +2390,7 @@ snapshots:
       vite: 8.3.6(@types/node@24.19.2)(jiti@2.7.0)(sass@1.108.0)(yaml@2.9.1)
       vitefu: 1.1.3(vite@8.3.6(@types/node@24.19.2)(jiti@2.7.0)(sass@1.108.0)(yaml@2.9.1))
 
-  '@sveltepress/theme-blog@1.2.0(2ohovnh2xe7cx7fqo7f73hgi3m)':
+  '@sveltepress/theme-blog@1.3.0(2ohovnh2xe7cx7fqo7f73hgi3m)':
     dependencies:
       '@fontsource-variable/fraunces': 5.3.0
       '@fontsource/inter': 5.3.0
